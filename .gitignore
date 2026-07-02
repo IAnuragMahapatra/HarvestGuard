@@ -1,0 +1,45 @@
+# Environment & secrets
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+.venv/
+**/.venv/
+
+# Build artifacts
+dist/
+build/
+
+# Runtime files (generated at run time, never commit)
+finspark.db
+finspark.db-shm
+finspark.db-wal
+audit.log
+
+# Large model binaries (too big for git, download separately)
+models/*.pkl
+models/*.gguf
+models/*.bin
+models/*.pt
+# but keep the directory itself
+!models/.gitkeep
+
+# OS noise
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+
+# Agent & design tooling
+.agents/
+design_skills/
+internal_docs/
+AGENTS.md
