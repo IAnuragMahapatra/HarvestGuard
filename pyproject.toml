@@ -1,0 +1,32 @@
+[project]
+name = "finspark-hackathon"
+version = "0.1.0"
+description = "HarvestGuard — real-time cyber-fraud correlation platform for banking SOC and fraud teams"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi>=0.111.0",
+    "uvicorn[standard]>=0.29.0",
+    "redis>=5.0.4",
+    "aiosqlite>=0.20.0",
+    "pandas>=2.2.2",
+    "scikit-learn>=1.5.0",
+    "faker>=25.2.0",
+    "python-dotenv>=1.0.1",
+    "streamlit>=1.35.0",
+    "streamlit-echarts>=0.4.0",
+    "torch>=2.3.1",
+    "torch-geometric>=2.5.3",
+    "matplotlib>=3.9.0",
+    "numpy>=1.26.4",
+    "httpx>=0.27.0",
+    "pydantic>=2.7.1",
+    "networkx>=3.3",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
