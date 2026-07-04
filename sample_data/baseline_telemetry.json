@@ -1,0 +1,5002 @@
+[
+  {
+    "event_id": "fc967a99-aa0b-4496-a52f-30d33fc89be8",
+    "timestamp": "2026-06-11T00:40:47",
+    "src_ip": "10.86.140.47",
+    "dest_ip": "188.135.243.235",
+    "mitre_tag": "T1071",
+    "severity": 1.82,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "b4241e8d-03c4-4b1d-8587-9166429eecbe",
+    "timestamp": "2026-06-14T06:58:16",
+    "src_ip": "192.168.246.160",
+    "dest_ip": "101.151.176.67",
+    "mitre_tag": "T1071",
+    "severity": 2.6,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "8f141ba0-49cf-4670-85cb-4360a3bc1775",
+    "timestamp": "2026-06-23T15:22:07",
+    "src_ip": "192.168.7.157",
+    "dest_ip": "172.253.130.57",
+    "mitre_tag": "T1133",
+    "severity": 1.81,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "3f035b32-41e6-4994-8094-a8be1487ff8f",
+    "timestamp": "2026-06-27T21:26:55",
+    "src_ip": "172.24.9.9",
+    "dest_ip": "86.80.226.182",
+    "mitre_tag": "T1133",
+    "severity": 2.7,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "dd779540-dba9-4d9a-9be5-115172db7cae",
+    "timestamp": "2026-07-07T10:35:53",
+    "src_ip": "172.19.79.65",
+    "dest_ip": "3.188.234.70",
+    "mitre_tag": "T1046",
+    "severity": 0.77,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "7a22aee8-baef-4bb8-a5ab-67c963feb067",
+    "timestamp": "2026-07-02T01:12:11",
+    "src_ip": "192.168.116.3",
+    "dest_ip": "185.214.89.59",
+    "mitre_tag": "T1046",
+    "severity": 3.5,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "e10580cf-7c7b-453c-aab2-e353ae3c5794",
+    "timestamp": "2026-06-20T17:58:52",
+    "src_ip": "172.23.217.168",
+    "dest_ip": "199.19.178.146",
+    "mitre_tag": "T1046",
+    "severity": 2.79,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "63630402-3a92-4c41-94e5-1f9fc9853d66",
+    "timestamp": "2026-06-18T22:09:48",
+    "src_ip": "192.168.79.152",
+    "dest_ip": "165.71.124.55",
+    "mitre_tag": "T1133",
+    "severity": 2.06,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "8377f6ea-06fb-4b5d-b5cb-a958ec712101",
+    "timestamp": "2026-06-23T18:44:56",
+    "src_ip": "192.168.200.141",
+    "dest_ip": "11.132.164.32",
+    "mitre_tag": "T1071",
+    "severity": 1.04,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "586326bc-5421-41e5-9700-e7479ce1134a",
+    "timestamp": "2026-07-09T09:30:58",
+    "src_ip": "192.168.159.66",
+    "dest_ip": "88.246.59.114",
+    "mitre_tag": "T1133",
+    "severity": 2.4,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "f3eaee59-431a-4013-80b5-39b3443a6ae0",
+    "timestamp": "2026-06-22T12:55:35",
+    "src_ip": "10.112.127.2",
+    "dest_ip": "143.75.88.119",
+    "mitre_tag": "T1046",
+    "severity": 1.91,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "8724a1bf-7d2d-4529-a2b7-6ba1b52de000",
+    "timestamp": "2026-06-29T17:36:08",
+    "src_ip": "10.113.74.214",
+    "dest_ip": "37.53.49.132",
+    "mitre_tag": "T1071",
+    "severity": 1.46,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "8de1af79-4a11-42ba-8e1e-313005654f5d",
+    "timestamp": "2026-07-02T23:54:45",
+    "src_ip": "10.221.201.67",
+    "dest_ip": "69.228.123.246",
+    "mitre_tag": "T1059",
+    "severity": 1.49,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "c8d9c5ef-0a63-49d6-a1d6-58a92d407af0",
+    "timestamp": "2026-06-30T13:43:19",
+    "src_ip": "172.28.175.4",
+    "dest_ip": "110.23.58.241",
+    "mitre_tag": "T1071",
+    "severity": 2.49,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "b384e764-7d24-4c2b-ad3e-a219c0c355f7",
+    "timestamp": "2026-06-18T10:51:17",
+    "src_ip": "192.168.51.74",
+    "dest_ip": "19.70.149.174",
+    "mitre_tag": "T1046",
+    "severity": 1.86,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "5d98334e-a530-4d5b-8c62-19620dea2e5b",
+    "timestamp": "2026-07-01T05:37:33",
+    "src_ip": "172.16.227.111",
+    "dest_ip": "130.153.14.19",
+    "mitre_tag": "T1071",
+    "severity": 1.47,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "a276e72b-ddef-4836-b684-44bd49565759",
+    "timestamp": "2026-07-04T17:10:53",
+    "src_ip": "172.22.124.10",
+    "dest_ip": "68.61.20.207",
+    "mitre_tag": "T1046",
+    "severity": 2.47,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "4ccf07bb-b7f9-4298-bd2c-8fc4370dfbb6",
+    "timestamp": "2026-07-02T09:22:14",
+    "src_ip": "192.168.38.139",
+    "dest_ip": "67.60.69.158",
+    "mitre_tag": "T1133",
+    "severity": 1.74,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "de118a92-f1ab-4a02-97d4-53e611b2fa00",
+    "timestamp": "2026-06-29T01:29:07",
+    "src_ip": "172.20.214.196",
+    "dest_ip": "191.92.73.102",
+    "mitre_tag": "T1071",
+    "severity": 2.37,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "f9689955-9ae6-4ff0-ae61-7fcb2844bcfb",
+    "timestamp": "2026-07-07T21:47:25",
+    "src_ip": "172.29.174.251",
+    "dest_ip": "85.53.103.0",
+    "mitre_tag": "T1133",
+    "severity": 2.78,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "ec32e946-aacc-4e44-85be-76dac8cae145",
+    "timestamp": "2026-06-27T15:31:26",
+    "src_ip": "192.168.96.127",
+    "dest_ip": "38.191.161.64",
+    "mitre_tag": "T1071",
+    "severity": 2.15,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "ef3e22b1-1fc9-4ca3-bc0d-6b428423be10",
+    "timestamp": "2026-07-08T08:07:35",
+    "src_ip": "10.197.146.211",
+    "dest_ip": "208.204.21.94",
+    "mitre_tag": "T1133",
+    "severity": 3.14,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "92f85593-d8e7-4fbf-bcc8-adba8cd9132c",
+    "timestamp": "2026-06-17T09:48:54",
+    "src_ip": "172.22.91.56",
+    "dest_ip": "38.24.57.233",
+    "mitre_tag": "T1046",
+    "severity": 0.59,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "81d760f9-0db5-445b-872a-068120f3c7fd",
+    "timestamp": "2026-06-14T08:31:24",
+    "src_ip": "10.134.3.1",
+    "dest_ip": "167.1.39.131",
+    "mitre_tag": "T1059",
+    "severity": 1.43,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "57ca8a57-ef60-46dc-b110-d0d715b95bf5",
+    "timestamp": "2026-06-21T16:19:59",
+    "src_ip": "192.168.133.238",
+    "dest_ip": "81.111.44.138",
+    "mitre_tag": "T1133",
+    "severity": 0.78,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "420633e8-4ab6-4d6d-8dae-0183f5fbe1f2",
+    "timestamp": "2026-06-18T17:53:15",
+    "src_ip": "192.168.147.158",
+    "dest_ip": "154.62.10.114",
+    "mitre_tag": "T1133",
+    "severity": 3.34,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "f79f2ea3-5a36-48d7-8c16-0e27ca591d02",
+    "timestamp": "2026-06-14T10:55:19",
+    "src_ip": "192.168.136.201",
+    "dest_ip": "162.189.13.179",
+    "mitre_tag": "T1133",
+    "severity": 3.3,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "7d8a4d94-c37b-454d-9c25-fa8eb9b18238",
+    "timestamp": "2026-06-22T00:53:52",
+    "src_ip": "172.24.219.76",
+    "dest_ip": "2.24.40.178",
+    "mitre_tag": "T1071",
+    "severity": 1.75,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "c3e302fb-1b8d-4c67-bebc-8f953273cfcb",
+    "timestamp": "2026-07-05T21:02:58",
+    "src_ip": "10.208.120.202",
+    "dest_ip": "126.46.199.5",
+    "mitre_tag": "T1133",
+    "severity": 1.23,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "0cad3dd9-881d-49c3-b736-b3e69fc4c8cc",
+    "timestamp": "2026-07-08T00:00:38",
+    "src_ip": "192.168.124.149",
+    "dest_ip": "96.244.241.89",
+    "mitre_tag": "T1059",
+    "severity": 1.65,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "ba6ac807-179f-4aaa-8b1c-e9c96dc4d2a2",
+    "timestamp": "2026-06-11T06:01:49",
+    "src_ip": "192.168.194.78",
+    "dest_ip": "13.243.60.201",
+    "mitre_tag": "T1059",
+    "severity": 3.09,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "37ed0fa6-b758-4a2e-b520-c63000d52484",
+    "timestamp": "2026-06-26T22:20:57",
+    "src_ip": "172.27.99.169",
+    "dest_ip": "189.173.172.210",
+    "mitre_tag": "T1133",
+    "severity": 1.52,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "a49d83ab-879d-4b8c-90aa-06db6b47a12d",
+    "timestamp": "2026-06-20T23:34:17",
+    "src_ip": "192.168.24.64",
+    "dest_ip": "136.150.224.80",
+    "mitre_tag": "T1071",
+    "severity": 2.96,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "eeb15b82-8720-4879-b541-345a7b813b93",
+    "timestamp": "2026-06-23T10:59:07",
+    "src_ip": "192.168.109.118",
+    "dest_ip": "130.216.239.201",
+    "mitre_tag": "T1071",
+    "severity": 3.01,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "2350530f-248f-4731-bb5f-bf0179e8c468",
+    "timestamp": "2026-07-08T04:00:48",
+    "src_ip": "172.23.176.85",
+    "dest_ip": "65.211.81.124",
+    "mitre_tag": "T1133",
+    "severity": 3.1,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "0837c50c-afe0-4e11-b64d-0b4eec2942c0",
+    "timestamp": "2026-06-13T07:27:04",
+    "src_ip": "192.168.43.246",
+    "dest_ip": "214.29.154.236",
+    "mitre_tag": "T1133",
+    "severity": 1.54,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "f15e6597-961f-4795-aba1-38a25e954ba9",
+    "timestamp": "2026-06-14T01:31:52",
+    "src_ip": "192.168.124.149",
+    "dest_ip": "22.29.23.33",
+    "mitre_tag": "T1133",
+    "severity": 1.87,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "6a478b08-65bc-42a0-a883-e690bbe7a896",
+    "timestamp": "2026-07-04T10:21:38",
+    "src_ip": "10.97.182.47",
+    "dest_ip": "173.9.195.170",
+    "mitre_tag": "T1059",
+    "severity": 3.44,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "38a6ca9d-0816-4816-b911-7c18a18404fe",
+    "timestamp": "2026-06-28T13:55:46",
+    "src_ip": "10.134.3.1",
+    "dest_ip": "26.128.185.93",
+    "mitre_tag": "T1133",
+    "severity": 1.2,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "b67b0f61-4dc8-4cdf-b8ec-2765d6a82834",
+    "timestamp": "2026-06-13T13:12:25",
+    "src_ip": "192.168.41.73",
+    "dest_ip": "121.168.58.84",
+    "mitre_tag": "T1046",
+    "severity": 1.45,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "1b70c001-e442-4151-acae-cc9962535e8e",
+    "timestamp": "2026-06-24T21:51:19",
+    "src_ip": "172.27.162.126",
+    "dest_ip": "76.153.119.173",
+    "mitre_tag": "T1133",
+    "severity": 1.66,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "29f9cb98-7ce4-47c9-a098-f29a3e712e48",
+    "timestamp": "2026-06-26T13:21:31",
+    "src_ip": "192.168.172.17",
+    "dest_ip": "199.143.46.112",
+    "mitre_tag": "T1133",
+    "severity": 3.39,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "3d5b0470-71ce-4c59-a990-2416ab509437",
+    "timestamp": "2026-07-05T12:34:58",
+    "src_ip": "192.168.145.133",
+    "dest_ip": "198.26.75.17",
+    "mitre_tag": "T1071",
+    "severity": 3.11,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "b81ed4e6-0a9f-48a8-83b6-b017411629a4",
+    "timestamp": "2026-06-27T08:59:25",
+    "src_ip": "172.25.142.2",
+    "dest_ip": "72.228.134.143",
+    "mitre_tag": "T1046",
+    "severity": 2.08,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "2a3125c0-10a2-471b-86e9-78068cd59602",
+    "timestamp": "2026-06-18T18:29:23",
+    "src_ip": "172.19.233.164",
+    "dest_ip": "76.251.81.163",
+    "mitre_tag": "T1046",
+    "severity": 2.67,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "94e12dd7-ed65-4613-a101-9f819eb5228d",
+    "timestamp": "2026-07-08T15:21:52",
+    "src_ip": "10.113.74.214",
+    "dest_ip": "158.56.204.67",
+    "mitre_tag": "T1059",
+    "severity": 0.72,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "a2c49ff7-ab6c-461e-b302-4139064dc2b0",
+    "timestamp": "2026-06-26T19:52:03",
+    "src_ip": "10.230.200.194",
+    "dest_ip": "16.56.55.39",
+    "mitre_tag": "T1071",
+    "severity": 2.37,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "e3f8dbe2-8346-4533-9a3a-9b3ec1d32b28",
+    "timestamp": "2026-06-19T00:46:30",
+    "src_ip": "172.16.169.159",
+    "dest_ip": "138.90.85.157",
+    "mitre_tag": "T1046",
+    "severity": 3.06,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "add02ef3-eee7-4e9a-a501-4a4b5402378f",
+    "timestamp": "2026-07-06T04:50:26",
+    "src_ip": "10.29.35.52",
+    "dest_ip": "102.252.254.98",
+    "mitre_tag": "T1133",
+    "severity": 3.36,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "6629470b-1393-4bde-a039-b694a85f8c91",
+    "timestamp": "2026-07-01T05:17:59",
+    "src_ip": "192.168.76.105",
+    "dest_ip": "186.207.114.247",
+    "mitre_tag": "T1046",
+    "severity": 2.35,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "d27d1acc-1f11-45bf-8716-264fab0dfaa6",
+    "timestamp": "2026-06-18T00:11:21",
+    "src_ip": "10.61.72.113",
+    "dest_ip": "72.35.253.122",
+    "mitre_tag": "T1071",
+    "severity": 3.49,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "b938b2c9-9b60-408d-b679-286c141851ed",
+    "timestamp": "2026-06-26T22:08:35",
+    "src_ip": "10.238.37.150",
+    "dest_ip": "39.197.131.78",
+    "mitre_tag": "T1133",
+    "severity": 3.44,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "e2528715-b63e-4f6c-b077-2a8d9693dbfc",
+    "timestamp": "2026-06-14T03:24:09",
+    "src_ip": "10.50.118.15",
+    "dest_ip": "218.171.185.137",
+    "mitre_tag": "T1133",
+    "severity": 1.0,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "7a6b89a4-e0b8-4ad7-aef2-ea506c6fedfc",
+    "timestamp": "2026-06-15T01:51:50",
+    "src_ip": "192.168.176.172",
+    "dest_ip": "191.54.108.216",
+    "mitre_tag": "T1046",
+    "severity": 0.64,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "b7a02578-a0f8-4185-b47b-a8a2ba249fad",
+    "timestamp": "2026-07-03T07:04:40",
+    "src_ip": "10.74.115.73",
+    "dest_ip": "76.131.158.217",
+    "mitre_tag": "T1071",
+    "severity": 1.58,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "ba516db9-1fb6-4c42-a82d-00082b5a1758",
+    "timestamp": "2026-07-05T13:32:08",
+    "src_ip": "172.29.226.154",
+    "dest_ip": "58.152.157.67",
+    "mitre_tag": "T1059",
+    "severity": 1.23,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "2ac95ae8-d5d2-4aaf-8e9c-922f2ab067b7",
+    "timestamp": "2026-06-24T04:53:29",
+    "src_ip": "192.168.41.73",
+    "dest_ip": "172.18.229.219",
+    "mitre_tag": "T1059",
+    "severity": 1.01,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "97b4832d-ff6e-4180-bb07-de20e494eaff",
+    "timestamp": "2026-06-30T07:15:29",
+    "src_ip": "192.168.32.27",
+    "dest_ip": "151.235.13.232",
+    "mitre_tag": "T1133",
+    "severity": 2.36,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "50856062-93ab-4ad2-aa94-9e10c8a5a898",
+    "timestamp": "2026-06-27T11:42:56",
+    "src_ip": "10.162.208.114",
+    "dest_ip": "141.142.155.40",
+    "mitre_tag": "T1133",
+    "severity": 3.24,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "73668824-60b0-4b66-89db-af70d07cf236",
+    "timestamp": "2026-06-15T19:35:03",
+    "src_ip": "172.30.144.183",
+    "dest_ip": "164.30.17.172",
+    "mitre_tag": "T1059",
+    "severity": 1.88,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "328ac2c6-78c3-4a23-9a99-eee5287efa0e",
+    "timestamp": "2026-06-19T01:28:32",
+    "src_ip": "192.168.40.16",
+    "dest_ip": "201.83.84.133",
+    "mitre_tag": "T1133",
+    "severity": 1.27,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "1cbfe650-dd15-4441-b01e-1da28e7d01d2",
+    "timestamp": "2026-07-04T07:42:13",
+    "src_ip": "192.168.227.161",
+    "dest_ip": "130.37.95.94",
+    "mitre_tag": "T1133",
+    "severity": 3.2,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "268746c0-563e-42a9-a9b0-5317146446da",
+    "timestamp": "2026-06-21T14:18:27",
+    "src_ip": "192.168.26.149",
+    "dest_ip": "96.241.240.224",
+    "mitre_tag": "T1059",
+    "severity": 0.72,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "e6a7e6f5-d23f-4743-8755-d809083b0c23",
+    "timestamp": "2026-06-28T02:17:17",
+    "src_ip": "10.4.219.202",
+    "dest_ip": "220.151.243.238",
+    "mitre_tag": "T1071",
+    "severity": 2.42,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "989eff45-cebd-424e-a59b-78b964949218",
+    "timestamp": "2026-07-07T05:40:06",
+    "src_ip": "172.28.188.191",
+    "dest_ip": "220.198.146.14",
+    "mitre_tag": "T1071",
+    "severity": 1.87,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "04e38988-69d0-4809-91ca-6c6dc930f9f1",
+    "timestamp": "2026-06-10T10:59:53",
+    "src_ip": "192.168.147.73",
+    "dest_ip": "166.141.245.50",
+    "mitre_tag": "T1059",
+    "severity": 3.5,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "38a89bf9-346a-424a-a232-fab8a4d0269d",
+    "timestamp": "2026-06-21T13:57:35",
+    "src_ip": "10.208.120.202",
+    "dest_ip": "14.89.198.43",
+    "mitre_tag": "T1046",
+    "severity": 1.21,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "4b434cd1-c09e-40c0-b866-09603edbd047",
+    "timestamp": "2026-06-20T16:28:04",
+    "src_ip": "10.16.111.78",
+    "dest_ip": "101.117.63.252",
+    "mitre_tag": "T1071",
+    "severity": 2.22,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "7f6b28eb-adf4-48e1-bf26-4dafb6cd07a5",
+    "timestamp": "2026-07-01T20:14:34",
+    "src_ip": "172.27.157.190",
+    "dest_ip": "213.125.230.166",
+    "mitre_tag": "T1046",
+    "severity": 3.43,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "b5519c31-94dc-484d-8f86-1661110d73bb",
+    "timestamp": "2026-06-14T18:40:47",
+    "src_ip": "10.129.62.96",
+    "dest_ip": "129.220.233.101",
+    "mitre_tag": "T1071",
+    "severity": 0.52,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "23542f80-174f-4bfe-af97-14ac5ff00073",
+    "timestamp": "2026-06-18T05:34:18",
+    "src_ip": "172.17.185.99",
+    "dest_ip": "8.211.84.57",
+    "mitre_tag": "T1133",
+    "severity": 3.0,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "5ab6b37d-aaac-4681-814a-dd4d014b8e77",
+    "timestamp": "2026-07-06T08:38:15",
+    "src_ip": "10.125.226.208",
+    "dest_ip": "141.78.105.75",
+    "mitre_tag": "T1059",
+    "severity": 2.32,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "56d4431f-f003-462d-a757-8c0552b5fb93",
+    "timestamp": "2026-06-13T04:07:54",
+    "src_ip": "192.168.117.131",
+    "dest_ip": "119.95.189.66",
+    "mitre_tag": "T1059",
+    "severity": 2.41,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "a77757cf-d3da-4e18-82a9-ef796c8a472e",
+    "timestamp": "2026-06-30T00:16:04",
+    "src_ip": "172.19.79.65",
+    "dest_ip": "191.160.95.10",
+    "mitre_tag": "T1059",
+    "severity": 2.38,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "25ce359d-2761-494e-87c7-8b7aa211ffd5",
+    "timestamp": "2026-07-02T17:27:39",
+    "src_ip": "172.24.9.9",
+    "dest_ip": "99.137.245.28",
+    "mitre_tag": "T1071",
+    "severity": 2.87,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "a15eaa81-1325-401d-a363-f4a714aa2bf9",
+    "timestamp": "2026-07-07T12:32:48",
+    "src_ip": "192.168.1.221",
+    "dest_ip": "6.242.58.165",
+    "mitre_tag": "T1071",
+    "severity": 2.7,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "5eb8b4b4-b097-48c4-8fd7-ef5161004db3",
+    "timestamp": "2026-06-15T00:52:57",
+    "src_ip": "10.238.37.150",
+    "dest_ip": "163.108.239.96",
+    "mitre_tag": "T1071",
+    "severity": 1.48,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "0cbf3ee5-02ff-4729-90bc-4dc6255eed75",
+    "timestamp": "2026-06-14T09:03:41",
+    "src_ip": "192.168.6.103",
+    "dest_ip": "4.218.163.110",
+    "mitre_tag": "T1059",
+    "severity": 1.1,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "a85f7191-bb31-4fc3-9948-e08023d8782a",
+    "timestamp": "2026-06-25T18:16:27",
+    "src_ip": "10.39.213.148",
+    "dest_ip": "207.218.126.17",
+    "mitre_tag": "T1071",
+    "severity": 2.09,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "5c6fcda6-b3cb-4938-9e0e-06bb99c891f6",
+    "timestamp": "2026-06-24T02:29:29",
+    "src_ip": "192.168.7.157",
+    "dest_ip": "175.241.78.20",
+    "mitre_tag": "T1059",
+    "severity": 1.27,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "ae8ccb6b-8818-4f12-a3dd-204dcedb1577",
+    "timestamp": "2026-06-28T08:53:50",
+    "src_ip": "192.168.193.245",
+    "dest_ip": "110.2.221.89",
+    "mitre_tag": "T1071",
+    "severity": 2.74,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "3e3316e2-01f6-4db4-b619-e0fa678fd9be",
+    "timestamp": "2026-07-09T12:04:47",
+    "src_ip": "10.87.149.171",
+    "dest_ip": "49.126.213.28",
+    "mitre_tag": "T1046",
+    "severity": 1.9,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "b28959f4-0d6a-48d9-8e5b-9959d6731f7c",
+    "timestamp": "2026-06-11T21:54:34",
+    "src_ip": "172.31.239.128",
+    "dest_ip": "177.114.219.11",
+    "mitre_tag": "T1059",
+    "severity": 2.76,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "a65880e1-21aa-4892-bac9-ed9fabeb5199",
+    "timestamp": "2026-07-01T09:54:31",
+    "src_ip": "10.134.217.225",
+    "dest_ip": "95.195.178.101",
+    "mitre_tag": "T1133",
+    "severity": 3.4,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "ba44ee62-f993-4801-bd77-5e89509b85f0",
+    "timestamp": "2026-06-10T07:36:39",
+    "src_ip": "10.176.43.104",
+    "dest_ip": "173.60.226.144",
+    "mitre_tag": "T1071",
+    "severity": 0.77,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "35185c65-28eb-4343-a467-a72a07af3373",
+    "timestamp": "2026-07-04T02:49:53",
+    "src_ip": "10.129.62.96",
+    "dest_ip": "65.214.243.201",
+    "mitre_tag": "T1046",
+    "severity": 1.29,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "07af5555-2205-4318-8714-f215d2fb4de4",
+    "timestamp": "2026-06-16T19:04:27",
+    "src_ip": "10.116.250.192",
+    "dest_ip": "29.254.83.228",
+    "mitre_tag": "T1133",
+    "severity": 1.61,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "d5b0ad28-d6a8-43fa-ba14-c43dfe2843c4",
+    "timestamp": "2026-06-12T16:10:42",
+    "src_ip": "10.97.6.125",
+    "dest_ip": "159.156.215.84",
+    "mitre_tag": "T1133",
+    "severity": 2.97,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "cbc8d804-8f49-4125-a98f-1bebf9c47819",
+    "timestamp": "2026-07-07T18:32:10",
+    "src_ip": "172.18.232.168",
+    "dest_ip": "169.171.63.132",
+    "mitre_tag": "T1046",
+    "severity": 2.52,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "9565bfd4-f642-4be4-9f0a-0b136087cade",
+    "timestamp": "2026-06-24T20:06:46",
+    "src_ip": "10.32.241.53",
+    "dest_ip": "66.167.122.108",
+    "mitre_tag": "T1046",
+    "severity": 2.36,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "4cd91cd8-4aac-426b-86bd-52366b32f6e3",
+    "timestamp": "2026-06-18T06:16:12",
+    "src_ip": "172.23.107.162",
+    "dest_ip": "98.92.114.216",
+    "mitre_tag": "T1071",
+    "severity": 3.25,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "f570b4ed-3f83-4fa0-b717-f60546b92f04",
+    "timestamp": "2026-07-08T18:15:13",
+    "src_ip": "10.97.228.107",
+    "dest_ip": "219.62.81.189",
+    "mitre_tag": "T1046",
+    "severity": 2.41,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "37aad5ea-1f50-44c0-89b3-b1ec3f7cdac4",
+    "timestamp": "2026-06-26T22:21:04",
+    "src_ip": "172.26.205.55",
+    "dest_ip": "185.77.244.158",
+    "mitre_tag": "T1071",
+    "severity": 2.45,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "2ae3c509-b369-49b3-b2bb-cfeb3608ad93",
+    "timestamp": "2026-06-28T20:07:53",
+    "src_ip": "192.168.113.1",
+    "dest_ip": "5.217.40.5",
+    "mitre_tag": "T1059",
+    "severity": 0.64,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "94e3f1c9-e9bb-4046-a102-42b235707132",
+    "timestamp": "2026-06-12T08:23:37",
+    "src_ip": "10.104.54.15",
+    "dest_ip": "99.101.240.136",
+    "mitre_tag": "T1071",
+    "severity": 3.49,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "f8bfa42b-37b9-4518-bccf-2340b36e8472",
+    "timestamp": "2026-07-04T17:33:24",
+    "src_ip": "192.168.113.1",
+    "dest_ip": "169.130.46.104",
+    "mitre_tag": "T1046",
+    "severity": 1.2,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "3f2fdbe6-f85c-4ef6-9717-2710861883fb",
+    "timestamp": "2026-06-25T01:31:29",
+    "src_ip": "172.20.49.66",
+    "dest_ip": "172.57.199.165",
+    "mitre_tag": "T1059",
+    "severity": 1.67,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "fb6ba51f-ad7a-4245-b998-13c82b6ce5e7",
+    "timestamp": "2026-06-16T05:04:47",
+    "src_ip": "10.72.141.80",
+    "dest_ip": "44.85.178.156",
+    "mitre_tag": "T1133",
+    "severity": 2.26,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "bb9f317a-e78d-43e0-bb4f-49d473cf9422",
+    "timestamp": "2026-07-04T15:46:16",
+    "src_ip": "10.207.196.222",
+    "dest_ip": "216.206.216.234",
+    "mitre_tag": "T1133",
+    "severity": 2.46,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "78705761-32eb-40d4-8eca-35c3cb1ddfaf",
+    "timestamp": "2026-07-03T06:23:37",
+    "src_ip": "10.159.169.85",
+    "dest_ip": "3.80.82.53",
+    "mitre_tag": "T1133",
+    "severity": 3.32,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "643e378d-8ddb-4269-8ee3-c5ac22c2b7f5",
+    "timestamp": "2026-06-24T12:52:07",
+    "src_ip": "192.168.255.155",
+    "dest_ip": "98.166.126.248",
+    "mitre_tag": "T1046",
+    "severity": 2.57,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "93ca0663-ed14-4e52-8176-530ab1e8a979",
+    "timestamp": "2026-07-07T16:01:09",
+    "src_ip": "10.236.96.91",
+    "dest_ip": "16.188.193.199",
+    "mitre_tag": "T1133",
+    "severity": 1.83,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "3dd445f7-9b08-498f-8a0a-610021e3777c",
+    "timestamp": "2026-06-11T12:15:02",
+    "src_ip": "10.61.72.113",
+    "dest_ip": "190.226.71.211",
+    "mitre_tag": "T1071",
+    "severity": 0.8,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "d03114cb-4a0f-4081-a2fd-3ad5d9b4cf5d",
+    "timestamp": "2026-07-06T13:26:44",
+    "src_ip": "192.168.167.172",
+    "dest_ip": "81.242.194.5",
+    "mitre_tag": "T1071",
+    "severity": 0.68,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "d4ba22a6-9105-40a1-aa9d-1cc4793c012d",
+    "timestamp": "2026-06-28T13:50:09",
+    "src_ip": "172.27.99.169",
+    "dest_ip": "19.239.252.82",
+    "mitre_tag": "T1059",
+    "severity": 3.4,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "74e66cdb-af47-4a79-b3b5-9892a866938a",
+    "timestamp": "2026-06-10T17:29:45",
+    "src_ip": "172.30.220.187",
+    "dest_ip": "154.28.215.95",
+    "mitre_tag": "T1046",
+    "severity": 2.49,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "93bb6bc9-8e2c-4f54-af41-15769f556b48",
+    "timestamp": "2026-07-03T18:26:24",
+    "src_ip": "192.168.50.68",
+    "dest_ip": "114.194.65.186",
+    "mitre_tag": "T1046",
+    "severity": 2.86,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "4bb646dd-129f-4d4f-992c-aed683bcbf9e",
+    "timestamp": "2026-07-03T03:34:59",
+    "src_ip": "172.16.190.67",
+    "dest_ip": "220.16.217.142",
+    "mitre_tag": "T1059",
+    "severity": 2.86,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "8e3e5487-29ba-425c-9969-20bbe27d1594",
+    "timestamp": "2026-07-02T12:50:55",
+    "src_ip": "172.24.251.211",
+    "dest_ip": "16.255.48.129",
+    "mitre_tag": "T1046",
+    "severity": 2.99,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "6155b521-39a4-4fa1-a2b6-2804ebe12396",
+    "timestamp": "2026-06-16T19:00:04",
+    "src_ip": "172.21.209.240",
+    "dest_ip": "56.214.55.242",
+    "mitre_tag": "T1059",
+    "severity": 2.26,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "1038467b-fdc3-41a2-b202-9daaf635f51b",
+    "timestamp": "2026-07-05T09:26:20",
+    "src_ip": "172.31.161.68",
+    "dest_ip": "10.214.61.241",
+    "mitre_tag": "T1071",
+    "severity": 2.82,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "3c1ee343-cdde-4f5d-8aec-f9eb123f418e",
+    "timestamp": "2026-07-01T10:25:43",
+    "src_ip": "192.168.3.234",
+    "dest_ip": "90.62.186.226",
+    "mitre_tag": "T1071",
+    "severity": 3.08,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "e6e63ab4-194b-4708-a240-46829ac1cc4c",
+    "timestamp": "2026-06-29T04:41:37",
+    "src_ip": "172.28.197.151",
+    "dest_ip": "54.46.158.111",
+    "mitre_tag": "T1059",
+    "severity": 2.12,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "5dfbcf9b-73ed-4da4-a8d6-66560a74ffa7",
+    "timestamp": "2026-06-17T14:01:12",
+    "src_ip": "192.168.79.152",
+    "dest_ip": "202.70.198.39",
+    "mitre_tag": "T1046",
+    "severity": 2.48,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "0a5e129b-f506-4425-8e05-3da3986fe3e5",
+    "timestamp": "2026-06-21T14:01:40",
+    "src_ip": "192.168.132.184",
+    "dest_ip": "32.33.203.118",
+    "mitre_tag": "T1059",
+    "severity": 0.54,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "99f37cfc-bf19-40ff-8090-aff9c8c84347",
+    "timestamp": "2026-06-21T13:49:08",
+    "src_ip": "192.168.163.66",
+    "dest_ip": "73.231.228.222",
+    "mitre_tag": "T1071",
+    "severity": 0.55,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "3e7b7296-3192-49e7-a453-5a705e1d0474",
+    "timestamp": "2026-06-20T00:42:40",
+    "src_ip": "10.230.200.194",
+    "dest_ip": "35.61.15.183",
+    "mitre_tag": "T1046",
+    "severity": 0.88,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "842567e8-232d-4fdf-985a-520ab9b12c0b",
+    "timestamp": "2026-06-13T18:51:27",
+    "src_ip": "172.19.27.18",
+    "dest_ip": "116.149.185.84",
+    "mitre_tag": "T1046",
+    "severity": 2.74,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "e7db6c03-0623-4c0e-8a55-dc50e10a4ae4",
+    "timestamp": "2026-06-22T15:17:38",
+    "src_ip": "192.168.27.168",
+    "dest_ip": "1.10.47.222",
+    "mitre_tag": "T1133",
+    "severity": 2.83,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "6a8c4498-b69d-408c-a100-c09e29d3309e",
+    "timestamp": "2026-06-10T23:31:19",
+    "src_ip": "10.105.205.115",
+    "dest_ip": "140.127.4.147",
+    "mitre_tag": "T1046",
+    "severity": 1.86,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "562e3098-4d2f-4969-b4d4-321b4bcd2b7e",
+    "timestamp": "2026-06-13T13:18:01",
+    "src_ip": "10.97.228.107",
+    "dest_ip": "78.35.137.126",
+    "mitre_tag": "T1046",
+    "severity": 2.68,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "708ee22e-22d1-439b-8d7a-3b6c6ae8fa4b",
+    "timestamp": "2026-06-30T07:40:48",
+    "src_ip": "172.20.121.195",
+    "dest_ip": "92.137.213.199",
+    "mitre_tag": "T1071",
+    "severity": 1.87,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "abdf58b6-3ae1-45fb-a80d-c204090e7227",
+    "timestamp": "2026-07-08T16:03:46",
+    "src_ip": "192.168.55.239",
+    "dest_ip": "179.211.38.60",
+    "mitre_tag": "T1046",
+    "severity": 3.5,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "30effd87-3c94-4151-9169-45d7173e1abf",
+    "timestamp": "2026-06-09T13:33:47",
+    "src_ip": "192.168.51.74",
+    "dest_ip": "167.21.12.59",
+    "mitre_tag": "T1133",
+    "severity": 2.56,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "f876cc2c-e0b2-4a82-9264-5f9afc3b6a7f",
+    "timestamp": "2026-06-28T17:13:58",
+    "src_ip": "10.112.127.2",
+    "dest_ip": "115.8.253.22",
+    "mitre_tag": "T1133",
+    "severity": 0.72,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "8f5e7695-de73-4f9b-b409-d3e8efb6a3d1",
+    "timestamp": "2026-06-10T15:20:14",
+    "src_ip": "172.28.166.113",
+    "dest_ip": "169.217.42.208",
+    "mitre_tag": "T1071",
+    "severity": 2.32,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "942f4c13-10bf-4abe-b3ce-8b1a2192a74c",
+    "timestamp": "2026-06-30T12:07:10",
+    "src_ip": "172.16.169.109",
+    "dest_ip": "14.96.186.147",
+    "mitre_tag": "T1059",
+    "severity": 1.33,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "43c72fa7-6239-4d13-8aab-14770c0f4961",
+    "timestamp": "2026-06-14T15:40:47",
+    "src_ip": "192.168.159.66",
+    "dest_ip": "109.53.81.14",
+    "mitre_tag": "T1071",
+    "severity": 1.64,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "0afe8e8a-4976-43de-b9f0-a37c69ced735",
+    "timestamp": "2026-06-26T11:16:43",
+    "src_ip": "10.158.224.66",
+    "dest_ip": "37.66.223.204",
+    "mitre_tag": "T1071",
+    "severity": 1.86,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "27f1094f-4b7b-4d09-8319-971e8bad8ffc",
+    "timestamp": "2026-06-22T06:02:02",
+    "src_ip": "172.29.226.154",
+    "dest_ip": "141.118.86.253",
+    "mitre_tag": "T1046",
+    "severity": 2.88,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "6b4148ab-1b21-4318-8a7b-ab14bc7c75a4",
+    "timestamp": "2026-06-23T12:07:52",
+    "src_ip": "192.168.147.158",
+    "dest_ip": "136.50.71.128",
+    "mitre_tag": "T1059",
+    "severity": 1.79,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "3b485703-e7e6-48d0-8b87-ebf83dcac051",
+    "timestamp": "2026-06-22T12:43:01",
+    "src_ip": "172.19.78.205",
+    "dest_ip": "211.61.176.95",
+    "mitre_tag": "T1133",
+    "severity": 1.52,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "55c48230-3961-4924-9f61-16aa397b7da5",
+    "timestamp": "2026-06-22T14:42:46",
+    "src_ip": "172.30.220.187",
+    "dest_ip": "184.47.21.24",
+    "mitre_tag": "T1133",
+    "severity": 1.75,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "4607936c-7711-4990-b314-735401b43b1d",
+    "timestamp": "2026-06-10T20:22:16",
+    "src_ip": "10.66.173.2",
+    "dest_ip": "89.98.184.224",
+    "mitre_tag": "T1071",
+    "severity": 1.78,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "f449fb15-baa4-4baf-9d06-e8f534851579",
+    "timestamp": "2026-07-08T21:27:29",
+    "src_ip": "192.168.40.16",
+    "dest_ip": "17.166.100.149",
+    "mitre_tag": "T1071",
+    "severity": 3.36,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "09d1ab84-2aa8-468b-ba6a-346e0d537c6e",
+    "timestamp": "2026-06-18T16:14:45",
+    "src_ip": "172.27.162.126",
+    "dest_ip": "13.106.201.107",
+    "mitre_tag": "T1046",
+    "severity": 0.77,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "4c931902-6504-4665-bd89-41ea1ace58f6",
+    "timestamp": "2026-07-09T08:58:34",
+    "src_ip": "10.76.194.130",
+    "dest_ip": "89.247.218.183",
+    "mitre_tag": "T1046",
+    "severity": 1.8,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "4a7335a7-a3d1-4ad8-a257-af970520a2bd",
+    "timestamp": "2026-06-18T04:52:06",
+    "src_ip": "172.18.232.168",
+    "dest_ip": "122.246.234.2",
+    "mitre_tag": "T1059",
+    "severity": 2.17,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "a8ed4cdc-79d2-4b14-a05e-13e968c77539",
+    "timestamp": "2026-06-19T00:41:45",
+    "src_ip": "172.23.107.162",
+    "dest_ip": "149.104.53.75",
+    "mitre_tag": "T1071",
+    "severity": 2.51,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "5324702e-cf2e-408c-a7cc-0167394b1d4c",
+    "timestamp": "2026-06-23T13:55:50",
+    "src_ip": "192.168.41.73",
+    "dest_ip": "196.89.186.224",
+    "mitre_tag": "T1071",
+    "severity": 3.12,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "98052c80-5369-4fc4-b929-247e475b743b",
+    "timestamp": "2026-06-16T23:38:15",
+    "src_ip": "192.168.57.146",
+    "dest_ip": "184.178.121.187",
+    "mitre_tag": "T1046",
+    "severity": 3.41,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "80e70bbe-c7ed-4301-9514-28951ceef280",
+    "timestamp": "2026-06-25T15:53:24",
+    "src_ip": "10.74.196.154",
+    "dest_ip": "111.141.21.108",
+    "mitre_tag": "T1071",
+    "severity": 0.81,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "0da68375-4974-4bec-bbdd-382592a70042",
+    "timestamp": "2026-06-10T12:46:56",
+    "src_ip": "192.168.24.64",
+    "dest_ip": "43.41.186.40",
+    "mitre_tag": "T1059",
+    "severity": 0.96,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "b9e9f509-a4ea-40ff-8b2d-d948450a142b",
+    "timestamp": "2026-06-18T16:37:15",
+    "src_ip": "192.168.193.245",
+    "dest_ip": "33.8.141.238",
+    "mitre_tag": "T1059",
+    "severity": 3.04,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "a36815d6-2032-4a01-a673-0c07a81abc89",
+    "timestamp": "2026-06-21T20:46:33",
+    "src_ip": "172.25.63.80",
+    "dest_ip": "24.45.138.232",
+    "mitre_tag": "T1071",
+    "severity": 0.84,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "401d0707-3c9a-4831-a4da-57886d4bc2fe",
+    "timestamp": "2026-06-10T03:13:07",
+    "src_ip": "192.168.108.5",
+    "dest_ip": "85.46.208.164",
+    "mitre_tag": "T1059",
+    "severity": 2.92,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "89c82676-f63d-48bc-a506-1517bb958853",
+    "timestamp": "2026-06-28T15:08:20",
+    "src_ip": "172.23.107.162",
+    "dest_ip": "130.46.198.203",
+    "mitre_tag": "T1046",
+    "severity": 2.33,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "586db66f-e025-4f78-83e3-09ca3543f5e2",
+    "timestamp": "2026-06-25T17:01:30",
+    "src_ip": "192.168.208.78",
+    "dest_ip": "77.10.51.228",
+    "mitre_tag": "T1046",
+    "severity": 1.04,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "3bb59c23-a5c3-4691-9c9e-e098cfd2e581",
+    "timestamp": "2026-06-22T21:57:52",
+    "src_ip": "172.19.154.5",
+    "dest_ip": "41.135.29.153",
+    "mitre_tag": "T1071",
+    "severity": 1.55,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "39e5035d-458c-40b3-84dd-d2e24e152639",
+    "timestamp": "2026-06-24T12:31:05",
+    "src_ip": "192.168.231.167",
+    "dest_ip": "113.118.218.186",
+    "mitre_tag": "T1059",
+    "severity": 2.2,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "9837dbb3-6200-4adb-9eb2-9ff2607c76fd",
+    "timestamp": "2026-07-04T08:38:39",
+    "src_ip": "192.168.51.74",
+    "dest_ip": "120.231.212.217",
+    "mitre_tag": "T1046",
+    "severity": 0.93,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "3c62735d-73db-46a6-ac7b-1cdfbf7c0e94",
+    "timestamp": "2026-07-05T04:41:09",
+    "src_ip": "192.168.55.239",
+    "dest_ip": "102.134.251.186",
+    "mitre_tag": "T1046",
+    "severity": 2.74,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "9c98ab92-21dc-4b13-9b38-ec85640acd1e",
+    "timestamp": "2026-06-30T20:56:09",
+    "src_ip": "192.168.182.196",
+    "dest_ip": "97.116.126.76",
+    "mitre_tag": "T1133",
+    "severity": 1.76,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "2649e2ed-c3bf-4cc8-8424-a20000b8f07c",
+    "timestamp": "2026-06-22T03:25:52",
+    "src_ip": "10.178.64.50",
+    "dest_ip": "65.54.16.192",
+    "mitre_tag": "T1059",
+    "severity": 1.61,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "345b3711-ff18-48ec-bd19-474567c39fa3",
+    "timestamp": "2026-06-11T05:59:28",
+    "src_ip": "172.19.230.230",
+    "dest_ip": "190.77.85.23",
+    "mitre_tag": "T1046",
+    "severity": 3.15,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "d766a219-b25f-4b68-9d9c-c674a4c812dc",
+    "timestamp": "2026-07-02T19:07:19",
+    "src_ip": "10.207.196.222",
+    "dest_ip": "113.10.240.167",
+    "mitre_tag": "T1059",
+    "severity": 2.76,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "1f5343eb-acc0-429a-835c-a50ddc65daf7",
+    "timestamp": "2026-07-03T06:35:47",
+    "src_ip": "172.17.185.99",
+    "dest_ip": "5.61.54.175",
+    "mitre_tag": "T1046",
+    "severity": 1.32,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "ef0bae71-97d9-4a3b-8901-46f3c8d8c8fe",
+    "timestamp": "2026-06-21T23:04:01",
+    "src_ip": "172.28.188.191",
+    "dest_ip": "211.148.36.35",
+    "mitre_tag": "T1133",
+    "severity": 2.32,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "5784f901-8c25-452a-a12e-29195e029f73",
+    "timestamp": "2026-07-03T19:58:57",
+    "src_ip": "192.168.6.103",
+    "dest_ip": "121.204.222.58",
+    "mitre_tag": "T1071",
+    "severity": 1.15,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "c7d37bce-a48a-4580-9e32-4f69bddf9451",
+    "timestamp": "2026-07-06T03:00:57",
+    "src_ip": "10.105.205.115",
+    "dest_ip": "171.196.1.217",
+    "mitre_tag": "T1046",
+    "severity": 1.54,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "970509fe-867d-4506-b2af-2af2bf482198",
+    "timestamp": "2026-06-28T11:49:18",
+    "src_ip": "172.24.8.106",
+    "dest_ip": "186.15.22.5",
+    "mitre_tag": "T1071",
+    "severity": 2.53,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "e22c00aa-a3da-4cd8-8c7f-414906d524d8",
+    "timestamp": "2026-07-01T04:25:35",
+    "src_ip": "192.168.76.105",
+    "dest_ip": "74.99.103.201",
+    "mitre_tag": "T1071",
+    "severity": 0.64,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "16d7bcb7-4342-4e74-be4f-1cfcca911857",
+    "timestamp": "2026-06-26T08:03:09",
+    "src_ip": "10.129.62.96",
+    "dest_ip": "200.144.30.238",
+    "mitre_tag": "T1046",
+    "severity": 0.52,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "4ec7b718-a2d8-45fa-a978-344e0f62ce0f",
+    "timestamp": "2026-07-08T09:33:07",
+    "src_ip": "192.168.147.73",
+    "dest_ip": "181.31.12.17",
+    "mitre_tag": "T1059",
+    "severity": 2.8,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "aeb3d471-7003-4e7a-bbd9-48fa3b3289f1",
+    "timestamp": "2026-07-09T11:29:19",
+    "src_ip": "192.168.40.16",
+    "dest_ip": "166.170.219.115",
+    "mitre_tag": "T1071",
+    "severity": 1.48,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "c06318fd-c2b5-4cde-8b41-2228aa39c6b7",
+    "timestamp": "2026-06-23T11:46:05",
+    "src_ip": "172.28.240.113",
+    "dest_ip": "103.223.100.221",
+    "mitre_tag": "T1133",
+    "severity": 2.74,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "7917679f-759e-4f81-b368-f6d32f9fb698",
+    "timestamp": "2026-07-06T02:00:06",
+    "src_ip": "192.168.79.152",
+    "dest_ip": "182.100.1.114",
+    "mitre_tag": "T1059",
+    "severity": 1.64,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "9cb81afc-d76d-49cb-afa3-c06c78150e55",
+    "timestamp": "2026-06-16T19:06:32",
+    "src_ip": "192.168.167.64",
+    "dest_ip": "37.249.237.45",
+    "mitre_tag": "T1071",
+    "severity": 0.72,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "f7ceab88-ac70-40cf-b50c-2147dedd9c37",
+    "timestamp": "2026-07-02T05:00:06",
+    "src_ip": "192.168.141.240",
+    "dest_ip": "23.222.149.25",
+    "mitre_tag": "T1133",
+    "severity": 0.56,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "6c4ccbcb-4e47-4dd1-af87-645574d694b2",
+    "timestamp": "2026-06-21T15:15:58",
+    "src_ip": "192.168.25.220",
+    "dest_ip": "16.97.205.12",
+    "mitre_tag": "T1071",
+    "severity": 2.23,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "c8a24b67-ba42-4b58-8bc8-a1e0a3b00c17",
+    "timestamp": "2026-07-06T01:47:42",
+    "src_ip": "172.22.192.33",
+    "dest_ip": "20.84.80.78",
+    "mitre_tag": "T1133",
+    "severity": 2.63,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "baca6a17-e02a-4908-9779-8e596999dd65",
+    "timestamp": "2026-06-25T19:11:05",
+    "src_ip": "10.218.82.138",
+    "dest_ip": "73.243.141.140",
+    "mitre_tag": "T1071",
+    "severity": 0.85,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "cf61c5ca-badb-48d2-8174-4fcd62934c9d",
+    "timestamp": "2026-06-18T03:32:44",
+    "src_ip": "192.168.50.68",
+    "dest_ip": "176.204.249.193",
+    "mitre_tag": "T1071",
+    "severity": 1.02,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "256ef958-6ffe-4873-92e5-90774a0ca742",
+    "timestamp": "2026-06-26T00:55:22",
+    "src_ip": "10.197.157.160",
+    "dest_ip": "137.252.128.173",
+    "mitre_tag": "T1071",
+    "severity": 0.76,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "c87e590a-775e-4c3d-bc26-c565968714fe",
+    "timestamp": "2026-07-05T19:34:10",
+    "src_ip": "10.234.146.169",
+    "dest_ip": "121.159.170.15",
+    "mitre_tag": "T1059",
+    "severity": 1.81,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "513d173e-2265-4319-adf6-948616a6ffd6",
+    "timestamp": "2026-06-17T10:10:17",
+    "src_ip": "192.168.51.74",
+    "dest_ip": "84.192.76.102",
+    "mitre_tag": "T1046",
+    "severity": 1.69,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "08864bcc-a5a8-49bb-91a3-5a637f6625cd",
+    "timestamp": "2026-06-30T06:02:25",
+    "src_ip": "172.19.154.5",
+    "dest_ip": "47.79.128.154",
+    "mitre_tag": "T1071",
+    "severity": 1.16,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "89f5ccee-2225-4107-9ce8-ed27aeee4a9b",
+    "timestamp": "2026-07-07T05:24:47",
+    "src_ip": "172.25.86.207",
+    "dest_ip": "22.147.114.206",
+    "mitre_tag": "T1046",
+    "severity": 2.03,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "1bdf1236-685a-4b96-b1ed-8b78a7c9aa38",
+    "timestamp": "2026-06-18T13:20:44",
+    "src_ip": "192.168.147.158",
+    "dest_ip": "205.4.102.245",
+    "mitre_tag": "T1059",
+    "severity": 3.22,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "d289e59e-1ca7-4215-8ce3-9c9251c0d908",
+    "timestamp": "2026-06-23T06:58:33",
+    "src_ip": "172.18.195.169",
+    "dest_ip": "107.134.160.185",
+    "mitre_tag": "T1071",
+    "severity": 2.68,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "51f2fc90-6197-4ed0-91c1-50f62236ba29",
+    "timestamp": "2026-06-15T08:42:05",
+    "src_ip": "172.17.101.191",
+    "dest_ip": "94.66.99.154",
+    "mitre_tag": "T1059",
+    "severity": 0.81,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "6abf56e8-fce1-4a46-aef5-85bb12e7ebf5",
+    "timestamp": "2026-06-28T14:32:07",
+    "src_ip": "10.224.200.195",
+    "dest_ip": "7.33.178.28",
+    "mitre_tag": "T1059",
+    "severity": 1.02,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "8501a160-6c11-43b0-be38-8cd61df4fb0d",
+    "timestamp": "2026-06-10T12:57:08",
+    "src_ip": "192.168.136.201",
+    "dest_ip": "219.34.194.62",
+    "mitre_tag": "T1046",
+    "severity": 1.03,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "302c4584-155a-4bfd-bb85-a38847f3893c",
+    "timestamp": "2026-07-01T16:31:29",
+    "src_ip": "192.168.249.26",
+    "dest_ip": "158.103.16.251",
+    "mitre_tag": "T1133",
+    "severity": 2.76,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "ca4bb94c-6909-433e-b9cd-b86bbdb05fc9",
+    "timestamp": "2026-06-29T16:17:11",
+    "src_ip": "172.23.176.85",
+    "dest_ip": "151.39.81.222",
+    "mitre_tag": "T1133",
+    "severity": 2.54,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "9494c949-e319-4498-aa00-3a020d8595fb",
+    "timestamp": "2026-07-07T21:36:03",
+    "src_ip": "192.168.114.62",
+    "dest_ip": "136.25.250.71",
+    "mitre_tag": "T1071",
+    "severity": 3.09,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "ba500b59-4c97-40ed-b28c-dc2c5bfee1ea",
+    "timestamp": "2026-06-24T15:14:51",
+    "src_ip": "172.16.227.111",
+    "dest_ip": "14.237.2.211",
+    "mitre_tag": "T1059",
+    "severity": 1.82,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "e109bd81-37d1-453c-af7e-bb8d0fde9d58",
+    "timestamp": "2026-06-13T04:37:41",
+    "src_ip": "172.21.184.199",
+    "dest_ip": "154.11.47.1",
+    "mitre_tag": "T1133",
+    "severity": 2.39,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "1b2fd4f3-f3b1-4c4f-836e-6011fedc490a",
+    "timestamp": "2026-06-19T21:53:10",
+    "src_ip": "172.20.110.109",
+    "dest_ip": "205.162.188.48",
+    "mitre_tag": "T1046",
+    "severity": 1.56,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "25d0234f-c4d3-4983-8e57-392410858b77",
+    "timestamp": "2026-06-28T11:00:34",
+    "src_ip": "172.23.171.198",
+    "dest_ip": "135.74.66.84",
+    "mitre_tag": "T1071",
+    "severity": 1.89,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "838d139b-b1ee-4f75-8253-ff3168d323c0",
+    "timestamp": "2026-07-06T12:55:40",
+    "src_ip": "10.104.54.15",
+    "dest_ip": "51.158.181.241",
+    "mitre_tag": "T1046",
+    "severity": 1.61,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "5e9db3ac-93c3-4ab5-9539-238b32176b35",
+    "timestamp": "2026-06-27T09:55:08",
+    "src_ip": "10.125.226.208",
+    "dest_ip": "3.152.75.211",
+    "mitre_tag": "T1046",
+    "severity": 2.43,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "ff8788e9-8d50-46a2-9ab6-d9201ad5b323",
+    "timestamp": "2026-07-08T09:58:55",
+    "src_ip": "10.238.37.150",
+    "dest_ip": "75.141.32.97",
+    "mitre_tag": "T1133",
+    "severity": 1.89,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "ee51ed20-b725-43b6-812a-207894d45f2c",
+    "timestamp": "2026-07-04T17:26:23",
+    "src_ip": "172.21.209.240",
+    "dest_ip": "42.129.55.88",
+    "mitre_tag": "T1046",
+    "severity": 1.85,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "dc8cbe6e-2cd8-4bc3-b82e-97409519a272",
+    "timestamp": "2026-07-02T00:57:50",
+    "src_ip": "10.16.111.78",
+    "dest_ip": "180.102.93.160",
+    "mitre_tag": "T1059",
+    "severity": 1.46,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "d459b778-0ef9-4fb4-9665-e3767b831321",
+    "timestamp": "2026-07-01T00:35:43",
+    "src_ip": "192.168.27.168",
+    "dest_ip": "188.176.229.108",
+    "mitre_tag": "T1059",
+    "severity": 3.37,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "2c73f289-8f0e-435d-a302-bfd821e8c043",
+    "timestamp": "2026-07-04T22:37:32",
+    "src_ip": "172.17.98.131",
+    "dest_ip": "220.225.178.85",
+    "mitre_tag": "T1046",
+    "severity": 2.93,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "d437e2bd-9ab8-47e5-8665-9dd8cd5c06e6",
+    "timestamp": "2026-06-20T09:08:36",
+    "src_ip": "172.28.36.43",
+    "dest_ip": "223.122.117.89",
+    "mitre_tag": "T1046",
+    "severity": 2.01,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "17522514-dcc8-42e7-ac92-a36ac89ea378",
+    "timestamp": "2026-07-03T23:32:13",
+    "src_ip": "192.168.51.169",
+    "dest_ip": "123.75.171.212",
+    "mitre_tag": "T1046",
+    "severity": 1.24,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "1711cccd-8ab9-479b-90cd-079adfd88c63",
+    "timestamp": "2026-07-01T17:25:23",
+    "src_ip": "10.180.37.214",
+    "dest_ip": "198.118.190.231",
+    "mitre_tag": "T1133",
+    "severity": 2.07,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "65f2dca6-8fd8-4196-aeb9-ba659a5583d5",
+    "timestamp": "2026-06-24T11:48:17",
+    "src_ip": "10.31.129.178",
+    "dest_ip": "17.7.27.130",
+    "mitre_tag": "T1071",
+    "severity": 1.62,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "ddd64c8d-62cf-45af-a2b6-a52101b79220",
+    "timestamp": "2026-06-30T10:18:43",
+    "src_ip": "192.168.109.118",
+    "dest_ip": "118.61.237.91",
+    "mitre_tag": "T1133",
+    "severity": 1.73,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "ee588914-b686-40f5-9bbb-434b3d752e44",
+    "timestamp": "2026-06-18T19:19:10",
+    "src_ip": "10.87.149.171",
+    "dest_ip": "131.86.246.145",
+    "mitre_tag": "T1046",
+    "severity": 2.87,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "7b2241fd-0adf-4d39-99e7-f597e99d26a1",
+    "timestamp": "2026-06-10T13:18:27",
+    "src_ip": "172.16.30.4",
+    "dest_ip": "201.7.173.52",
+    "mitre_tag": "T1046",
+    "severity": 1.49,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "91950f59-9582-4bb5-97b7-1ddac9aadffe",
+    "timestamp": "2026-06-18T03:10:25",
+    "src_ip": "10.176.43.104",
+    "dest_ip": "1.83.16.61",
+    "mitre_tag": "T1133",
+    "severity": 1.35,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "b4278e0c-0757-4e48-894f-c5a47f6e8a3d",
+    "timestamp": "2026-06-18T12:57:19",
+    "src_ip": "172.31.160.37",
+    "dest_ip": "156.89.13.10",
+    "mitre_tag": "T1071",
+    "severity": 0.74,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "996116ff-63da-4f94-9a99-ea3417089248",
+    "timestamp": "2026-06-30T23:07:53",
+    "src_ip": "192.168.137.106",
+    "dest_ip": "208.247.235.180",
+    "mitre_tag": "T1071",
+    "severity": 1.43,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "91e07265-ea67-4b27-8d77-3a9aa0d0f922",
+    "timestamp": "2026-06-21T09:47:50",
+    "src_ip": "172.24.173.2",
+    "dest_ip": "220.75.106.203",
+    "mitre_tag": "T1059",
+    "severity": 2.29,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "eb9aafb6-af95-47e3-936e-b8505906fc21",
+    "timestamp": "2026-07-01T20:50:43",
+    "src_ip": "10.76.194.130",
+    "dest_ip": "21.84.10.160",
+    "mitre_tag": "T1071",
+    "severity": 2.18,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "def80b2b-1bb8-46ce-b272-320ff8d84742",
+    "timestamp": "2026-06-11T00:31:19",
+    "src_ip": "172.30.113.109",
+    "dest_ip": "111.95.141.234",
+    "mitre_tag": "T1059",
+    "severity": 2.51,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "bf13a27b-3beb-4dc0-90d0-19247bf29c21",
+    "timestamp": "2026-06-18T06:32:47",
+    "src_ip": "192.168.171.4",
+    "dest_ip": "182.38.5.12",
+    "mitre_tag": "T1046",
+    "severity": 2.44,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "ef836836-57dc-4668-be86-1caad605391d",
+    "timestamp": "2026-06-21T11:47:34",
+    "src_ip": "192.168.57.146",
+    "dest_ip": "84.214.153.128",
+    "mitre_tag": "T1071",
+    "severity": 0.55,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "76e2e21d-5278-4ed2-9dcf-c7a6607b8313",
+    "timestamp": "2026-07-05T21:48:18",
+    "src_ip": "172.19.154.5",
+    "dest_ip": "139.241.148.197",
+    "mitre_tag": "T1059",
+    "severity": 3.35,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "b5b348ae-6482-4f6a-be85-51d1900c752a",
+    "timestamp": "2026-06-19T06:27:37",
+    "src_ip": "10.178.64.50",
+    "dest_ip": "78.162.72.139",
+    "mitre_tag": "T1133",
+    "severity": 1.08,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "9f55df10-a7f7-47fa-a0e6-f85c4222e6ee",
+    "timestamp": "2026-06-28T17:42:04",
+    "src_ip": "10.27.152.16",
+    "dest_ip": "131.44.75.244",
+    "mitre_tag": "T1059",
+    "severity": 0.73,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "4a5e61e8-2332-456a-88cc-26c5f1de0cb4",
+    "timestamp": "2026-07-06T10:14:42",
+    "src_ip": "10.50.118.15",
+    "dest_ip": "78.8.42.181",
+    "mitre_tag": "T1046",
+    "severity": 2.49,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "b34d9810-7b02-4c5d-920b-293a7928fbd0",
+    "timestamp": "2026-07-02T01:13:55",
+    "src_ip": "172.22.233.116",
+    "dest_ip": "54.173.0.145",
+    "mitre_tag": "T1133",
+    "severity": 0.96,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "bd4790a7-8bd4-40a2-b6b1-1ec3e29dce0c",
+    "timestamp": "2026-07-02T12:35:25",
+    "src_ip": "192.168.231.167",
+    "dest_ip": "134.135.173.90",
+    "mitre_tag": "T1059",
+    "severity": 2.66,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "7763e897-37ae-40ee-bd7c-86cbb444dce8",
+    "timestamp": "2026-06-13T13:07:52",
+    "src_ip": "172.18.32.124",
+    "dest_ip": "137.144.217.195",
+    "mitre_tag": "T1133",
+    "severity": 1.59,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "74863d83-070b-430c-8114-a95d83c4cdfb",
+    "timestamp": "2026-07-09T07:21:07",
+    "src_ip": "192.168.163.66",
+    "dest_ip": "38.177.50.213",
+    "mitre_tag": "T1133",
+    "severity": 2.33,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "ecf663b4-e2fc-4e4c-80e4-cd1f042f3e74",
+    "timestamp": "2026-06-23T20:13:33",
+    "src_ip": "172.20.34.54",
+    "dest_ip": "216.120.78.156",
+    "mitre_tag": "T1059",
+    "severity": 2.1,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "7d7e75f1-aaf7-497c-9bda-3788d9cc7c72",
+    "timestamp": "2026-07-03T06:32:44",
+    "src_ip": "172.19.154.5",
+    "dest_ip": "157.64.28.149",
+    "mitre_tag": "T1133",
+    "severity": 3.21,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "e88cf15d-d6f3-4fb9-86c0-2700d6c7b004",
+    "timestamp": "2026-06-24T16:31:12",
+    "src_ip": "10.6.133.54",
+    "dest_ip": "117.144.155.185",
+    "mitre_tag": "T1071",
+    "severity": 2.53,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "bc7a6ecf-2c88-4551-8ddd-f681b210d961",
+    "timestamp": "2026-06-25T16:24:38",
+    "src_ip": "10.16.111.78",
+    "dest_ip": "118.237.197.59",
+    "mitre_tag": "T1133",
+    "severity": 1.89,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "904e9a2a-36b2-4e60-b962-3285174a8a73",
+    "timestamp": "2026-06-21T03:55:05",
+    "src_ip": "192.168.109.118",
+    "dest_ip": "12.22.74.70",
+    "mitre_tag": "T1133",
+    "severity": 2.01,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "653e8c8a-7e05-47ce-8dfa-42696b961fc4",
+    "timestamp": "2026-06-17T02:51:57",
+    "src_ip": "10.244.219.148",
+    "dest_ip": "94.93.8.116",
+    "mitre_tag": "T1059",
+    "severity": 2.95,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "c109e2b7-4662-4275-932b-55ab81542746",
+    "timestamp": "2026-06-12T10:41:51",
+    "src_ip": "10.27.152.16",
+    "dest_ip": "186.168.173.222",
+    "mitre_tag": "T1071",
+    "severity": 0.66,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "b5661b96-82c4-4ded-ad87-c74f8121a7b1",
+    "timestamp": "2026-07-07T11:51:21",
+    "src_ip": "192.168.193.245",
+    "dest_ip": "222.247.19.111",
+    "mitre_tag": "T1071",
+    "severity": 2.16,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "662ac8b1-1ef3-4078-870b-b66f7ef26326",
+    "timestamp": "2026-06-25T03:21:31",
+    "src_ip": "192.168.55.159",
+    "dest_ip": "39.185.144.21",
+    "mitre_tag": "T1046",
+    "severity": 1.36,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "4dff570e-b64d-41d9-85e4-a573bc798ea2",
+    "timestamp": "2026-06-28T09:55:07",
+    "src_ip": "10.226.99.218",
+    "dest_ip": "220.152.144.200",
+    "mitre_tag": "T1071",
+    "severity": 1.85,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "ba6dbcc5-af46-40cf-95a3-33a69af104f0",
+    "timestamp": "2026-06-20T12:48:33",
+    "src_ip": "10.105.205.115",
+    "dest_ip": "15.125.62.230",
+    "mitre_tag": "T1059",
+    "severity": 2.99,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "39c69a75-407e-49d5-92e0-46d16fcee6fa",
+    "timestamp": "2026-07-02T17:21:11",
+    "src_ip": "10.238.37.150",
+    "dest_ip": "32.221.53.247",
+    "mitre_tag": "T1059",
+    "severity": 2.95,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "082c8667-5e5c-4c91-bfa0-4240b29aa932",
+    "timestamp": "2026-06-10T10:20:42",
+    "src_ip": "172.18.195.169",
+    "dest_ip": "158.56.42.164",
+    "mitre_tag": "T1046",
+    "severity": 1.74,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "5fcb197b-6ca3-42fa-aeb2-ae4ce75c5a8f",
+    "timestamp": "2026-06-30T14:02:08",
+    "src_ip": "10.129.62.96",
+    "dest_ip": "136.71.72.77",
+    "mitre_tag": "T1071",
+    "severity": 1.21,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "d46340e5-7366-46fe-a5dd-f6255d59180e",
+    "timestamp": "2026-06-17T18:42:41",
+    "src_ip": "172.28.166.113",
+    "dest_ip": "27.96.136.224",
+    "mitre_tag": "T1071",
+    "severity": 1.17,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "bd99cc2d-d2b1-468d-8842-9c2646d3dd46",
+    "timestamp": "2026-07-01T05:22:54",
+    "src_ip": "10.139.57.185",
+    "dest_ip": "212.63.147.212",
+    "mitre_tag": "T1046",
+    "severity": 3.02,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "fa3ffb23-4b27-4447-9503-aad9f407e2a5",
+    "timestamp": "2026-06-27T02:24:39",
+    "src_ip": "172.16.30.4",
+    "dest_ip": "88.56.21.206",
+    "mitre_tag": "T1059",
+    "severity": 0.91,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "b94eccc1-b5ea-46f6-ab49-c306ce0faf05",
+    "timestamp": "2026-06-16T09:27:17",
+    "src_ip": "10.125.226.208",
+    "dest_ip": "212.120.166.110",
+    "mitre_tag": "T1133",
+    "severity": 2.59,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "6b202fcc-661d-4e47-bf45-2275040aa106",
+    "timestamp": "2026-06-17T05:30:54",
+    "src_ip": "192.168.118.3",
+    "dest_ip": "39.139.133.131",
+    "mitre_tag": "T1133",
+    "severity": 1.85,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "550e516f-b161-4658-b63b-680e163af397",
+    "timestamp": "2026-07-08T22:06:23",
+    "src_ip": "172.24.105.143",
+    "dest_ip": "80.23.140.19",
+    "mitre_tag": "T1046",
+    "severity": 0.56,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "b65dc2f1-1b93-4b94-abf9-fec26450b29b",
+    "timestamp": "2026-07-01T04:39:30",
+    "src_ip": "192.168.182.196",
+    "dest_ip": "39.184.67.204",
+    "mitre_tag": "T1059",
+    "severity": 2.15,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "f9b78db3-ddc7-4ae3-9585-3e04e44b46bc",
+    "timestamp": "2026-06-22T21:49:46",
+    "src_ip": "172.20.11.20",
+    "dest_ip": "57.91.227.233",
+    "mitre_tag": "T1133",
+    "severity": 0.83,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "d4e4478b-f885-42d1-b87b-67d080b0f5a1",
+    "timestamp": "2026-07-02T20:55:19",
+    "src_ip": "10.197.146.211",
+    "dest_ip": "103.87.61.212",
+    "mitre_tag": "T1059",
+    "severity": 1.4,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "3f7853b1-fcc9-4b39-a93e-093268fb5e4a",
+    "timestamp": "2026-06-14T08:31:32",
+    "src_ip": "172.28.64.63",
+    "dest_ip": "131.151.155.23",
+    "mitre_tag": "T1059",
+    "severity": 1.76,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "403ad794-ea30-41e5-ae4d-222c0897a1ce",
+    "timestamp": "2026-06-23T08:11:02",
+    "src_ip": "192.168.51.182",
+    "dest_ip": "119.29.125.215",
+    "mitre_tag": "T1046",
+    "severity": 0.83,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "ba6f0b0a-2490-44c7-9b3f-8f8e22b2f4b7",
+    "timestamp": "2026-06-29T22:52:25",
+    "src_ip": "172.29.174.251",
+    "dest_ip": "194.59.146.176",
+    "mitre_tag": "T1046",
+    "severity": 2.4,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "279d141a-fa33-422f-9e20-d83387ed40b8",
+    "timestamp": "2026-07-07T18:26:06",
+    "src_ip": "192.168.116.3",
+    "dest_ip": "8.77.159.193",
+    "mitre_tag": "T1059",
+    "severity": 2.66,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "4bc1c4d8-e89e-4f23-bdba-127c95dbb427",
+    "timestamp": "2026-06-13T21:12:25",
+    "src_ip": "172.24.219.76",
+    "dest_ip": "174.192.252.76",
+    "mitre_tag": "T1133",
+    "severity": 0.5,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "c298a97a-cbe7-4c67-bf94-052d6ff5f2ea",
+    "timestamp": "2026-06-13T04:01:27",
+    "src_ip": "192.168.117.131",
+    "dest_ip": "75.164.124.95",
+    "mitre_tag": "T1059",
+    "severity": 2.21,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "0a11582c-b9d8-4d6f-bf28-1e128c40b95a",
+    "timestamp": "2026-06-20T00:46:53",
+    "src_ip": "172.30.151.15",
+    "dest_ip": "13.71.240.167",
+    "mitre_tag": "T1046",
+    "severity": 2.07,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "660c57cb-97ea-48a2-b4b5-b9dadaee11c6",
+    "timestamp": "2026-06-18T08:17:15",
+    "src_ip": "172.18.31.45",
+    "dest_ip": "103.128.80.72",
+    "mitre_tag": "T1046",
+    "severity": 3.36,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "f4a1d069-47ea-46a1-98e2-87adcefd1737",
+    "timestamp": "2026-06-24T10:25:08",
+    "src_ip": "10.195.185.93",
+    "dest_ip": "53.73.79.200",
+    "mitre_tag": "T1046",
+    "severity": 1.67,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "34d6c158-0114-43c1-b889-b0e3406f0051",
+    "timestamp": "2026-06-21T06:29:32",
+    "src_ip": "172.21.184.199",
+    "dest_ip": "41.49.106.206",
+    "mitre_tag": "T1046",
+    "severity": 2.41,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "3e60e7f9-54ec-42e5-b82f-9b87c9daa1dc",
+    "timestamp": "2026-06-18T04:00:25",
+    "src_ip": "10.169.56.11",
+    "dest_ip": "148.21.155.164",
+    "mitre_tag": "T1071",
+    "severity": 2.74,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "a824ed62-3384-4eb8-a3db-3ed98a143350",
+    "timestamp": "2026-07-06T20:57:33",
+    "src_ip": "172.30.233.24",
+    "dest_ip": "143.252.89.168",
+    "mitre_tag": "T1046",
+    "severity": 1.53,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "927abf78-a9ee-4bab-90c5-22798b1ae9fc",
+    "timestamp": "2026-06-27T17:25:12",
+    "src_ip": "10.221.201.67",
+    "dest_ip": "1.184.165.161",
+    "mitre_tag": "T1071",
+    "severity": 0.9,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "37a496b1-7c15-478e-89a3-559b311bae2a",
+    "timestamp": "2026-06-12T02:54:23",
+    "src_ip": "192.168.117.131",
+    "dest_ip": "44.242.65.241",
+    "mitre_tag": "T1071",
+    "severity": 2.94,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "00361191-f5ee-40dd-868d-a627c832a6d0",
+    "timestamp": "2026-06-22T09:18:16",
+    "src_ip": "192.168.79.152",
+    "dest_ip": "56.244.140.212",
+    "mitre_tag": "T1133",
+    "severity": 3.44,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "7e4b150a-dbbd-451f-bb4c-2ba0141a1fef",
+    "timestamp": "2026-06-26T22:27:53",
+    "src_ip": "172.25.128.112",
+    "dest_ip": "186.5.180.84",
+    "mitre_tag": "T1059",
+    "severity": 2.93,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "5452d411-1169-417a-9248-94f3856f6457",
+    "timestamp": "2026-06-22T21:49:26",
+    "src_ip": "172.22.42.127",
+    "dest_ip": "194.24.170.110",
+    "mitre_tag": "T1133",
+    "severity": 0.61,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "39ded7f0-aa35-4442-ae72-d884a3898845",
+    "timestamp": "2026-07-02T16:33:06",
+    "src_ip": "192.168.98.169",
+    "dest_ip": "38.141.206.165",
+    "mitre_tag": "T1046",
+    "severity": 2.87,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "f2acdde6-cf88-4575-9afe-64b09b84fe6d",
+    "timestamp": "2026-06-20T15:36:15",
+    "src_ip": "192.168.141.240",
+    "dest_ip": "102.93.233.76",
+    "mitre_tag": "T1071",
+    "severity": 3.3,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "2f2dc754-3470-4a65-9264-4497c13b075f",
+    "timestamp": "2026-06-23T16:57:03",
+    "src_ip": "172.19.157.0",
+    "dest_ip": "164.230.160.218",
+    "mitre_tag": "T1133",
+    "severity": 3.47,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "c1e8422e-5fbe-41ed-8b57-4e2320e8dc66",
+    "timestamp": "2026-07-07T17:49:26",
+    "src_ip": "10.195.185.93",
+    "dest_ip": "61.240.64.34",
+    "mitre_tag": "T1133",
+    "severity": 1.26,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "3b2d278c-aa27-4528-b995-6b58faa48742",
+    "timestamp": "2026-06-27T09:08:32",
+    "src_ip": "10.252.44.75",
+    "dest_ip": "200.173.234.157",
+    "mitre_tag": "T1071",
+    "severity": 1.57,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "30a825be-99d1-42ab-9fde-9f7e5a67d772",
+    "timestamp": "2026-06-22T20:32:51",
+    "src_ip": "172.28.64.63",
+    "dest_ip": "62.203.78.120",
+    "mitre_tag": "T1071",
+    "severity": 1.32,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "f672b592-5406-47ac-9f13-377affe6b70a",
+    "timestamp": "2026-06-10T08:16:43",
+    "src_ip": "192.168.167.172",
+    "dest_ip": "189.134.41.133",
+    "mitre_tag": "T1133",
+    "severity": 3.17,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "18fc3e03-a96a-4a6e-8f13-3144bb46908a",
+    "timestamp": "2026-06-17T18:03:58",
+    "src_ip": "172.25.142.2",
+    "dest_ip": "207.12.97.72",
+    "mitre_tag": "T1133",
+    "severity": 1.52,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "75bc3d89-db4b-4728-aef2-3df1a11c4570",
+    "timestamp": "2026-06-27T22:42:27",
+    "src_ip": "172.30.151.15",
+    "dest_ip": "214.240.8.207",
+    "mitre_tag": "T1133",
+    "severity": 2.58,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "c2a3a78e-c6f0-4abb-9ef2-f6e063bd18b3",
+    "timestamp": "2026-07-07T07:28:32",
+    "src_ip": "192.168.167.172",
+    "dest_ip": "52.102.30.206",
+    "mitre_tag": "T1071",
+    "severity": 2.9,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "ec33337b-694f-489a-be36-f9ad31879e93",
+    "timestamp": "2026-07-04T19:23:51",
+    "src_ip": "172.28.188.191",
+    "dest_ip": "156.104.90.134",
+    "mitre_tag": "T1046",
+    "severity": 1.79,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "51764aa4-d7d3-4c06-a6c8-7d4d856d2787",
+    "timestamp": "2026-07-05T15:37:30",
+    "src_ip": "192.168.231.167",
+    "dest_ip": "125.248.49.33",
+    "mitre_tag": "T1071",
+    "severity": 1.46,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "4e7c1416-663f-46f4-8ebf-e17e678e9181",
+    "timestamp": "2026-06-09T18:01:32",
+    "src_ip": "192.168.32.27",
+    "dest_ip": "61.193.205.110",
+    "mitre_tag": "T1071",
+    "severity": 2.48,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "0a6c0729-ad77-49cc-9b1d-117b5c576811",
+    "timestamp": "2026-06-16T05:46:13",
+    "src_ip": "10.200.44.201",
+    "dest_ip": "17.39.206.105",
+    "mitre_tag": "T1133",
+    "severity": 2.31,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "fe843272-d009-44f0-bbcc-c60c4770db8b",
+    "timestamp": "2026-06-16T21:01:08",
+    "src_ip": "192.168.35.70",
+    "dest_ip": "19.62.241.148",
+    "mitre_tag": "T1059",
+    "severity": 2.57,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "51853eac-f85a-4d12-a018-7cc06399f85a",
+    "timestamp": "2026-06-20T15:48:37",
+    "src_ip": "172.25.63.80",
+    "dest_ip": "178.162.255.133",
+    "mitre_tag": "T1133",
+    "severity": 0.63,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "8496238f-ded4-4c31-b3c1-907c05410e89",
+    "timestamp": "2026-07-05T10:14:49",
+    "src_ip": "192.168.117.131",
+    "dest_ip": "208.111.137.102",
+    "mitre_tag": "T1133",
+    "severity": 1.32,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "b72248b9-d47a-4094-bddf-78d310890fe9",
+    "timestamp": "2026-07-01T04:44:35",
+    "src_ip": "172.29.238.163",
+    "dest_ip": "136.50.151.31",
+    "mitre_tag": "T1046",
+    "severity": 2.51,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "f45f91e5-314a-4990-b4c8-af7a6e3bc81a",
+    "timestamp": "2026-07-09T08:14:14",
+    "src_ip": "10.165.206.0",
+    "dest_ip": "4.171.156.108",
+    "mitre_tag": "T1071",
+    "severity": 2.04,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "7dd90fd6-7200-4117-8a01-9f1b39fd0e41",
+    "timestamp": "2026-06-20T11:34:00",
+    "src_ip": "10.31.129.178",
+    "dest_ip": "184.64.108.172",
+    "mitre_tag": "T1046",
+    "severity": 0.93,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "7ab9a524-7b81-40e0-a8fa-ef9c6ca95272",
+    "timestamp": "2026-07-05T18:12:27",
+    "src_ip": "10.180.37.214",
+    "dest_ip": "56.250.152.15",
+    "mitre_tag": "T1046",
+    "severity": 0.88,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "9059f718-d283-4f97-aee4-968ec6676675",
+    "timestamp": "2026-06-13T18:57:19",
+    "src_ip": "10.61.72.113",
+    "dest_ip": "31.20.12.112",
+    "mitre_tag": "T1071",
+    "severity": 1.59,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "ade62a07-4223-4c6f-a2e2-d27647c4d38c",
+    "timestamp": "2026-06-30T13:23:06",
+    "src_ip": "192.168.43.244",
+    "dest_ip": "24.207.218.167",
+    "mitre_tag": "T1046",
+    "severity": 2.32,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "ade0af56-1d23-43d6-ad67-0e89bea25021",
+    "timestamp": "2026-06-14T13:39:32",
+    "src_ip": "172.17.98.131",
+    "dest_ip": "55.234.27.167",
+    "mitre_tag": "T1071",
+    "severity": 1.62,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "fea5e9f7-6c48-4ffa-9211-9f902cfdec01",
+    "timestamp": "2026-06-13T06:54:01",
+    "src_ip": "192.168.25.220",
+    "dest_ip": "216.174.140.6",
+    "mitre_tag": "T1059",
+    "severity": 2.09,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "385495a8-efc3-4095-b9ca-95d2e67d3ed1",
+    "timestamp": "2026-07-08T11:09:03",
+    "src_ip": "172.16.169.159",
+    "dest_ip": "150.136.30.155",
+    "mitre_tag": "T1071",
+    "severity": 2.45,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "25f6b752-3ef1-4e3c-a0bd-ed7893fa72ca",
+    "timestamp": "2026-06-11T03:17:39",
+    "src_ip": "10.9.246.244",
+    "dest_ip": "128.40.82.109",
+    "mitre_tag": "T1046",
+    "severity": 0.58,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "8d676402-1659-455c-b34e-f8c6b63133cc",
+    "timestamp": "2026-07-02T19:47:33",
+    "src_ip": "172.30.151.15",
+    "dest_ip": "201.110.4.80",
+    "mitre_tag": "T1133",
+    "severity": 2.05,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "dc719c54-9168-4285-ac60-e20974d013a8",
+    "timestamp": "2026-06-12T13:58:57",
+    "src_ip": "172.23.107.162",
+    "dest_ip": "71.92.55.168",
+    "mitre_tag": "T1046",
+    "severity": 1.29,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "ecae05fb-0915-44b6-8a7b-15a2cc035ee9",
+    "timestamp": "2026-07-01T23:10:01",
+    "src_ip": "192.168.168.9",
+    "dest_ip": "67.44.54.143",
+    "mitre_tag": "T1133",
+    "severity": 1.14,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "48584fa8-dd84-4934-bebb-fd8af2dc9312",
+    "timestamp": "2026-06-11T03:38:55",
+    "src_ip": "10.125.226.208",
+    "dest_ip": "17.203.73.16",
+    "mitre_tag": "T1133",
+    "severity": 1.1,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "4678f5ae-5056-4822-bd00-60fa32be8a16",
+    "timestamp": "2026-06-23T06:50:45",
+    "src_ip": "172.18.250.140",
+    "dest_ip": "196.199.167.202",
+    "mitre_tag": "T1046",
+    "severity": 1.86,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "f37e06ed-8bfb-40c5-ac33-4e9a49e7d574",
+    "timestamp": "2026-06-24T21:50:10",
+    "src_ip": "172.31.236.55",
+    "dest_ip": "134.136.57.121",
+    "mitre_tag": "T1046",
+    "severity": 2.93,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "29150ded-ad74-4e84-be91-e735bd99c2bb",
+    "timestamp": "2026-06-13T17:19:14",
+    "src_ip": "10.139.57.185",
+    "dest_ip": "208.113.43.13",
+    "mitre_tag": "T1071",
+    "severity": 2.63,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "a20a7f5e-6bb1-49b8-8644-8be10bfe0be8",
+    "timestamp": "2026-06-19T14:55:13",
+    "src_ip": "10.11.92.11",
+    "dest_ip": "30.82.76.149",
+    "mitre_tag": "T1071",
+    "severity": 3.17,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "d4badafb-4f01-437d-8a67-f3234501361c",
+    "timestamp": "2026-07-06T09:10:47",
+    "src_ip": "172.23.172.241",
+    "dest_ip": "116.54.4.66",
+    "mitre_tag": "T1059",
+    "severity": 2.88,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "fbe04f86-f406-41e4-b1d7-a9bbaa371b71",
+    "timestamp": "2026-06-25T22:04:24",
+    "src_ip": "192.168.194.78",
+    "dest_ip": "194.79.238.135",
+    "mitre_tag": "T1059",
+    "severity": 0.86,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "27a9e6e6-a9df-42f2-a1c2-0f0750c1a52d",
+    "timestamp": "2026-07-04T10:28:39",
+    "src_ip": "10.224.154.41",
+    "dest_ip": "113.183.250.18",
+    "mitre_tag": "T1059",
+    "severity": 1.21,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "b89666c5-5b33-4449-ac16-8b68b9c3963a",
+    "timestamp": "2026-06-09T23:54:27",
+    "src_ip": "192.168.249.26",
+    "dest_ip": "205.2.40.238",
+    "mitre_tag": "T1046",
+    "severity": 1.58,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "4f3fb29a-fe84-41e3-ae86-90804dc6dc37",
+    "timestamp": "2026-06-25T17:00:06",
+    "src_ip": "172.22.192.33",
+    "dest_ip": "153.128.6.252",
+    "mitre_tag": "T1071",
+    "severity": 1.9,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "c16eac2c-4c57-4255-b19f-ea9ebc03f2c1",
+    "timestamp": "2026-06-29T01:34:53",
+    "src_ip": "192.168.124.149",
+    "dest_ip": "147.83.195.214",
+    "mitre_tag": "T1059",
+    "severity": 2.34,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "656cf653-3d91-4a15-9a77-05e6f6d39869",
+    "timestamp": "2026-06-11T12:13:15",
+    "src_ip": "10.26.1.75",
+    "dest_ip": "156.190.194.229",
+    "mitre_tag": "T1046",
+    "severity": 1.43,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "da3d1ce4-629d-409a-bc92-cc499b064bcf",
+    "timestamp": "2026-07-01T04:33:11",
+    "src_ip": "172.25.128.112",
+    "dest_ip": "193.235.131.218",
+    "mitre_tag": "T1133",
+    "severity": 2.81,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "907ad707-54d0-4416-a59f-0adf0d7a42ea",
+    "timestamp": "2026-06-24T02:27:21",
+    "src_ip": "192.168.116.3",
+    "dest_ip": "130.65.16.149",
+    "mitre_tag": "T1046",
+    "severity": 0.88,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "d1503124-ca31-4600-b5a0-45737703e17f",
+    "timestamp": "2026-06-26T11:44:14",
+    "src_ip": "192.168.120.44",
+    "dest_ip": "41.88.159.142",
+    "mitre_tag": "T1046",
+    "severity": 1.85,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "b761985c-f26c-4f32-b18f-65aa94588993",
+    "timestamp": "2026-06-19T17:28:50",
+    "src_ip": "10.54.45.214",
+    "dest_ip": "45.187.86.212",
+    "mitre_tag": "T1071",
+    "severity": 0.89,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "5d2397f0-8323-48fd-ba26-23b506fc6f54",
+    "timestamp": "2026-07-07T04:18:37",
+    "src_ip": "192.168.124.149",
+    "dest_ip": "32.122.193.8",
+    "mitre_tag": "T1059",
+    "severity": 2.8,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "62183e43-f59a-46c5-b30a-1c775cdc5c1f",
+    "timestamp": "2026-07-04T04:31:40",
+    "src_ip": "10.166.154.6",
+    "dest_ip": "174.72.115.239",
+    "mitre_tag": "T1133",
+    "severity": 2.01,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "e7b764cb-57ad-4a74-aca1-38af136ddd2a",
+    "timestamp": "2026-06-27T08:31:13",
+    "src_ip": "10.74.115.73",
+    "dest_ip": "17.5.118.77",
+    "mitre_tag": "T1046",
+    "severity": 2.05,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "a0299137-ad6e-4a3e-88a6-d8906e8fbcd4",
+    "timestamp": "2026-06-20T07:44:55",
+    "src_ip": "10.45.101.132",
+    "dest_ip": "13.98.100.17",
+    "mitre_tag": "T1059",
+    "severity": 0.99,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "85580317-edc4-4a63-9237-a8f3ac276fd3",
+    "timestamp": "2026-06-26T00:43:38",
+    "src_ip": "10.134.217.225",
+    "dest_ip": "21.202.158.235",
+    "mitre_tag": "T1071",
+    "severity": 3.34,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "4a33a0d7-78e2-4921-9906-660181fe294b",
+    "timestamp": "2026-07-04T21:58:44",
+    "src_ip": "10.254.167.231",
+    "dest_ip": "118.99.131.86",
+    "mitre_tag": "T1071",
+    "severity": 3.04,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "a1301647-8952-4f72-ab23-b2d90ccba32a",
+    "timestamp": "2026-06-10T17:14:47",
+    "src_ip": "172.19.79.65",
+    "dest_ip": "133.85.203.128",
+    "mitre_tag": "T1059",
+    "severity": 2.41,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "6a7378c6-3f95-4802-844d-786e21d25ddb",
+    "timestamp": "2026-07-09T05:43:21",
+    "src_ip": "192.168.124.149",
+    "dest_ip": "144.150.91.56",
+    "mitre_tag": "T1071",
+    "severity": 0.88,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "ab4e05f9-4f51-419d-a838-3a47119f996e",
+    "timestamp": "2026-06-29T21:53:04",
+    "src_ip": "10.45.101.132",
+    "dest_ip": "79.255.210.160",
+    "mitre_tag": "T1046",
+    "severity": 2.01,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "2d4ff4dc-8d19-4f40-8838-4f1086c5b2fc",
+    "timestamp": "2026-06-11T03:40:49",
+    "src_ip": "172.25.86.207",
+    "dest_ip": "69.185.218.43",
+    "mitre_tag": "T1059",
+    "severity": 1.01,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "11b4f76a-fdbd-43fa-9804-3abe4458a875",
+    "timestamp": "2026-06-17T12:25:58",
+    "src_ip": "172.26.11.190",
+    "dest_ip": "185.238.125.150",
+    "mitre_tag": "T1046",
+    "severity": 2.98,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "0d7186a0-1d3a-466e-9af8-58e1c1e1d386",
+    "timestamp": "2026-06-25T06:22:20",
+    "src_ip": "192.168.26.112",
+    "dest_ip": "160.6.86.34",
+    "mitre_tag": "T1046",
+    "severity": 0.64,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "6a946b6a-8957-41ba-9e4c-c81eeb48dddc",
+    "timestamp": "2026-06-10T19:42:48",
+    "src_ip": "10.9.44.230",
+    "dest_ip": "93.121.4.95",
+    "mitre_tag": "T1071",
+    "severity": 2.45,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "2e43cd5a-2de8-46c1-be7b-997886e2a604",
+    "timestamp": "2026-06-12T08:10:40",
+    "src_ip": "10.16.111.78",
+    "dest_ip": "68.169.15.2",
+    "mitre_tag": "T1133",
+    "severity": 2.35,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "7d7208ad-1085-48ef-95e7-8120fa972649",
+    "timestamp": "2026-06-13T18:05:26",
+    "src_ip": "192.168.55.239",
+    "dest_ip": "60.248.243.171",
+    "mitre_tag": "T1133",
+    "severity": 3.17,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "be4ccde2-a66a-4d2f-bd2b-a5c888a88155",
+    "timestamp": "2026-07-07T10:53:13",
+    "src_ip": "192.168.26.149",
+    "dest_ip": "5.225.121.28",
+    "mitre_tag": "T1071",
+    "severity": 2.43,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "8750c6cf-710a-4b05-a84c-3a8b87b52e8d",
+    "timestamp": "2026-06-29T12:10:42",
+    "src_ip": "192.168.147.73",
+    "dest_ip": "156.3.156.255",
+    "mitre_tag": "T1133",
+    "severity": 1.23,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "04ab4186-5fb0-4f54-be56-658059d0de26",
+    "timestamp": "2026-07-03T11:56:39",
+    "src_ip": "10.165.206.0",
+    "dest_ip": "121.160.247.50",
+    "mitre_tag": "T1071",
+    "severity": 1.86,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "3c8e68ae-ee24-4f2f-9128-5750e64e531e",
+    "timestamp": "2026-06-24T09:04:30",
+    "src_ip": "172.17.131.142",
+    "dest_ip": "104.173.137.224",
+    "mitre_tag": "T1059",
+    "severity": 1.82,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "aaac81de-c232-45b2-8579-ad2656f23ff1",
+    "timestamp": "2026-06-12T06:16:42",
+    "src_ip": "10.208.120.202",
+    "dest_ip": "51.116.72.163",
+    "mitre_tag": "T1133",
+    "severity": 1.11,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "866d1c33-f3e0-4af9-9cc1-ae361877938b",
+    "timestamp": "2026-07-07T08:04:19",
+    "src_ip": "172.30.144.183",
+    "dest_ip": "20.115.208.224",
+    "mitre_tag": "T1071",
+    "severity": 3.08,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "d0176e7b-6381-4792-a3cc-83041200d9f8",
+    "timestamp": "2026-06-14T12:07:55",
+    "src_ip": "10.139.57.185",
+    "dest_ip": "159.122.125.104",
+    "mitre_tag": "T1071",
+    "severity": 3.43,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "3f8b9e8b-cc93-419f-90eb-8818705ee7ed",
+    "timestamp": "2026-06-17T14:58:26",
+    "src_ip": "10.166.154.6",
+    "dest_ip": "4.115.45.247",
+    "mitre_tag": "T1071",
+    "severity": 2.04,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "cc5a9d84-42d5-4e2a-b597-5aab876caf49",
+    "timestamp": "2026-06-21T23:24:45",
+    "src_ip": "10.234.146.169",
+    "dest_ip": "85.195.233.232",
+    "mitre_tag": "T1071",
+    "severity": 1.23,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "bf72706f-4710-4453-92fe-5cbe4d6b7615",
+    "timestamp": "2026-06-26T00:15:48",
+    "src_ip": "172.23.116.47",
+    "dest_ip": "217.149.141.192",
+    "mitre_tag": "T1071",
+    "severity": 1.85,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "62efbfb5-4fcd-4838-9894-d33e867ddfa1",
+    "timestamp": "2026-06-29T10:54:20",
+    "src_ip": "192.168.137.106",
+    "dest_ip": "37.74.237.132",
+    "mitre_tag": "T1046",
+    "severity": 0.65,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "e6b66c69-6673-4837-b04b-df6922563010",
+    "timestamp": "2026-06-20T00:12:44",
+    "src_ip": "192.168.102.111",
+    "dest_ip": "121.42.190.226",
+    "mitre_tag": "T1133",
+    "severity": 1.24,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "dd00d512-2db8-4954-b5d6-ec2e3d4da2aa",
+    "timestamp": "2026-07-04T06:31:09",
+    "src_ip": "10.31.129.178",
+    "dest_ip": "161.65.241.197",
+    "mitre_tag": "T1071",
+    "severity": 3.3,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "b69fa7e8-e578-46df-a683-8ce2024baaf2",
+    "timestamp": "2026-07-01T06:40:42",
+    "src_ip": "192.168.231.30",
+    "dest_ip": "59.44.80.179",
+    "mitre_tag": "T1059",
+    "severity": 2.79,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "25fdb022-6cbf-4a1f-b96a-adde57872b8c",
+    "timestamp": "2026-06-14T14:23:45",
+    "src_ip": "172.29.174.251",
+    "dest_ip": "67.215.90.124",
+    "mitre_tag": "T1133",
+    "severity": 2.0,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "d7e626a7-6f38-46b5-8e75-75dec281c8fd",
+    "timestamp": "2026-06-10T03:35:54",
+    "src_ip": "192.168.9.42",
+    "dest_ip": "40.40.209.244",
+    "mitre_tag": "T1133",
+    "severity": 0.57,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "46868df4-a468-454d-a4f2-84f9432140bf",
+    "timestamp": "2026-06-17T17:30:59",
+    "src_ip": "10.221.245.10",
+    "dest_ip": "189.7.36.28",
+    "mitre_tag": "T1133",
+    "severity": 3.4,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "68d9083e-2f14-481b-9127-47c29102a648",
+    "timestamp": "2026-06-30T14:51:52",
+    "src_ip": "192.168.182.196",
+    "dest_ip": "165.218.124.131",
+    "mitre_tag": "T1071",
+    "severity": 0.65,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "c7a00451-9e70-4f20-be85-d308488a38e4",
+    "timestamp": "2026-07-03T03:46:12",
+    "src_ip": "192.168.109.118",
+    "dest_ip": "212.242.6.108",
+    "mitre_tag": "T1133",
+    "severity": 2.29,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "faf6dca8-c006-4175-a347-2ca35c848493",
+    "timestamp": "2026-06-23T13:04:39",
+    "src_ip": "172.21.184.199",
+    "dest_ip": "87.99.180.247",
+    "mitre_tag": "T1071",
+    "severity": 2.11,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "158614cb-1e2d-4e33-b9e7-053273ad7a9e",
+    "timestamp": "2026-06-26T07:23:55",
+    "src_ip": "192.168.174.129",
+    "dest_ip": "62.174.57.21",
+    "mitre_tag": "T1133",
+    "severity": 0.9,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "e32939a3-12aa-4e4a-8e3a-8ff6ea7362a7",
+    "timestamp": "2026-06-11T18:53:20",
+    "src_ip": "10.230.200.194",
+    "dest_ip": "2.111.5.255",
+    "mitre_tag": "T1071",
+    "severity": 2.79,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "75b15a2b-362c-4469-9696-2b3e008cb82f",
+    "timestamp": "2026-06-21T11:32:11",
+    "src_ip": "172.24.244.212",
+    "dest_ip": "28.209.15.58",
+    "mitre_tag": "T1046",
+    "severity": 1.7,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "d5378bb4-ed04-412b-8643-892c22fd8676",
+    "timestamp": "2026-06-16T16:38:38",
+    "src_ip": "10.86.140.47",
+    "dest_ip": "23.42.217.202",
+    "mitre_tag": "T1059",
+    "severity": 1.59,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "6b358d32-5553-4d06-bf9e-443f1226b739",
+    "timestamp": "2026-06-29T12:35:34",
+    "src_ip": "10.197.146.211",
+    "dest_ip": "58.124.134.68",
+    "mitre_tag": "T1046",
+    "severity": 1.66,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "62a1e01f-7b9f-4d70-ba82-a7ea6bc9b5b8",
+    "timestamp": "2026-06-18T14:26:07",
+    "src_ip": "172.17.98.131",
+    "dest_ip": "10.16.243.215",
+    "mitre_tag": "T1071",
+    "severity": 2.98,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "eee20ccc-075e-4a82-852b-f71bd3013b9e",
+    "timestamp": "2026-06-26T10:20:50",
+    "src_ip": "172.31.7.104",
+    "dest_ip": "27.14.183.91",
+    "mitre_tag": "T1059",
+    "severity": 3.43,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "c436d4ea-901b-4ba3-b148-1b2ab744c591",
+    "timestamp": "2026-06-30T12:21:00",
+    "src_ip": "10.221.245.10",
+    "dest_ip": "64.140.141.187",
+    "mitre_tag": "T1071",
+    "severity": 2.88,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "d060e56b-c402-4650-8092-0ecc721282af",
+    "timestamp": "2026-06-10T00:20:11",
+    "src_ip": "10.87.149.171",
+    "dest_ip": "137.197.157.114",
+    "mitre_tag": "T1071",
+    "severity": 2.76,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "b7bbe238-e7ec-4063-a89a-ae0bd361305d",
+    "timestamp": "2026-06-21T08:12:13",
+    "src_ip": "192.168.128.73",
+    "dest_ip": "149.249.154.197",
+    "mitre_tag": "T1133",
+    "severity": 2.0,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "0bbb0ab2-9476-493c-980f-f53038b62e3a",
+    "timestamp": "2026-06-18T12:34:59",
+    "src_ip": "10.224.238.203",
+    "dest_ip": "59.186.48.139",
+    "mitre_tag": "T1046",
+    "severity": 0.91,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "4d27e821-7b3d-4ce5-b2dc-71da4b6b48b6",
+    "timestamp": "2026-07-02T04:07:39",
+    "src_ip": "10.15.244.190",
+    "dest_ip": "63.155.253.106",
+    "mitre_tag": "T1133",
+    "severity": 2.06,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "36f5023b-7357-4292-baac-19dd3eb63413",
+    "timestamp": "2026-06-16T11:03:27",
+    "src_ip": "172.31.160.37",
+    "dest_ip": "67.50.129.110",
+    "mitre_tag": "T1059",
+    "severity": 1.48,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "b9b695b8-d15a-4eab-8d30-826c3db14ad2",
+    "timestamp": "2026-06-10T21:52:19",
+    "src_ip": "10.139.57.185",
+    "dest_ip": "197.185.107.249",
+    "mitre_tag": "T1059",
+    "severity": 1.68,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "f6906318-9732-4fc0-98b5-5c9b2b243a6a",
+    "timestamp": "2026-06-27T15:24:16",
+    "src_ip": "192.168.176.172",
+    "dest_ip": "31.198.217.52",
+    "mitre_tag": "T1071",
+    "severity": 2.02,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "60d75541-815c-492f-b51e-b863d007c080",
+    "timestamp": "2026-06-30T03:50:37",
+    "src_ip": "192.168.194.78",
+    "dest_ip": "196.136.154.134",
+    "mitre_tag": "T1133",
+    "severity": 2.63,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "e8322d09-29e2-406d-afd5-2e0690afdc67",
+    "timestamp": "2026-06-25T08:50:04",
+    "src_ip": "192.168.176.172",
+    "dest_ip": "135.12.24.255",
+    "mitre_tag": "T1133",
+    "severity": 2.95,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "3ef56585-a71f-4b4e-b3df-a660ec4fc522",
+    "timestamp": "2026-06-19T04:01:42",
+    "src_ip": "192.168.167.172",
+    "dest_ip": "156.192.107.81",
+    "mitre_tag": "T1071",
+    "severity": 2.52,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "edcca7cd-e82b-4704-a77e-e39e4484b9e5",
+    "timestamp": "2026-07-03T04:10:53",
+    "src_ip": "10.218.82.138",
+    "dest_ip": "160.227.18.50",
+    "mitre_tag": "T1071",
+    "severity": 2.89,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "71c496c5-9125-41cd-b49e-b93fc1f780c6",
+    "timestamp": "2026-06-28T12:00:49",
+    "src_ip": "192.168.132.184",
+    "dest_ip": "89.75.152.191",
+    "mitre_tag": "T1133",
+    "severity": 1.3,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "82b1375e-ad8d-4b9e-bbf6-ea000c96e750",
+    "timestamp": "2026-07-04T06:05:00",
+    "src_ip": "172.23.176.85",
+    "dest_ip": "205.234.121.123",
+    "mitre_tag": "T1059",
+    "severity": 2.66,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "1e49f3af-e5aa-4fff-88fd-2c6a6a982385",
+    "timestamp": "2026-06-21T10:31:16",
+    "src_ip": "10.21.22.232",
+    "dest_ip": "17.65.129.82",
+    "mitre_tag": "T1133",
+    "severity": 1.01,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "c826c242-3a4a-4658-b08a-6af092b8a50f",
+    "timestamp": "2026-06-28T00:01:11",
+    "src_ip": "192.168.52.177",
+    "dest_ip": "138.78.242.207",
+    "mitre_tag": "T1059",
+    "severity": 2.96,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "77ec773f-2db8-4b7f-8447-d281fd88eb19",
+    "timestamp": "2026-07-07T12:17:16",
+    "src_ip": "172.16.190.67",
+    "dest_ip": "161.181.22.26",
+    "mitre_tag": "T1046",
+    "severity": 2.22,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "a11f7856-9aa7-4af4-a094-ad650bac04fb",
+    "timestamp": "2026-07-04T09:19:12",
+    "src_ip": "172.24.8.106",
+    "dest_ip": "197.4.129.26",
+    "mitre_tag": "T1059",
+    "severity": 0.56,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "c9db79a3-e130-4135-947a-06f56c257189",
+    "timestamp": "2026-06-30T04:16:00",
+    "src_ip": "192.168.231.30",
+    "dest_ip": "174.244.75.108",
+    "mitre_tag": "T1133",
+    "severity": 0.95,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "fe787429-53f0-45c7-92a6-533384e52ab2",
+    "timestamp": "2026-06-22T15:12:48",
+    "src_ip": "192.168.96.127",
+    "dest_ip": "198.140.166.88",
+    "mitre_tag": "T1133",
+    "severity": 2.01,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "d51a58b6-faf7-4669-94f1-4af0f64d6b1f",
+    "timestamp": "2026-06-26T23:02:50",
+    "src_ip": "10.32.241.53",
+    "dest_ip": "131.20.161.32",
+    "mitre_tag": "T1046",
+    "severity": 2.62,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "ce6b2d3b-df0d-405b-a2a6-f7ee5f25cdec",
+    "timestamp": "2026-07-03T07:47:26",
+    "src_ip": "10.254.167.231",
+    "dest_ip": "117.57.38.218",
+    "mitre_tag": "T1059",
+    "severity": 2.18,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "0f3cbd0e-5dd4-4034-ac5a-1e98ad60f539",
+    "timestamp": "2026-06-13T13:59:49",
+    "src_ip": "10.123.202.55",
+    "dest_ip": "117.220.173.93",
+    "mitre_tag": "T1133",
+    "severity": 1.44,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "6fcc4bee-5e7d-4326-bec8-8edc5db1f4b0",
+    "timestamp": "2026-07-01T01:16:52",
+    "src_ip": "192.168.51.169",
+    "dest_ip": "153.24.187.232",
+    "mitre_tag": "T1133",
+    "severity": 3.24,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "6acd791f-5766-4e0e-b28c-b3a8ad537ceb",
+    "timestamp": "2026-06-17T20:27:15",
+    "src_ip": "172.28.36.43",
+    "dest_ip": "169.112.166.240",
+    "mitre_tag": "T1071",
+    "severity": 2.53,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "127b9398-0264-47a8-a09d-01d8fe606a44",
+    "timestamp": "2026-07-05T00:52:19",
+    "src_ip": "10.230.200.194",
+    "dest_ip": "177.239.75.121",
+    "mitre_tag": "T1133",
+    "severity": 1.08,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "4dfc2c74-65ff-4207-a99b-32b57eebb9fb",
+    "timestamp": "2026-07-04T14:49:10",
+    "src_ip": "172.19.90.76",
+    "dest_ip": "66.92.218.182",
+    "mitre_tag": "T1071",
+    "severity": 2.17,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "a403d034-2dac-477b-bd58-2550bab03702",
+    "timestamp": "2026-06-18T02:58:59",
+    "src_ip": "10.134.217.225",
+    "dest_ip": "86.228.50.15",
+    "mitre_tag": "T1071",
+    "severity": 2.81,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "90daf891-7654-4b2d-b476-285e8f6e7d07",
+    "timestamp": "2026-06-14T10:53:40",
+    "src_ip": "172.28.180.10",
+    "dest_ip": "134.186.249.16",
+    "mitre_tag": "T1133",
+    "severity": 1.45,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "8cd45dd9-b7ec-4d07-a44b-bf856c796f70",
+    "timestamp": "2026-07-05T07:12:54",
+    "src_ip": "172.18.195.169",
+    "dest_ip": "215.198.124.126",
+    "mitre_tag": "T1071",
+    "severity": 1.36,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "ed9168f9-f004-47b9-96d9-601fe450a756",
+    "timestamp": "2026-06-11T20:03:35",
+    "src_ip": "172.22.192.33",
+    "dest_ip": "63.104.2.10",
+    "mitre_tag": "T1133",
+    "severity": 3.19,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "143b8981-ca84-4c1a-8732-fd240c53894d",
+    "timestamp": "2026-06-16T04:33:57",
+    "src_ip": "10.129.62.96",
+    "dest_ip": "200.202.228.245",
+    "mitre_tag": "T1071",
+    "severity": 3.36,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "9a856ea8-bd72-4519-8e7c-100fc7f6dfe0",
+    "timestamp": "2026-06-25T06:46:07",
+    "src_ip": "172.28.197.151",
+    "dest_ip": "59.141.192.174",
+    "mitre_tag": "T1071",
+    "severity": 0.63,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "2d5ec92d-881f-47cc-8296-54b742956f9c",
+    "timestamp": "2026-06-27T11:09:25",
+    "src_ip": "192.168.32.27",
+    "dest_ip": "223.220.221.239",
+    "mitre_tag": "T1071",
+    "severity": 3.27,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "d39cdd0f-ef30-4d6d-93ab-1fd2573ee9ec",
+    "timestamp": "2026-06-17T08:38:42",
+    "src_ip": "10.224.200.195",
+    "dest_ip": "53.200.26.170",
+    "mitre_tag": "T1133",
+    "severity": 1.14,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "c902a93e-5b2e-48a5-9d25-fdb12c8499e2",
+    "timestamp": "2026-07-05T06:05:23",
+    "src_ip": "172.20.49.66",
+    "dest_ip": "207.150.11.60",
+    "mitre_tag": "T1071",
+    "severity": 3.3,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "e5767535-5906-4791-bf19-769662fffb2c",
+    "timestamp": "2026-06-15T05:08:26",
+    "src_ip": "192.168.7.157",
+    "dest_ip": "28.124.4.116",
+    "mitre_tag": "T1059",
+    "severity": 0.83,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "b50ccf30-077c-4025-9f5d-c2d68b696cf9",
+    "timestamp": "2026-06-13T04:04:27",
+    "src_ip": "10.134.3.1",
+    "dest_ip": "61.140.51.252",
+    "mitre_tag": "T1059",
+    "severity": 0.65,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "54a2ab69-0c8b-48cc-bab9-6fe59159fb0f",
+    "timestamp": "2026-06-27T20:56:03",
+    "src_ip": "10.158.224.66",
+    "dest_ip": "218.94.224.152",
+    "mitre_tag": "T1059",
+    "severity": 2.41,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "3c84f9d8-d9f4-411a-a968-84af91902d19",
+    "timestamp": "2026-06-25T04:19:03",
+    "src_ip": "10.160.172.39",
+    "dest_ip": "133.150.33.138",
+    "mitre_tag": "T1046",
+    "severity": 1.74,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "5f079a2f-3fa2-43b5-9708-fcab71867651",
+    "timestamp": "2026-06-19T16:01:31",
+    "src_ip": "10.32.241.53",
+    "dest_ip": "196.114.180.179",
+    "mitre_tag": "T1046",
+    "severity": 2.54,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "99f7cf22-f042-425c-8bcd-c8ac7ccf08ed",
+    "timestamp": "2026-06-17T07:20:51",
+    "src_ip": "10.27.152.16",
+    "dest_ip": "171.203.108.14",
+    "mitre_tag": "T1046",
+    "severity": 3.39,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "58e025db-6ec1-4801-b386-0e9c1b9e0a92",
+    "timestamp": "2026-07-01T14:51:59",
+    "src_ip": "172.23.172.241",
+    "dest_ip": "108.1.242.59",
+    "mitre_tag": "T1133",
+    "severity": 2.46,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "54757820-017e-4dde-a9d6-32d74575c3f6",
+    "timestamp": "2026-06-20T00:26:51",
+    "src_ip": "192.168.27.168",
+    "dest_ip": "100.168.9.190",
+    "mitre_tag": "T1133",
+    "severity": 2.45,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "4e223b4c-da35-4e78-aa69-3d13599cba17",
+    "timestamp": "2026-06-25T06:31:38",
+    "src_ip": "10.197.146.211",
+    "dest_ip": "33.218.225.27",
+    "mitre_tag": "T1071",
+    "severity": 1.36,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "c519d324-68d1-4972-afa2-73dc58b39c29",
+    "timestamp": "2026-07-02T08:41:14",
+    "src_ip": "172.17.131.142",
+    "dest_ip": "67.3.7.122",
+    "mitre_tag": "T1046",
+    "severity": 2.46,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "d9782aaa-f805-454b-a0b7-d963f915f4d0",
+    "timestamp": "2026-07-05T01:21:09",
+    "src_ip": "10.172.118.180",
+    "dest_ip": "86.240.29.195",
+    "mitre_tag": "T1046",
+    "severity": 3.24,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "905f8c30-f94b-4298-b824-908cccae5708",
+    "timestamp": "2026-07-09T02:04:05",
+    "src_ip": "192.168.79.152",
+    "dest_ip": "133.186.60.220",
+    "mitre_tag": "T1133",
+    "severity": 3.15,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "82671879-5bf6-4a77-851c-35e1a8371cde",
+    "timestamp": "2026-07-08T22:35:01",
+    "src_ip": "10.41.53.104",
+    "dest_ip": "79.185.204.214",
+    "mitre_tag": "T1046",
+    "severity": 3.49,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "5db06095-15da-4ae2-89c0-1ca876361099",
+    "timestamp": "2026-07-02T04:37:13",
+    "src_ip": "172.16.169.159",
+    "dest_ip": "48.254.161.173",
+    "mitre_tag": "T1133",
+    "severity": 1.06,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "7e60695f-e39b-43e6-8292-043778d00a27",
+    "timestamp": "2026-07-07T14:43:18",
+    "src_ip": "10.126.29.254",
+    "dest_ip": "160.90.196.236",
+    "mitre_tag": "T1046",
+    "severity": 0.53,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "cf96e34a-0186-435b-ab1c-188cfd7db594",
+    "timestamp": "2026-07-05T23:13:44",
+    "src_ip": "192.168.43.244",
+    "dest_ip": "4.86.67.223",
+    "mitre_tag": "T1046",
+    "severity": 3.29,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "70bb58a1-43d3-4666-be4c-d8010aaaa6de",
+    "timestamp": "2026-06-15T15:52:03",
+    "src_ip": "172.16.30.4",
+    "dest_ip": "128.181.222.246",
+    "mitre_tag": "T1071",
+    "severity": 1.86,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "32497b0d-fc11-4060-aad4-150ea68549d9",
+    "timestamp": "2026-07-04T11:14:15",
+    "src_ip": "10.195.185.93",
+    "dest_ip": "11.145.24.148",
+    "mitre_tag": "T1133",
+    "severity": 3.17,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "f949fe92-4d0d-40cb-b41b-86a777af0980",
+    "timestamp": "2026-07-05T18:05:22",
+    "src_ip": "10.254.143.5",
+    "dest_ip": "216.235.174.104",
+    "mitre_tag": "T1133",
+    "severity": 1.32,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "98ac9d41-69e3-4129-b60f-81d209edeb54",
+    "timestamp": "2026-06-26T10:31:26",
+    "src_ip": "192.168.147.8",
+    "dest_ip": "187.205.39.199",
+    "mitre_tag": "T1071",
+    "severity": 0.99,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "e577410b-cb6d-44ab-9f62-3c687b4f9266",
+    "timestamp": "2026-06-12T12:17:10",
+    "src_ip": "192.168.51.182",
+    "dest_ip": "192.236.251.19",
+    "mitre_tag": "T1071",
+    "severity": 2.66,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "d686ab2c-03e7-40f2-bf89-9d1885284989",
+    "timestamp": "2026-06-09T18:35:38",
+    "src_ip": "192.168.133.238",
+    "dest_ip": "113.203.188.252",
+    "mitre_tag": "T1071",
+    "severity": 2.87,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "df8c1123-ef5b-45a7-b425-586dec70b55a",
+    "timestamp": "2026-07-08T20:50:12",
+    "src_ip": "192.168.43.244",
+    "dest_ip": "86.34.121.236",
+    "mitre_tag": "T1059",
+    "severity": 1.03,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "7f1d43aa-63d6-4cd5-bbd3-6a12d088894c",
+    "timestamp": "2026-06-13T04:53:00",
+    "src_ip": "10.165.206.0",
+    "dest_ip": "131.107.123.198",
+    "mitre_tag": "T1133",
+    "severity": 2.05,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "e6103c0f-f967-4d9c-b89b-f84add498396",
+    "timestamp": "2026-06-22T03:09:58",
+    "src_ip": "10.26.1.75",
+    "dest_ip": "81.129.188.93",
+    "mitre_tag": "T1133",
+    "severity": 2.51,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "c469d89a-e496-4f9d-ac8a-a64262940de9",
+    "timestamp": "2026-07-08T04:57:22",
+    "src_ip": "192.168.200.76",
+    "dest_ip": "53.136.249.52",
+    "mitre_tag": "T1059",
+    "severity": 1.93,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "76dba7e0-be06-4978-8b23-5eb33a7f5ae2",
+    "timestamp": "2026-06-26T00:53:44",
+    "src_ip": "10.9.246.244",
+    "dest_ip": "200.170.186.168",
+    "mitre_tag": "T1046",
+    "severity": 1.28,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "e6fd24da-8b8f-4716-b712-0d65d782be77",
+    "timestamp": "2026-06-26T10:49:41",
+    "src_ip": "10.61.72.113",
+    "dest_ip": "32.245.214.69",
+    "mitre_tag": "T1133",
+    "severity": 2.76,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "1a98ebef-a568-42d7-80d1-bfd0b71919e6",
+    "timestamp": "2026-07-09T09:16:19",
+    "src_ip": "172.30.113.109",
+    "dest_ip": "64.107.34.79",
+    "mitre_tag": "T1071",
+    "severity": 2.25,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "749a6c5b-7162-44e5-8aba-2eb5f4da31fe",
+    "timestamp": "2026-06-27T23:20:08",
+    "src_ip": "172.22.192.33",
+    "dest_ip": "37.251.144.141",
+    "mitre_tag": "T1046",
+    "severity": 1.28,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "7b07fc33-2fde-45b2-832c-5dbf2f51dd24",
+    "timestamp": "2026-06-16T06:49:48",
+    "src_ip": "172.18.31.45",
+    "dest_ip": "79.170.51.35",
+    "mitre_tag": "T1059",
+    "severity": 0.69,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "b1a246ef-1ec3-4d4b-8f6c-ce4c0bdf0f68",
+    "timestamp": "2026-06-15T19:07:05",
+    "src_ip": "172.31.7.104",
+    "dest_ip": "4.97.57.167",
+    "mitre_tag": "T1133",
+    "severity": 1.42,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "b0ce403a-1feb-4d25-8e45-586052336a2f",
+    "timestamp": "2026-07-08T06:04:25",
+    "src_ip": "10.165.206.0",
+    "dest_ip": "151.189.99.115",
+    "mitre_tag": "T1071",
+    "severity": 2.57,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "d5c1ae5d-2684-46c1-803f-e8b168020e7c",
+    "timestamp": "2026-06-14T03:01:23",
+    "src_ip": "172.27.157.190",
+    "dest_ip": "47.14.137.182",
+    "mitre_tag": "T1071",
+    "severity": 2.34,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "c9355324-7326-4051-aa8f-0ce05e2a322e",
+    "timestamp": "2026-07-01T06:48:50",
+    "src_ip": "172.28.86.30",
+    "dest_ip": "155.162.136.91",
+    "mitre_tag": "T1059",
+    "severity": 1.93,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "59a3f233-df54-4ace-b6d8-2cd2c8a74688",
+    "timestamp": "2026-06-22T23:23:47",
+    "src_ip": "172.30.220.187",
+    "dest_ip": "103.228.43.202",
+    "mitre_tag": "T1071",
+    "severity": 1.75,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "b0642cb4-c075-4bca-8497-3f7c4eeb109e",
+    "timestamp": "2026-06-28T04:50:21",
+    "src_ip": "10.11.92.11",
+    "dest_ip": "2.237.189.249",
+    "mitre_tag": "T1133",
+    "severity": 2.77,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "164b11ce-eb1b-467d-897f-d9bfdad28d57",
+    "timestamp": "2026-06-24T02:36:09",
+    "src_ip": "10.236.96.91",
+    "dest_ip": "13.142.98.166",
+    "mitre_tag": "T1059",
+    "severity": 2.54,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "47852491-f914-469a-a4dc-ce821087fcca",
+    "timestamp": "2026-06-13T02:07:24",
+    "src_ip": "172.28.166.113",
+    "dest_ip": "222.131.241.227",
+    "mitre_tag": "T1133",
+    "severity": 2.08,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "7eae1689-3b3f-4278-aac2-aedaf261b899",
+    "timestamp": "2026-06-27T09:10:59",
+    "src_ip": "192.168.46.121",
+    "dest_ip": "70.235.137.65",
+    "mitre_tag": "T1046",
+    "severity": 3.25,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "3111a60b-9864-441e-91f7-2ff9d628c479",
+    "timestamp": "2026-06-28T22:09:06",
+    "src_ip": "192.168.147.8",
+    "dest_ip": "93.113.70.115",
+    "mitre_tag": "T1046",
+    "severity": 2.99,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "cb3d7ac7-1ac6-40ad-973d-869dec0a7d96",
+    "timestamp": "2026-06-10T22:29:33",
+    "src_ip": "192.168.153.128",
+    "dest_ip": "99.38.25.118",
+    "mitre_tag": "T1059",
+    "severity": 2.22,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "15158b30-ab51-41f7-8fce-b7e289c3c334",
+    "timestamp": "2026-06-21T13:18:23",
+    "src_ip": "172.31.160.37",
+    "dest_ip": "119.100.137.45",
+    "mitre_tag": "T1059",
+    "severity": 1.48,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "0ac6f27b-6e09-4e4d-bb90-0438ba26903e",
+    "timestamp": "2026-07-08T16:42:38",
+    "src_ip": "172.20.121.195",
+    "dest_ip": "77.195.62.233",
+    "mitre_tag": "T1133",
+    "severity": 0.85,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "d10f1378-15af-45cf-904a-1affc3a2bb53",
+    "timestamp": "2026-06-23T19:39:15",
+    "src_ip": "172.24.251.211",
+    "dest_ip": "4.147.21.235",
+    "mitre_tag": "T1133",
+    "severity": 0.77,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "18a01a19-626f-4d2d-be38-a1eb8f6c82b2",
+    "timestamp": "2026-07-03T09:32:33",
+    "src_ip": "10.133.26.118",
+    "dest_ip": "83.59.143.214",
+    "mitre_tag": "T1133",
+    "severity": 2.93,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "a52d06cb-b448-4963-bed1-2674b7435bda",
+    "timestamp": "2026-06-24T10:25:05",
+    "src_ip": "172.30.220.187",
+    "dest_ip": "142.91.198.57",
+    "mitre_tag": "T1059",
+    "severity": 2.04,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "67fa8c33-50f7-48e6-b5d2-fe9ac2ecc64d",
+    "timestamp": "2026-06-09T18:22:57",
+    "src_ip": "172.19.233.164",
+    "dest_ip": "116.101.103.50",
+    "mitre_tag": "T1046",
+    "severity": 2.18,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "7090bedc-f526-47e7-bc86-69401f98e5a8",
+    "timestamp": "2026-06-30T10:14:53",
+    "src_ip": "192.168.9.42",
+    "dest_ip": "118.68.232.125",
+    "mitre_tag": "T1046",
+    "severity": 1.69,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "714422eb-2d92-4e6e-b374-23d521457e0a",
+    "timestamp": "2026-06-14T06:27:01",
+    "src_ip": "192.168.3.234",
+    "dest_ip": "188.13.197.48",
+    "mitre_tag": "T1059",
+    "severity": 2.23,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "74135f77-3a70-48b8-a974-57dcde37ed3b",
+    "timestamp": "2026-07-09T00:37:24",
+    "src_ip": "10.224.238.203",
+    "dest_ip": "139.131.5.245",
+    "mitre_tag": "T1133",
+    "severity": 1.53,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "971635ee-540a-4ba2-af88-f73de4c0e300",
+    "timestamp": "2026-07-01T08:43:10",
+    "src_ip": "172.22.42.127",
+    "dest_ip": "147.35.122.169",
+    "mitre_tag": "T1046",
+    "severity": 3.3,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "57be5fc6-51b3-4ab9-97df-206872249f2f",
+    "timestamp": "2026-06-26T00:38:10",
+    "src_ip": "192.168.165.140",
+    "dest_ip": "48.183.63.31",
+    "mitre_tag": "T1133",
+    "severity": 0.6,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "d9291612-3773-4662-97d9-fc54af3faed6",
+    "timestamp": "2026-06-24T01:49:26",
+    "src_ip": "10.113.74.214",
+    "dest_ip": "208.86.119.247",
+    "mitre_tag": "T1059",
+    "severity": 2.81,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "9d6da4f5-d7da-488b-9136-a2d15ed0fc4d",
+    "timestamp": "2026-07-05T02:26:12",
+    "src_ip": "172.19.27.18",
+    "dest_ip": "170.58.15.234",
+    "mitre_tag": "T1071",
+    "severity": 3.48,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "2ddd0396-9ebb-48f0-a662-f612668317f4",
+    "timestamp": "2026-06-16T11:37:54",
+    "src_ip": "10.18.206.165",
+    "dest_ip": "117.247.149.20",
+    "mitre_tag": "T1133",
+    "severity": 3.11,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "ae768c61-c055-4d59-b953-7af939d012b6",
+    "timestamp": "2026-06-19T18:13:06",
+    "src_ip": "172.23.247.120",
+    "dest_ip": "97.223.208.139",
+    "mitre_tag": "T1133",
+    "severity": 0.74,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "ede910fb-79c9-4770-9c5c-d1982a6b6bce",
+    "timestamp": "2026-06-14T07:08:46",
+    "src_ip": "10.39.213.148",
+    "dest_ip": "118.68.106.108",
+    "mitre_tag": "T1059",
+    "severity": 2.46,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "239886b4-d483-4bc0-9ac0-8b572a2a4fce",
+    "timestamp": "2026-06-28T22:34:55",
+    "src_ip": "172.18.195.169",
+    "dest_ip": "186.154.2.14",
+    "mitre_tag": "T1046",
+    "severity": 1.04,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "7af2c4a7-0146-4eb7-96ee-3bf38f08294d",
+    "timestamp": "2026-06-14T22:00:14",
+    "src_ip": "172.20.49.66",
+    "dest_ip": "160.167.254.200",
+    "mitre_tag": "T1133",
+    "severity": 2.09,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "b6bbf304-4b39-464d-a17e-cc3715be86aa",
+    "timestamp": "2026-06-27T16:57:42",
+    "src_ip": "10.120.168.228",
+    "dest_ip": "183.219.246.74",
+    "mitre_tag": "T1046",
+    "severity": 2.77,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "039240d3-e17e-41a9-9d31-e90ba7ace668",
+    "timestamp": "2026-07-05T15:58:17",
+    "src_ip": "10.154.142.167",
+    "dest_ip": "158.206.215.28",
+    "mitre_tag": "T1133",
+    "severity": 2.52,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "801ced07-7be4-44a2-b2f0-5f1d0200cef1",
+    "timestamp": "2026-07-06T10:09:19",
+    "src_ip": "10.195.185.93",
+    "dest_ip": "177.227.66.225",
+    "mitre_tag": "T1133",
+    "severity": 2.1,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "dd55af46-00a8-4935-84f1-3ca4c25ae985",
+    "timestamp": "2026-06-18T22:58:21",
+    "src_ip": "192.168.167.64",
+    "dest_ip": "139.63.149.242",
+    "mitre_tag": "T1059",
+    "severity": 1.88,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "a18337fb-d52b-4dea-b4ea-7d3d01c8312c",
+    "timestamp": "2026-07-03T05:22:00",
+    "src_ip": "10.207.196.222",
+    "dest_ip": "205.50.109.37",
+    "mitre_tag": "T1071",
+    "severity": 1.07,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "c5d36fc7-8bf7-4d3e-9c13-3885083218c7",
+    "timestamp": "2026-06-20T16:30:36",
+    "src_ip": "192.168.147.8",
+    "dest_ip": "187.244.126.248",
+    "mitre_tag": "T1046",
+    "severity": 2.93,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "73a7d58d-83ee-41c5-b9f9-da194e08cd60",
+    "timestamp": "2026-07-04T15:58:53",
+    "src_ip": "10.244.219.148",
+    "dest_ip": "201.226.222.136",
+    "mitre_tag": "T1046",
+    "severity": 1.22,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "05c816e6-7c33-4dbe-b8bd-fbdb2bcc1389",
+    "timestamp": "2026-07-02T04:38:21",
+    "src_ip": "172.21.169.146",
+    "dest_ip": "2.24.232.28",
+    "mitre_tag": "T1046",
+    "severity": 2.28,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "eaba31d4-21a9-4a3b-abc1-823bcc55b5b7",
+    "timestamp": "2026-06-25T20:23:42",
+    "src_ip": "192.168.43.246",
+    "dest_ip": "129.202.195.165",
+    "mitre_tag": "T1046",
+    "severity": 1.23,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "547d253a-846c-4b6a-a189-46df7a0c4803",
+    "timestamp": "2026-07-02T18:10:28",
+    "src_ip": "172.18.32.124",
+    "dest_ip": "174.241.209.133",
+    "mitre_tag": "T1133",
+    "severity": 1.82,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "af878af0-09e7-41c0-ac39-1df97256c3f4",
+    "timestamp": "2026-06-20T06:25:37",
+    "src_ip": "10.39.213.148",
+    "dest_ip": "116.228.197.225",
+    "mitre_tag": "T1059",
+    "severity": 2.76,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "057bd3ba-3826-42bb-bf22-c84e1bc50c6f",
+    "timestamp": "2026-06-18T17:11:34",
+    "src_ip": "10.74.115.73",
+    "dest_ip": "111.215.202.232",
+    "mitre_tag": "T1059",
+    "severity": 2.01,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "8457c7f4-4566-404c-978e-08f09d3a259b",
+    "timestamp": "2026-06-12T18:02:07",
+    "src_ip": "10.126.29.254",
+    "dest_ip": "212.207.88.49",
+    "mitre_tag": "T1059",
+    "severity": 2.95,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "7dc89cd9-a830-4343-a9e1-7820ae51c77d",
+    "timestamp": "2026-06-13T06:55:49",
+    "src_ip": "192.168.116.3",
+    "dest_ip": "97.112.64.50",
+    "mitre_tag": "T1071",
+    "severity": 2.23,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "acb52f87-a224-4758-96b7-385ffaa5f5d6",
+    "timestamp": "2026-06-19T04:55:50",
+    "src_ip": "10.97.182.47",
+    "dest_ip": "142.134.39.198",
+    "mitre_tag": "T1059",
+    "severity": 1.41,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "8826f246-ed8f-4410-a6bd-1296c4f5166a",
+    "timestamp": "2026-07-04T22:05:00",
+    "src_ip": "172.30.144.183",
+    "dest_ip": "217.118.94.96",
+    "mitre_tag": "T1059",
+    "severity": 1.74,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "36a8343b-5380-47a9-88f8-4bd9cd32c1d3",
+    "timestamp": "2026-06-12T06:21:15",
+    "src_ip": "172.20.110.109",
+    "dest_ip": "139.235.59.183",
+    "mitre_tag": "T1046",
+    "severity": 2.17,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "563fedbd-bd19-4682-a6db-eb134f6982fc",
+    "timestamp": "2026-06-15T08:29:10",
+    "src_ip": "192.168.79.152",
+    "dest_ip": "21.197.239.12",
+    "mitre_tag": "T1133",
+    "severity": 2.17,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "d0639f62-3c9c-412c-9a87-dce749060652",
+    "timestamp": "2026-06-18T07:22:34",
+    "src_ip": "172.28.64.63",
+    "dest_ip": "75.51.56.173",
+    "mitre_tag": "T1071",
+    "severity": 3.32,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "65cadd80-d90a-4547-9bea-1b06f1f28f8e",
+    "timestamp": "2026-06-13T06:26:38",
+    "src_ip": "10.18.206.165",
+    "dest_ip": "125.116.208.41",
+    "mitre_tag": "T1071",
+    "severity": 2.59,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "78f2c6db-8fc0-47f7-a41c-89b287a5d39f",
+    "timestamp": "2026-06-12T03:58:45",
+    "src_ip": "10.113.74.214",
+    "dest_ip": "180.106.92.73",
+    "mitre_tag": "T1059",
+    "severity": 1.4,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "08e93934-3d11-4fd1-bc18-4fe0b710daba",
+    "timestamp": "2026-07-01T01:13:51",
+    "src_ip": "192.168.200.76",
+    "dest_ip": "30.54.104.236",
+    "mitre_tag": "T1133",
+    "severity": 1.22,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "49ce4d00-020b-4de2-9c80-d9ab9f13de98",
+    "timestamp": "2026-06-29T22:52:19",
+    "src_ip": "10.134.217.225",
+    "dest_ip": "115.7.248.185",
+    "mitre_tag": "T1071",
+    "severity": 3.07,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "ffbaa9b4-dc7b-4d24-a8be-f86a742e3963",
+    "timestamp": "2026-07-07T17:19:35",
+    "src_ip": "172.30.144.183",
+    "dest_ip": "6.21.166.219",
+    "mitre_tag": "T1133",
+    "severity": 3.24,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "73130dfe-5551-46f6-a310-16123ce1f71a",
+    "timestamp": "2026-07-02T19:56:01",
+    "src_ip": "172.23.107.162",
+    "dest_ip": "220.253.12.205",
+    "mitre_tag": "T1133",
+    "severity": 3.4,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "9712e599-c32c-4cfd-933c-67ddb692ee1e",
+    "timestamp": "2026-06-21T17:27:24",
+    "src_ip": "10.176.43.104",
+    "dest_ip": "151.96.242.64",
+    "mitre_tag": "T1059",
+    "severity": 1.67,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "024356df-7ad7-442b-8aff-71aafd7900c7",
+    "timestamp": "2026-06-13T03:01:00",
+    "src_ip": "192.168.40.16",
+    "dest_ip": "219.216.214.184",
+    "mitre_tag": "T1059",
+    "severity": 1.49,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "9e129317-d2f8-45d8-be21-f7c282c14f86",
+    "timestamp": "2026-06-25T04:00:32",
+    "src_ip": "192.168.32.27",
+    "dest_ip": "196.47.243.57",
+    "mitre_tag": "T1133",
+    "severity": 3.04,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "931a49a3-906f-436a-9934-f84a15d93efa",
+    "timestamp": "2026-06-18T14:20:03",
+    "src_ip": "172.30.57.65",
+    "dest_ip": "189.115.12.167",
+    "mitre_tag": "T1059",
+    "severity": 0.65,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "83d92a67-1a0b-47e6-af93-e533a8db3ca6",
+    "timestamp": "2026-07-06T04:42:59",
+    "src_ip": "172.23.247.120",
+    "dest_ip": "155.138.169.159",
+    "mitre_tag": "T1046",
+    "severity": 3.12,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "449f6e9e-f3e2-46d4-9a58-a3788a507663",
+    "timestamp": "2026-06-16T22:52:19",
+    "src_ip": "172.20.214.196",
+    "dest_ip": "89.132.130.79",
+    "mitre_tag": "T1059",
+    "severity": 1.94,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "a942f56f-f1b4-49e3-8dea-5c737e7e919b",
+    "timestamp": "2026-06-16T02:56:44",
+    "src_ip": "10.15.244.190",
+    "dest_ip": "220.177.156.10",
+    "mitre_tag": "T1071",
+    "severity": 3.37,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "216c5227-551e-4b54-b592-5b612c3c3069",
+    "timestamp": "2026-07-01T00:27:05",
+    "src_ip": "192.168.133.238",
+    "dest_ip": "30.154.38.26",
+    "mitre_tag": "T1059",
+    "severity": 3.31,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "91e8cc1b-e12d-44a6-8755-b3e57faffc34",
+    "timestamp": "2026-06-24T06:16:40",
+    "src_ip": "172.31.7.104",
+    "dest_ip": "132.132.251.135",
+    "mitre_tag": "T1133",
+    "severity": 3.24,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "bc1e134b-55fa-4fb0-8790-b2aaacc831f9",
+    "timestamp": "2026-07-07T14:17:51",
+    "src_ip": "192.168.96.127",
+    "dest_ip": "211.91.6.226",
+    "mitre_tag": "T1133",
+    "severity": 3.25,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "10dbb85b-7dfc-4b44-87a1-d33b3b1211a8",
+    "timestamp": "2026-06-20T05:38:51",
+    "src_ip": "192.168.124.149",
+    "dest_ip": "182.20.205.77",
+    "mitre_tag": "T1071",
+    "severity": 2.83,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "7386d2fd-60ff-4636-bf89-73810e4a83e5",
+    "timestamp": "2026-06-17T08:48:14",
+    "src_ip": "192.168.52.177",
+    "dest_ip": "199.150.59.104",
+    "mitre_tag": "T1133",
+    "severity": 2.1,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "a1476f58-915d-4893-b5e2-c0d04651ad22",
+    "timestamp": "2026-07-04T17:34:25",
+    "src_ip": "172.31.5.230",
+    "dest_ip": "140.114.172.32",
+    "mitre_tag": "T1071",
+    "severity": 1.28,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "e72619d3-6f82-4eed-89b5-8e1c77c59dbe",
+    "timestamp": "2026-07-09T01:25:32",
+    "src_ip": "10.105.205.115",
+    "dest_ip": "84.32.52.52",
+    "mitre_tag": "T1133",
+    "severity": 1.9,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "0b60242f-5cac-435f-b8e2-d529174452f2",
+    "timestamp": "2026-07-07T12:29:17",
+    "src_ip": "172.21.184.199",
+    "dest_ip": "126.107.87.97",
+    "mitre_tag": "T1071",
+    "severity": 3.24,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "9e318aa1-aa0e-4c11-9d68-56b107b3e516",
+    "timestamp": "2026-07-05T02:16:09",
+    "src_ip": "10.72.141.80",
+    "dest_ip": "35.5.196.237",
+    "mitre_tag": "T1071",
+    "severity": 1.74,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "f7e3d8dd-ab5e-49bc-9554-a41b3461d9ca",
+    "timestamp": "2026-07-02T22:35:57",
+    "src_ip": "10.125.3.11",
+    "dest_ip": "116.68.32.103",
+    "mitre_tag": "T1059",
+    "severity": 2.72,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "dd1ac2a3-3d09-4734-871a-319590c1cff3",
+    "timestamp": "2026-06-18T16:35:52",
+    "src_ip": "192.168.234.252",
+    "dest_ip": "197.205.173.162",
+    "mitre_tag": "T1071",
+    "severity": 2.16,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "25a5d03a-b135-477a-97e6-487d5ebaa139",
+    "timestamp": "2026-07-08T16:04:28",
+    "src_ip": "192.168.159.66",
+    "dest_ip": "137.172.236.250",
+    "mitre_tag": "T1133",
+    "severity": 1.39,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "5daebc0a-c285-44e8-9aec-a2e3f5014276",
+    "timestamp": "2026-06-11T13:12:57",
+    "src_ip": "172.26.158.90",
+    "dest_ip": "24.45.199.1",
+    "mitre_tag": "T1071",
+    "severity": 1.19,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "ed4884b9-1b1d-4bad-8c57-8e0983a93fdd",
+    "timestamp": "2026-06-27T07:33:45",
+    "src_ip": "10.86.140.47",
+    "dest_ip": "67.29.170.86",
+    "mitre_tag": "T1059",
+    "severity": 2.0,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "86c41142-74f9-440b-b8af-921fe4f99177",
+    "timestamp": "2026-06-24T20:38:41",
+    "src_ip": "172.26.11.190",
+    "dest_ip": "156.59.108.13",
+    "mitre_tag": "T1071",
+    "severity": 2.79,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "70e43d6d-a81a-4e76-9177-3ad283203ac6",
+    "timestamp": "2026-06-10T00:06:47",
+    "src_ip": "10.159.169.85",
+    "dest_ip": "21.83.141.60",
+    "mitre_tag": "T1133",
+    "severity": 1.88,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "f2a97dc6-6611-4223-be65-ae905a057b4f",
+    "timestamp": "2026-06-09T23:31:52",
+    "src_ip": "192.168.117.131",
+    "dest_ip": "115.251.31.185",
+    "mitre_tag": "T1059",
+    "severity": 0.92,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "83417776-4390-4371-ae45-d5b50aa379c9",
+    "timestamp": "2026-07-07T05:06:23",
+    "src_ip": "192.168.26.149",
+    "dest_ip": "19.73.15.218",
+    "mitre_tag": "T1133",
+    "severity": 1.05,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "20cd6d5e-f03c-4d09-8d87-8834723680e4",
+    "timestamp": "2026-07-01T06:40:08",
+    "src_ip": "192.168.38.139",
+    "dest_ip": "189.157.200.142",
+    "mitre_tag": "T1046",
+    "severity": 2.07,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "21abbe4a-4d26-41cd-b0f8-8efca48d80c7",
+    "timestamp": "2026-06-09T22:26:37",
+    "src_ip": "172.31.239.128",
+    "dest_ip": "188.228.38.74",
+    "mitre_tag": "T1046",
+    "severity": 2.79,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "1abafaaa-edfa-4314-be5e-37083f79c33b",
+    "timestamp": "2026-06-22T08:01:11",
+    "src_ip": "192.168.108.41",
+    "dest_ip": "39.116.248.180",
+    "mitre_tag": "T1059",
+    "severity": 3.03,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "2fd2a8de-0df6-412d-ac5b-d351fc5079f6",
+    "timestamp": "2026-07-08T15:57:30",
+    "src_ip": "10.172.118.180",
+    "dest_ip": "30.205.45.53",
+    "mitre_tag": "T1046",
+    "severity": 2.62,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "af5a79aa-d07f-4d67-abe0-814c5b135c78",
+    "timestamp": "2026-07-07T20:18:48",
+    "src_ip": "192.168.227.161",
+    "dest_ip": "81.213.36.33",
+    "mitre_tag": "T1059",
+    "severity": 2.02,
+    "tls_metadata": null,
+    "type": "cyber"
+  },
+  {
+    "event_id": "306e7fcd-58a7-4fc5-a104-b7f41c01423c",
+    "timestamp": "2026-07-06T02:36:05",
+    "src_ip": "10.169.56.11",
+    "dest_ip": "107.103.216.57",
+    "mitre_tag": "T1046",
+    "severity": 2.35,
+    "tls_metadata": null,
+    "type": "cyber"
+  }
+]
