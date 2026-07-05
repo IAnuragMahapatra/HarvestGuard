@@ -5,13 +5,22 @@ Run: uv run streamlit run src/ui/app.py
 """
 
 import os
-import time
 
 import httpx
 import streamlit as st
 from streamlit_autorefresh import st_autorefresh
 
+from src.ml import graph_model as gm
 from src.ui.components import alert_feed, graph_view, shap_view, threat_chain
+
+
+@st.cache_resource
+def _load_graph_model():
+    try:
+        gm.load_embeddings()
+    except FileNotFoundError:
+        pass  # run generate_baseline.py first
+    return gm
 
 API_BASE = os.getenv("API_BASE_URL", "http://localhost:8000")
 API_KEY = os.getenv("API_KEY", "changeme")
@@ -101,19 +110,15 @@ def page_command_center():
     with right:
         st.markdown("### 🕸 Network Threat Graph")
         # Build graph from latest alert if available
+        _gm = _load_graph_model()
         if alerts:
             latest = alerts[0]
-            from src.ml import graph_model as gm
-            try:
-                gm.load_embeddings()
-            except Exception:
-                pass
             account_ids = (
                 [latest.get("account_id")] + (latest.get("ring_members") or [])
                 if latest.get("account_id")
                 else []
             )
-            graph_data = gm.graph_nodes_for_alert(
+            graph_data = _gm.graph_nodes_for_alert(
                 [a for a in account_ids if a], latest.get("src_ip", "")
             )
         else:

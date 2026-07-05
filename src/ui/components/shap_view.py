@@ -76,8 +76,11 @@ def render(alert: dict) -> None:
 
         findings = []
         tls_ver = tls_data.get("tls_version", "")
-        if tls_ver and float(tls_ver or 1.3) < 1.3:
-            findings.append(f"- TLS {tls_ver} in use (deprecated — not TLS 1.3)")
+        try:
+            if tls_ver and float(tls_ver) < 1.3:
+                findings.append(f"- TLS {tls_ver} in use (deprecated — not TLS 1.3)")
+        except (ValueError, TypeError):
+            pass
         cipher = tls_data.get("cipher_suite", "")
         if cipher:
             findings.append(f"- Cipher: `{cipher}` (RSA key exchange, no Perfect Forward Secrecy)")
