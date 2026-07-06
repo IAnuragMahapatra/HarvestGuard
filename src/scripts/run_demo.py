@@ -19,7 +19,7 @@ ROOT = Path(__file__).resolve().parents[2]
 SAMPLE_DIR = ROOT / "sample_data"
 
 DEMO_EVENTS = [
-    # T+0s — port scan
+    # T+0s: port scan
     {
         "offset_seconds": 0,
         "endpoint": "/ingest/cyber",
@@ -34,7 +34,7 @@ DEMO_EVENTS = [
         },
         "label": "T+0s  | Port scan from 10.0.0.99 [T1046 Network Service Discovery]",
     },
-    # T+12s — brute force
+    # T+12s: brute force
     {
         "offset_seconds": 12,
         "endpoint": "/ingest/cyber",
@@ -49,7 +49,7 @@ DEMO_EVENTS = [
         },
         "label": "T+12s | 47 failed logins from 10.0.0.99 [T1110 Brute Force]",
     },
-    # T+61s — successful login
+    # T+61s: successful login
     {
         "offset_seconds": 61,
         "endpoint": "/ingest/cyber",
@@ -64,7 +64,7 @@ DEMO_EVENTS = [
         },
         "label": "T+61s | Successful login, ACC-0042 [T1078 Valid Accounts]",
     },
-    # T+74s — first smurfing transfer
+    # T+74s: first smurfing transfer
     {
         "offset_seconds": 74,
         "endpoint": "/ingest/transaction",
@@ -80,7 +80,7 @@ DEMO_EVENTS = [
         },
         "label": "T+74s | ₹49,500 transfer ACC-0042 → ACC-0071 [FATF Typology 3 Smurfing]",
     },
-    # T+81s — second smurfing transfer
+    # T+81s: second smurfing transfer
     {
         "offset_seconds": 81,
         "endpoint": "/ingest/transaction",
@@ -96,7 +96,7 @@ DEMO_EVENTS = [
         },
         "label": "T+81s | ₹49,500 transfer ACC-0042 → ACC-0088 [FATF Typology 3 Smurfing]",
     },
-    # T+89s — third smurfing transfer
+    # T+89s: third smurfing transfer
     {
         "offset_seconds": 89,
         "endpoint": "/ingest/transaction",
@@ -112,7 +112,7 @@ DEMO_EVENTS = [
         },
         "label": "T+89s | ₹49,500 transfer ACC-0042 → ACC-0103 [FATF Typology 3 Smurfing]",
     },
-    # T+95s — HNDL quantum risk
+    # T+95s: HNDL quantum risk
     {
         "offset_seconds": 95,
         "endpoint": "/ingest/cyber",
@@ -139,7 +139,7 @@ DEMO_EVENTS = [
 
 
 def build_demo_scenario_json(start_time: datetime) -> list[dict]:
-    """Returns the scenario as a list of dicts with real timestamps — for static export."""
+    """Returns the scenario as a list of dicts with real timestamps for static export."""
     events = []
     for e in DEMO_EVENTS:
         ev = dict(e)
@@ -170,7 +170,7 @@ def main():
     (SAMPLE_DIR / "demo_scenario.json").write_text(json.dumps(scenario, indent=2))
     print(f"Scenario saved → sample_data/demo_scenario.json\n")
     print("=" * 60)
-    print("  Operation Smurfing Phantom — HarvestGuard Demo")
+    print("  Operation Smurfing Phantom | HarvestGuard Demo")
     print("=" * 60)
 
     headers = {"X-API-Key": api_key, "Content-Type": "application/json"}
@@ -191,7 +191,7 @@ def main():
                 resp = client.post(event["endpoint"], json=payload, headers=headers)
                 status = "✓" if resp.status_code == 202 else f"✗ {resp.status_code}"
             except httpx.ConnectError:
-                status = "✗ connection refused — is the API running?"
+                status = "✗ connection refused. Is the API running?"
 
             print(f"{status}  {event['label']}")
 

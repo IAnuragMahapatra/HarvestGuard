@@ -25,7 +25,7 @@ MITRE_TAG_MAP = {
 }
 
 IP_BLOCKLIST = {
-    "10.0.0.99",   # demo attacker IP — always flagged
+    "10.0.0.99",   # demo attacker IP, always flagged
 }
 
 
@@ -42,11 +42,11 @@ class CorrelationEngine:
         event_id = event.get("event_id", str(uuid.uuid4()))
         event_type = event.get("type", "unknown")
 
-        # TTL-keyed storage — one key per event
+        # TTL-keyed storage, one key per event
         key = f"event:{src_ip}:{account_id}:{event_id}"
         await self.redis.setex(key, self.window, json.dumps(event))
 
-        # Async correlation — don't block the ingest response
+        # async correlation, don't block the ingest response
         asyncio.create_task(self._correlate(src_ip, account_id, event_type, event))
 
     async def _correlate(
@@ -113,7 +113,7 @@ class CorrelationEngine:
         ]
         velocity_3min = sum(e.get("amount_inr", 0) for e in tx_3min)
 
-        # IP reputation — 0.0 = flagged, 1.0 = clean
+        # IP reputation: 0.0 = flagged, 1.0 = clean
         src_ip = cyber_events[0].get("src_ip", "")
         ip_rep = 0.0 if src_ip in IP_BLOCKLIST else 0.9
 

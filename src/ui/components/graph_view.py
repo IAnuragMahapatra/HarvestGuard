@@ -1,4 +1,4 @@
-"""Network threat graph — force-directed echarts showing IPs, accounts, fraud rings."""
+"""Network threat graph. Force-directed echarts showing IPs, accounts and fraud rings."""
 
 import streamlit as st
 from streamlit_echarts import st_echarts

@@ -14,7 +14,7 @@ DEPRECATED_CIPHER_SUITES = {
     "TLS_RSA_WITH_AES_256_CBC_SHA",
     "TLS_RSA_WITH_AES_128_CBC_SHA256",
     "TLS_RSA_WITH_AES_256_CBC_SHA256",
-    # RSA key exchange without PFS — classic HNDL target
+    # RSA key exchange without PFS, classic HNDL target
     "TLS_RSA_WITH_AES_128_GCM_SHA256",
     "TLS_RSA_WITH_AES_256_GCM_SHA384",
     "TLS_RSA_WITH_CHACHA20_POLY1305_SHA256",
@@ -72,21 +72,21 @@ def explain_tls(tls_metadata: dict) -> dict:
     tls_version = tls_metadata.get("tls_version", "1.3")
     try:
         if float(tls_version) < 1.3:
-            findings["tls_version"] = f"TLS {tls_version} (deprecated — not TLS 1.3)"
+            findings["tls_version"] = f"TLS {tls_version} (deprecated, not TLS 1.3)"
     except (ValueError, TypeError):
         pass
 
     cipher = tls_metadata.get("cipher_suite", "")
     if cipher in DEPRECATED_CIPHER_SUITES:
-        findings["cipher_suite"] = f"{cipher} (RSA key exchange, no PFS — HNDL target)"
+        findings["cipher_suite"] = f"{cipher} (RSA key exchange, no PFS, HNDL target)"
 
     if tls_metadata.get("pqc_downgrade_detected"):
-        findings["pqc_downgrade"] = "PQC downgrade detected — client offered ML-KEM but server fell back to RSA/ECC"
+        findings["pqc_downgrade"] = "PQC downgrade: client offered ML-KEM but server fell back to RSA/ECC"
 
     session_bytes = tls_metadata.get("session_bytes", 0) or 0
     dest_asn = tls_metadata.get("dest_asn")
     if session_bytes > FIFTY_MB and dest_asn not in TRUSTED_ASNS:
         mb = session_bytes / (1024 * 1024)
-        findings["volume"] = f"{mb:.0f}MB to untrusted ASN {dest_asn} — matches HNDL exfiltration pattern"
+        findings["volume"] = f"{mb:.0f}MB to untrusted ASN {dest_asn}, matches HNDL exfiltration pattern"
 
     return findings

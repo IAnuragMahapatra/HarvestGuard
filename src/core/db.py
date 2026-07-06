@@ -1,5 +1,5 @@
 """
-SQLite database layer — all writes use parameterised queries.
+SQLite database layer. All writes use parameterised queries.
 Accessed via aiosqlite for non-blocking I/O inside FastAPI.
 """
 

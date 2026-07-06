@@ -41,7 +41,7 @@ def render(alert: dict) -> None:
     source_badge = (
         f'<span style="font-size:0.7rem;color:{GHOST};background:{SLATE};'
         f'padding:2px 7px;border-radius:10px;margin-left:8px">'
-        + ("Local AI — Data stays on-premises" if llm_source == "llm" else "Template report — LLM unavailable")
+        + ("Local AI, data stays on-premises" if llm_source == "llm" else "Template report, LLM unavailable")
         + "</span>"
     )
 
@@ -49,7 +49,7 @@ def render(alert: dict) -> None:
         f'<div style="border:1px solid #29B6F6;border-radius:8px;padding:14px 16px;'
         f'background:{SLATE};margin-bottom:12px">'
         f'<div style="font-size:1rem;font-weight:700;margin-bottom:8px">'
-        f'🤖 Autonomous SOC Report {source_badge}</div>'
+        f'🤖 AI-Generated SOC Report {source_badge}</div>'
         f'<div style="line-height:1.6;color:#E8EDF3">{llm_report or "Report not available."}</div>'
         f"</div>",
         unsafe_allow_html=True,
@@ -78,18 +78,18 @@ def render(alert: dict) -> None:
         tls_ver = tls_data.get("tls_version", "")
         try:
             if tls_ver and float(tls_ver) < 1.3:
-                findings.append(f"- TLS {tls_ver} in use (deprecated — not TLS 1.3)")
+                findings.append(f"- TLS {tls_ver} in use (deprecated, not TLS 1.3)")
         except (ValueError, TypeError):
             pass
         cipher = tls_data.get("cipher_suite", "")
         if cipher:
             findings.append(f"- Cipher: `{cipher}` (RSA key exchange, no Perfect Forward Secrecy)")
         if tls_data.get("pqc_downgrade_detected"):
-            findings.append("- PQC downgrade detected — client offered ML-KEM but server fell back to RSA/ECC")
+            findings.append("- PQC downgrade: client offered ML-KEM but server fell back to RSA/ECC")
         session_mb = (tls_data.get("session_bytes") or 0) / (1024 * 1024)
         dest_asn = tls_data.get("dest_asn")
         if session_mb > 50:
-            findings.append(f"- {session_mb:.0f}MB to untrusted ASN {dest_asn} — HNDL exfiltration pattern")
+            findings.append(f"- {session_mb:.0f}MB to untrusted ASN {dest_asn}, consistent with HNDL exfiltration")
 
         if findings:
             for f in findings:
@@ -97,7 +97,7 @@ def render(alert: dict) -> None:
 
         st.markdown(
             "_This session used deprecated encryption and transferred large volumes to an "
-            "unverified ASN — consistent with a Harvest-Now-Decrypt-Later exfiltration pattern. "
+            "unverified ASN, consistent with a Harvest-Now-Decrypt-Later exfiltration pattern. "
             "Recommend cipher suite audit and ASN allowlist review._"
         )
         st.markdown("</div>", unsafe_allow_html=True)

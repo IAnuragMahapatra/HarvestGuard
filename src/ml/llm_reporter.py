@@ -1,5 +1,5 @@
 """
-Local LLM SOC reporter — wraps llama.cpp with an 8-second timeout.
+Local LLM SOC reporter. Wraps llama.cpp with an 8-second timeout.
 Falls back to a deterministic template when LLM is unavailable or slow.
 """
 
@@ -18,7 +18,7 @@ def load_llm(model_path: str | None = None) -> None:
     global _llm
     path = model_path or os.getenv("LLM_MODEL_PATH", "models/phi-3-mini-q4.gguf")
     if not Path(path).exists():
-        logger.info("LLM model not found at %s — template-only mode", path)
+        logger.info("LLM model not found at %s, using template mode", path)
         return
     try:
         from llama_cpp import Llama
@@ -30,16 +30,16 @@ def load_llm(model_path: str | None = None) -> None:
         )
         logger.info("LLM loaded from %s", path)
     except ImportError:
-        logger.info("llama-cpp-python not installed — template-only mode")
+        logger.info("llama-cpp-python not installed, using template mode")
     except Exception as exc:
-        logger.warning("LLM load failed: %s — template-only mode", exc)
+        logger.warning("LLM load failed: %s, using template mode", exc)
 
 
 def generate(alert: dict, shap_top3: dict) -> tuple[str, str]:
     """
     Returns (report_text, source) where source is "llm" or "template".
 
-    8-second hard timeout — template fallback if LLM doesn't respond.
+    8-second hard timeout. Falls back to template if LLM does not respond.
     """
     if _llm is None:
         return _template_report(alert, shap_top3), "template"
@@ -49,10 +49,10 @@ def generate(alert: dict, shap_top3: dict) -> tuple[str, str]:
         text = future.result(timeout=8)
         return text, "llm"
     except concurrent.futures.TimeoutError:
-        logger.warning("LLM timed out after 8s — serving template report")
+        logger.warning("LLM timed out after 8s, serving template report")
         return _template_report(alert, shap_top3), "template"
     except Exception as exc:
-        logger.warning("LLM error: %s — serving template report", exc)
+        logger.warning("LLM error: %s, serving template report", exc)
         return _template_report(alert, shap_top3), "template"
 
 
@@ -108,7 +108,7 @@ def _template_report(alert: dict, shap_top3: dict) -> str:
     report = (
         f"CRITICAL: IP {src_ip} executed {mitre} before successful authentication. "
         f"Account {account} subsequently initiated high-velocity transfers consistent with "
-        f"{fatf} — a known financial crime typology. "
+        f"{fatf}, a known financial crime typology. "
         f"Composite anomaly score: {score:.2f}. "
         f"Primary SHAP drivers: {top_str}. "
     )
@@ -116,7 +116,7 @@ def _template_report(alert: dict, shap_top3: dict) -> str:
     if tls_score >= 0.5:
         report += (
             f"Additionally, a TLS session from this IP scored {tls_score:.2f} on the "
-            f"quantum risk scale — consistent with a Harvest-Now-Decrypt-Later exfiltration pattern. "
+            f"quantum risk scale, consistent with a Harvest-Now-Decrypt-Later exfiltration pattern. "
             f"Recommend immediate account freeze, SOC escalation, and cipher suite audit."
         )
     else:

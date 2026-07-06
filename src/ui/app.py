@@ -1,5 +1,5 @@
 """
-HarvestGuard Streamlit dashboard — Command Center + Alert Detail.
+HarvestGuard Streamlit dashboard. Command Center and Alert Detail pages.
 
 Run: uv run streamlit run src/ui/app.py
 """
@@ -33,7 +33,7 @@ EMERALD = "#00E676"
 GHOST = "#8892A4"
 
 st.set_page_config(
-    page_title="HarvestGuard — Threat Correlation",
+    page_title="HarvestGuard | Threat Correlation",
     page_icon="⚡",
     layout="wide",
     initial_sidebar_state="collapsed",
@@ -81,7 +81,7 @@ def page_command_center():
     # ── KPI row ───────────────────────────────────────────────────────
     st.markdown(
         '<h2 style="margin:0 0 12px 0">⚡ HarvestGuard <span style="font-size:1rem;'
-        'font-weight:400;color:#8892A4">— Real-time Cyber-Fraud Correlation</span></h2>',
+        'font-weight:400;color:#8892A4">Real-time Cyber-Fraud Correlation</span></h2>',
         unsafe_allow_html=True,
     )
 
@@ -128,7 +128,7 @@ def page_command_center():
 
         st.caption(
             f'<span style="color:{GHOST}">Graph updates on each new alert. '
-            f"Nodes are draggable — hover for details.</span>",
+            f"Nodes are draggable. Hover over any node for details.</span>",
             unsafe_allow_html=True,
         )
 

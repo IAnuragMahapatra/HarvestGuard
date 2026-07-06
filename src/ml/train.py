@@ -1,5 +1,5 @@
 """
-Standalone training script — run once after generate_baseline.py.
+Standalone training script. Run once after generate_baseline.py.
 
 Reads the baseline JSON files, builds fused vectors, fits Isolation Forest,
 and saves models/isolation_forest.pkl.

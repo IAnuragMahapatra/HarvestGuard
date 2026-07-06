@@ -37,13 +37,13 @@ async def lifespan(app: FastAPI):
         inference.load_model()
         logger.info("Isolation Forest loaded")
     except FileNotFoundError:
-        logger.warning("isolation_forest.pkl not found — run generate_baseline.py first")
+        logger.warning("isolation_forest.pkl not found. Run generate_baseline.py first")
 
     try:
         graph_model.load_embeddings()
         logger.info("GNN embeddings loaded")
     except FileNotFoundError:
-        logger.warning("graph_embeddings.pkl not found — fraud ring detection disabled")
+        logger.warning("graph_embeddings.pkl not found. Fraud ring detection disabled")
 
     llm_reporter.load_llm()
 
@@ -61,7 +61,7 @@ async def lifespan(app: FastAPI):
     app.state.correlator = correlator
     app.state.redis = redis_client
 
-    logger.info("HarvestGuard API ready — window=%ds db=%s", WINDOW_SECONDS, DB_PATH)
+    logger.info("HarvestGuard API ready, window=%ds db=%s", WINDOW_SECONDS, DB_PATH)
     yield
 
     await redis_client.aclose()

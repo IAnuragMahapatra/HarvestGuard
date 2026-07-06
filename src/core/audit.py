@@ -1,4 +1,4 @@
-"""Audit log writer — every ingestion request gets a line here."""
+"""Audit log writer. Every ingestion request gets a line here."""
 
 import asyncio
 import logging

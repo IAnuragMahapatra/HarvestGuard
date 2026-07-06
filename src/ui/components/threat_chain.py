@@ -1,5 +1,5 @@
 """
-Threat Chain timeline view — the primary differentiator.
+Threat Chain timeline view. The primary differentiator.
 
 Horizontal echarts timeline showing every event in an alert's correlation
 window, colour-coded by type, with MITRE and FATF labels.
@@ -67,7 +67,7 @@ def render(threat_chain: list[dict], alert: dict) -> None:
     events = sorted(threat_chain, key=lambda e: e.get("timestamp", ""))
     n = len(events)
 
-    # Build scatter series data — x = index, y = fixed row, tooltip shows detail
+    # build scatter series data: x = index, y = fixed row, tooltip shows detail
     scatter_data = []
     label_data = []
     for i, ev in enumerate(events):

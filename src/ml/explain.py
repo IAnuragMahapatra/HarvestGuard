@@ -1,5 +1,5 @@
 """
-SHAP explainability — waterfall values and base64 PNG for each alert.
+SHAP explainability. Waterfall values and base64 PNG for each alert.
 
 We use shap.TreeExplainer on the Isolation Forest. If shap is not installed
 (Python 3.14 compat issues), falls back to a simple feature-weight heuristic.

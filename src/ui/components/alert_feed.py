@@ -1,4 +1,4 @@
-"""Alert feed component — scrolling colour-coded table of recent alerts."""
+"""Alert feed component. Scrolling colour-coded table of recent alerts."""
 
 import streamlit as st
 
@@ -51,7 +51,7 @@ def render(alerts: list[dict]) -> None:
         st.info("No alerts yet. Run `python src/scripts/run_demo.py` to inject the demo scenario.")
         return
 
-    st.markdown(f"**{len(alerts)} recent alerts** — click any row to view details")
+    st.markdown(f"**{len(alerts)} recent alerts.** Click any row to view details.")
 
     for alert in alerts:
         score = alert.get("anomaly_score", 0)

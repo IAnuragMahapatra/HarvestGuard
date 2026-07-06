@@ -1,4 +1,4 @@
-"""GNN fraud ring detection — embedding lookup on pre-trained GraphSAGE output."""
+"""GNN fraud ring detection. Embedding lookup on pre-trained GraphSAGE output."""
 
 import pickle
 from pathlib import Path
@@ -48,7 +48,7 @@ def graph_nodes_for_alert(account_ids: list[str], src_ip: str) -> dict:
     nodes.append({
         "id": ip_node_id,
         "name": src_ip,
-        "category": 0,  # IP — Electric Blue
+        "category": 0,  # IP node, Electric Blue
         "symbolSize": 30,
         "label": {"show": True},
     })

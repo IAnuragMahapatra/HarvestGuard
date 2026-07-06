@@ -1,4 +1,4 @@
-"""Ingestion routes — /ingest/cyber and /ingest/transaction."""
+"""Ingestion routes for /ingest/cyber and /ingest/transaction."""
 
 import logging
 
@@ -27,7 +27,7 @@ async def ingest_cyber(
     event_dict = event.model_dump()
     event_dict["type"] = "cyber"
 
-    # TLS quantum risk — score synchronously so it's in Redis before correlation
+    # TLS quantum risk: score synchronously so it's in Redis before correlation
     tls_meta = event_dict.get("tls_metadata")
     if tls_meta:
         event_dict["tls_risk_score"] = score_tls(tls_meta)

@@ -1,4 +1,4 @@
-"""Alert query routes — /alerts and /alerts/{alert_id}."""
+"""Alert query routes for /alerts and /alerts/{alert_id}."""
 
 import logging
 
@@ -13,7 +13,7 @@ router = APIRouter()
 async def list_alerts(request: Request, limit: int = 50):
     state = request.app.state
     alerts = await state.db.get_alerts(limit=min(limit, 200))
-    # Strip waterfall PNG from list view — too large for polling
+    # strip waterfall PNG from list view, too large for polling
     for a in alerts:
         a.pop("shap_waterfall_png", None)
     return alerts

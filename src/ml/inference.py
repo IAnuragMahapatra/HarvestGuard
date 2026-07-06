@@ -1,4 +1,4 @@
-"""Isolation Forest inference — loads once at startup, scores fused vectors."""
+"""Isolation Forest inference. Loads once at startup and scores fused vectors."""
 
 import pickle
 from pathlib import Path
@@ -33,12 +33,12 @@ def score(fused_vector: dict) -> float:
     Higher = more anomalous. Threshold ≥0.75 triggers an alert.
     """
     if _model is None:
-        raise RuntimeError("Model not loaded — call load_model() first")
+        raise RuntimeError("Model not loaded. Call load_model() first")
 
     row = {col: fused_vector.get(col, 0) for col in _FEATURE_COLS}
     df = pd.DataFrame([row])
 
-    # IsolationForest.score_samples returns negative values — more negative = more anomalous
+    # IsolationForest.score_samples returns negative values, more negative = more anomalous
     raw = _model.score_samples(df)[0]
 
     # Normalise to [0, 1] where 1 is most anomalous
