@@ -43,6 +43,12 @@ uv run uvicorn src.api.main:app --host 0.0.0.0 --port 8000
 uv run streamlit run src/ui/app.py
 ```
 
+**Windows users:** You can run all of the above steps with a single script:
+
+```powershell
+.\run.ps1
+```
+
 Open [http://localhost:8501](http://localhost:8501) to see the Command Center dashboard.
 
 ## Running the Demo Scenario
