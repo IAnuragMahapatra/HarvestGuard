@@ -1,1 +1,108 @@
-{}
+{
+  "version": 1,
+  "project": "HarvestGuard",
+  "created": "2026-07-06T16:00:00Z",
+  "lastModified": "2026-07-06T17:03:00Z",
+  "lastPhase": "VALIDATE",
+  "constrain": {
+    "completedAt": "2026-07-06T17:03:00Z",
+    "conceptualDirection": {
+      "audience": "Cybersecurity analysts monitoring production systems on large monitors",
+      "memorableThing": "The incident timeline feels like a high-precision industrial control panel",
+      "aestheticRegister": "industrial"
+    },
+    "colorStrategy": "restrained",
+    "theme": {
+      "mode": "dark",
+      "sceneJustification": "Fraud investigator analyzing alerts in a focused, low-light SOC environment"
+    },
+    "fontPair": {
+      "display": "DM Serif Display",
+      "body": "DM Sans",
+      "mono": "JetBrains Mono"
+    },
+    "bansAcknowledged": [
+      "purple-gradient-on-white",
+      "gradient-text",
+      "transition-all",
+      "side-stripe-borders",
+      "inter-font",
+      "pure-black-white"
+    ]
+  },
+  "architect": {
+    "completedAt": "2026-07-06T17:03:00Z",
+    "tokens": {
+      "primitive": {
+        "colors": {
+          "slate-950": "oklch(15% 0.01 250)",
+          "slate-900": "oklch(20% 0.01 250)",
+          "slate-800": "oklch(25% 0.015 250)",
+          "slate-400": "oklch(65% 0.02 250)",
+          "slate-50": "oklch(95% 0.01 250)",
+          "blue-400": "oklch(68% 0.13 240)",
+          "crimson-500": "oklch(55% 0.20 25)",
+          "amber-500": "oklch(75% 0.17 75)",
+          "emerald-400": "oklch(70% 0.15 150)"
+        },
+        "spacing": {
+          "unit": "0.25rem",
+          "scale": [1, 2, 3, 4, 6, 8, 12, 16]
+        },
+        "radii": {
+          "sm": "0.25rem",
+          "md": "0.5rem",
+          "lg": "0.75rem",
+          "full": "9999px"
+        }
+      },
+      "semantic": {
+        "color-bg": "var(--clr-slate-950)",
+        "color-surface": "var(--clr-slate-900)",
+        "color-text": "var(--clr-slate-50)",
+        "color-text-muted": "var(--clr-slate-400)",
+        "color-accent": "var(--clr-blue-400)",
+        "color-critical": "var(--clr-crimson-500)"
+      },
+      "motion": {
+        "ease-out": "cubic-bezier(0.23, 1, 0.32, 1)",
+        "ease-in-out": "cubic-bezier(0.77, 0, 0.175, 1)",
+        "duration-fast": "150ms",
+        "duration-ui": "250ms"
+      }
+    },
+    "componentList": [
+      "MetricTile", "AlertFeed", "ThreatChain", "QuantumRiskPanel"
+    ],
+    "layoutStrategy": "streamlit-columns-with-custom-html"
+  },
+  "build": {
+    "completedAt": "2026-07-06T17:03:00Z",
+    "stack": "python-streamlit-html",
+    "filesGenerated": []
+  },
+  "enrich": {
+    "completedAt": "2026-07-06T17:03:00Z",
+    "microInteractions": [
+      "ease-out-pulse-animations"
+    ],
+    "accessibilityNotes": [],
+    "responsiveBreakpoints": []
+  },
+  "animate": {
+    "completedAt": "2026-07-06T17:03:00Z",
+    "library": "css-only",
+    "animationsAdded": ["pulse-red", "pulse-blue"]
+  },
+  "validate": {
+    "completedAt": "2026-07-06T17:03:00Z",
+    "critiqueScore": null,
+    "issuesFound": [],
+    "issuesResolved": [
+      "Removed side-stripe borders from KPI tiles",
+      "Injected premium typography",
+      "Replaced generic hex grays with OKLCH-tinted approximations"
+    ]
+  },
+  "driftLog": []
+}
