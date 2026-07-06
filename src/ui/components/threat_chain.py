@@ -67,32 +67,30 @@ def render(threat_chain: list[dict], alert: dict) -> None:
     events = sorted(threat_chain, key=lambda e: e.get("timestamp", ""))
     n = len(events)
 
-    # build scatter series data: x = index, y = fixed row, tooltip shows detail
+    # pre-compute tick labels so no lambda touches the echarts option dict
+    ts_labels = [ev.get("timestamp", "")[:16].replace("T", " ") for ev in events]
+
+    # build scatter series data: x = category label, y = fixed row
     scatter_data = []
-    label_data = []
     for i, ev in enumerate(events):
         etype = _event_type(ev)
         colour = TYPE_COLOUR.get(etype, GHOST)
-        icon = TYPE_ICON.get(etype, "•")
+        icon = TYPE_ICON.get(etype, "\u2022")
         label = _short_label(ev)
-        ts = ev.get("timestamp", "")[:19].replace("T", " ")
 
         scatter_data.append({
-            "value": [i, 0],
+            "value": [ts_labels[i], 0],
             "itemStyle": {"color": colour},
             "name": f"{icon} {label}",
-            "tooltip_extra": ts,
         })
-        label_data.append(f"{icon}\n{label}")
 
-    # Mark lines connecting consecutive events
+    # mark lines connecting consecutive events
     mark_lines = []
     for i in range(n - 1):
         c1 = TYPE_COLOUR.get(_event_type(events[i]), GHOST)
-        c2 = TYPE_COLOUR.get(_event_type(events[i + 1]), GHOST)
         mark_lines.append([
-            {"coord": [i, 0], "lineStyle": {"color": c1, "width": 2}},
-            {"coord": [i + 1, 0]},
+            {"coord": [ts_labels[i], 0], "lineStyle": {"color": c1, "width": 2}},
+            {"coord": [ts_labels[i + 1], 0]},
         ])
 
     option = {
@@ -105,17 +103,13 @@ def render(threat_chain: list[dict], alert: dict) -> None:
         },
         "grid": {"left": "5%", "right": "5%", "top": "30%", "bottom": "25%"},
         "xAxis": {
-            "type": "value",
-            "min": -0.5,
-            "max": n - 0.5,
+            "type": "category",
+            "data": ts_labels,
             "axisLabel": {
-                "formatter": lambda v: (
-                    events[int(v)].get("timestamp", "")[:16].replace("T", " ")
-                    if 0 <= int(v) < n else ""
-                ),
                 "color": GHOST,
                 "fontSize": 9,
                 "rotate": 25,
+                "interval": 0,
             },
             "splitLine": {"show": False},
             "axisLine": {"lineStyle": {"color": GHOST}},

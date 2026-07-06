@@ -64,40 +64,40 @@ def render(alert: dict) -> None:
         )
         tls_data = quantum_event.get("tls_metadata", {}) or {}
 
-        st.markdown(
-            f'<div style="border:1px solid {BLUE};border-radius:8px;padding:14px 16px;'
-            f'background:rgba(41,182,246,0.07)">'
-            f'<div style="font-size:1rem;font-weight:700;color:{BLUE};margin-bottom:8px">'
-            f"🔐 Quantum / HNDL Risk Detected</div>",
-            unsafe_allow_html=True,
-        )
-
-        st.progress(tls_score, text=f"TLS Risk Score: {tls_score:.2f}")
-
         findings = []
         tls_ver = tls_data.get("tls_version", "")
         try:
             if tls_ver and float(tls_ver) < 1.3:
-                findings.append(f"- TLS {tls_ver} in use (deprecated, not TLS 1.3)")
+                findings.append(f"TLS {tls_ver} in use (deprecated, not TLS 1.3)")
         except (ValueError, TypeError):
             pass
         cipher = tls_data.get("cipher_suite", "")
         if cipher:
-            findings.append(f"- Cipher: `{cipher}` (RSA key exchange, no Perfect Forward Secrecy)")
+            findings.append(f"Cipher: {cipher} (RSA key exchange, no Perfect Forward Secrecy)")
         if tls_data.get("pqc_downgrade_detected"):
-            findings.append("- PQC downgrade: client offered ML-KEM but server fell back to RSA/ECC")
+            findings.append("PQC downgrade: client offered ML-KEM but server fell back to RSA/ECC")
         session_mb = (tls_data.get("session_bytes") or 0) / (1024 * 1024)
         dest_asn = tls_data.get("dest_asn")
         if session_mb > 50:
-            findings.append(f"- {session_mb:.0f}MB to untrusted ASN {dest_asn}, consistent with HNDL exfiltration")
+            findings.append(f"{session_mb:.0f}MB to untrusted ASN {dest_asn}, consistent with HNDL exfiltration")
 
-        if findings:
-            for f in findings:
-                st.markdown(f)
+        findings_html = "".join(f"<li>{f}</li>" for f in findings)
+        bar_pct = int(tls_score * 100)
 
+        # build entire panel as one string so the border wraps all content
         st.markdown(
-            "_This session used deprecated encryption and transferred large volumes to an "
-            "unverified ASN, consistent with a Harvest-Now-Decrypt-Later exfiltration pattern. "
-            "Recommend cipher suite audit and ASN allowlist review._"
+            f'<div style="border:1px solid {BLUE};border-radius:8px;padding:14px 16px;'
+            f'background:rgba(41,182,246,0.07);margin-top:8px">'
+            f'<div style="font-size:1rem;font-weight:700;color:{BLUE};margin-bottom:10px">'
+            f"🔐 Quantum / HNDL Risk Detected</div>"
+            f'<div style="font-size:0.8rem;color:{GHOST};margin-bottom:4px">TLS Risk Score: {tls_score:.2f}</div>'
+            f'<div style="background:#2a3a4a;border-radius:4px;height:8px;margin-bottom:12px">'
+            f'<div style="background:{BLUE};width:{bar_pct}%;height:100%;border-radius:4px"></div></div>'
+            + (f'<ul style="margin:0 0 10px 0;padding-left:18px;font-size:0.85rem">{findings_html}</ul>' if findings else "")
+            + f'<div style="font-size:0.82rem;font-style:italic;color:#B0BEC5">'
+            f"This session used deprecated encryption and transferred large volumes to an "
+            f"unverified ASN, consistent with a Harvest-Now-Decrypt-Later exfiltration pattern. "
+            f"Recommend cipher suite audit and ASN allowlist review.</div>"
+            f"</div>",
+            unsafe_allow_html=True,
         )
-        st.markdown("</div>", unsafe_allow_html=True)

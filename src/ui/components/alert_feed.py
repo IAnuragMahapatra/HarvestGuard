@@ -48,7 +48,7 @@ def render(alerts: list[dict]) -> None:
     """, unsafe_allow_html=True)
 
     if not alerts:
-        st.info("No alerts yet. Run `python src/scripts/run_demo.py` to inject the demo scenario.")
+        st.info("No alerts yet. Run `uv run python src/scripts/run_demo.py` to inject the demo scenario.")
         return
 
     st.markdown(f"**{len(alerts)} recent alerts.** Click any row to view details.")

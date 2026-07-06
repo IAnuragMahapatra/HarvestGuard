@@ -11,7 +11,7 @@ CATEGORIES = [
 ]
 
 
-def render(graph_data: dict) -> None:
+def render(graph_data: dict, alert_id: str = "") -> None:
     nodes = graph_data.get("nodes", [])
     edges = graph_data.get("edges", [])
 
@@ -60,4 +60,4 @@ def render(graph_data: dict) -> None:
         ],
     }
 
-    st_echarts(option, height="360px", key="network_graph")
+    st_echarts(option, height="360px", key=f"network_graph_{alert_id}")

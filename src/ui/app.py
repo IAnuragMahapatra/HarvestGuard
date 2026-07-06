@@ -124,7 +124,7 @@ def page_command_center():
         else:
             graph_data = {"nodes": [], "edges": []}
 
-        graph_view.render(graph_data)
+        graph_view.render(graph_data, alert_id=alerts[0].get("alert_id", "") if alerts else "")
 
         st.caption(
             f'<span style="color:{GHOST}">Graph updates on each new alert. '
