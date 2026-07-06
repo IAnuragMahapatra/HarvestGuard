@@ -21,6 +21,7 @@ finspark.db
 finspark.db-shm
 finspark.db-wal
 audit.log
+sample_data/demo_scenario.json
 
 # Large model binaries (too big for git, download separately)
 models/*.pkl
