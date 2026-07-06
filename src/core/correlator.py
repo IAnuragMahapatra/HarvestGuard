@@ -14,7 +14,7 @@ from typing import Optional
 
 import redis.asyncio as aioredis
 
-from src.core.quantum_monitor import score_tls, explain_tls
+from src.core.quantum_monitor import explain_tls
 
 logger = logging.getLogger("correlator")
 
@@ -53,6 +53,11 @@ class CorrelationEngine:
         self, src_ip: str, account_id: str, trigger_type: str, trigger_event: dict
     ) -> None:
         try:
+            # dedup: only one alert per IP+account per window
+            dedup_key = f"alert_lock:{src_ip}:{account_id}"
+            if await self.redis.exists(dedup_key):
+                return
+
             window_events = await self._fetch_window_events(src_ip, account_id)
             if len(window_events) < 2:
                 return
@@ -60,11 +65,24 @@ class CorrelationEngine:
             cyber_events = [e for e in window_events if e.get("type") == "cyber"]
             tx_events = [e for e in window_events if e.get("type") == "transaction"]
 
-            # Need at least one of each type to produce a fused vector
+            # need at least one of each type to produce a fused vector
             if not cyber_events or not tx_events:
                 return
 
             vector = self._build_fused_vector(cyber_events, tx_events)
+
+            # score first so we know if this is worth writing
+            try:
+                alert_score = self.infer.score(vector)
+            except RuntimeError:
+                return
+
+            tls_risk = vector.get("tls_risk_score", 0.0)
+            if alert_score < 0.75 and tls_risk < 0.5:
+                return
+
+            # set the dedup lock before the async DB write so concurrent tasks don't double-fire
+            await self.redis.setex(dedup_key, 60, "1")
             await self.db.write_fused_and_score(vector, window_events)
 
         except Exception:
@@ -99,12 +117,10 @@ class CorrelationEngine:
     ) -> dict:
         now = datetime.now(tz=timezone.utc).timestamp()
 
-        # Pull TLS risk scores from any cyber events with TLS metadata
-        tls_risk_score = 0.0
-        for e in cyber_events:
-            tls_meta = e.get("tls_metadata")
-            if tls_meta:
-                tls_risk_score = max(tls_risk_score, score_tls(tls_meta))
+        # use the pre-scored tls_risk_score stored on each event (set by the ingest route)
+        tls_risk_score = max(
+            (e.get("tls_risk_score", 0.0) for e in cyber_events), default=0.0
+        )
 
         # Transaction velocity over last 3 minutes
         tx_3min = [

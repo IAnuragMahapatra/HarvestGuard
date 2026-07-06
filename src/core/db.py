@@ -101,8 +101,8 @@ class DatabaseWriter:
         if score < 0.75 and not is_quantum_alert:
             return
 
-        # SHAP explanation
-        shap_dict = self.explain.shap_values(vector)
+        # SHAP explanation — pass the live model so TreeExplainer can run
+        shap_dict = self.explain.shap_values(vector, self.infer.get_model())
         shap_png = self.explain.waterfall_png(shap_dict)
 
         # Fraud ring lookup

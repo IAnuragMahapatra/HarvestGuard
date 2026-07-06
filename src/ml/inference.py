@@ -30,7 +30,7 @@ def load_model(path: str | Path = "models/isolation_forest.pkl") -> None:
 def score(fused_vector: dict) -> float:
     """
     Returns an anomaly score in [0, 1].
-    Higher = more anomalous. Threshold ≥0.75 triggers an alert.
+    Higher = more anomalous. Threshold >=0.75 triggers an alert.
     """
     if _model is None:
         raise RuntimeError("Model not loaded. Call load_model() first")
@@ -45,3 +45,8 @@ def score(fused_vector: dict) -> float:
     # Typical range is roughly [-0.6, 0.0] for IF
     normalised = float(np.clip((raw + 0.6) / 0.6 * -1 + 1, 0.0, 1.0))
     return round(normalised, 4)
+
+
+def get_model():
+    """Returns the loaded Isolation Forest model, or None if not yet loaded."""
+    return _model

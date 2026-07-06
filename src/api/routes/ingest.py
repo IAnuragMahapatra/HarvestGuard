@@ -2,7 +2,7 @@
 
 import logging
 
-from fastapi import APIRouter, BackgroundTasks, Depends, Request, HTTPException
+from fastapi import APIRouter, Request
 from fastapi.responses import JSONResponse
 
 from src.api.models import CyberEvent, TransactionEvent
