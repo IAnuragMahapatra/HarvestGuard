@@ -86,14 +86,14 @@ def render(alert: dict) -> None:
 
         # build entire panel as one string so the border wraps all content
         st.markdown(
-            f'<div style="border:1px solid {BLUE};border-radius:8px;padding:14px 16px;'
-            f'background:rgba(41,182,246,0.07);margin-top:8px">'
-            f'<div style="font-size:1rem;font-weight:700;color:{BLUE};margin-bottom:10px">'
+            f'<div style="border:1px solid {BLUE}40;border-radius:8px;padding:18px 20px;'
+            f'background:rgba(41,182,246,0.04);margin-top:8px">'
+            f'<div style="font-family:\'DM Serif Display\', serif; font-size:1.4rem; font-weight:400; color:{BLUE}; margin-bottom:12px; line-height:1.2;">'
             f"🔐 Quantum / HNDL Risk Detected</div>"
-            f'<div style="font-size:0.8rem;color:{GHOST};margin-bottom:4px">TLS Risk Score: {tls_score:.2f}</div>'
-            f'<div style="background:#2a3a4a;border-radius:4px;height:8px;margin-bottom:12px">'
+            f'<div style="font-size:0.8rem;color:{GHOST};margin-bottom:6px;text-transform:uppercase;letter-spacing:0.05em;">TLS Risk Score: {tls_score:.2f}</div>'
+            f'<div style="background:#1C222C;border-radius:4px;height:8px;margin-bottom:16px">'
             f'<div style="background:{BLUE};width:{bar_pct}%;height:100%;border-radius:4px"></div></div>'
-            + (f'<ul style="margin:0 0 10px 0;padding-left:18px;font-size:0.85rem">{findings_html}</ul>' if findings else "")
+            + (f'<ul style="margin:0 0 14px 0;padding-left:18px;font-size:0.9rem;line-height:1.5;">{findings_html}</ul>' if findings else "")
             + f'<div style="font-size:0.82rem;font-style:italic;color:#B0BEC5">'
             f"This session used deprecated encryption and transferred large volumes to an "
             f"unverified ASN, consistent with a Harvest-Now-Decrypt-Later exfiltration pattern. "

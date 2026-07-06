@@ -41,8 +41,8 @@ def render(alerts: list[dict]) -> None:
       50%  { background-color: rgba(41,182,246,0.28); }
       100% { background-color: rgba(41,182,246,0.12); }
     }
-    .alert-critical { animation: pulse-red  2s infinite; border-radius: 6px; padding: 2px 6px; }
-    .alert-quantum  { animation: pulse-blue 2s infinite; border-radius: 6px; padding: 2px 6px; }
+    .alert-critical { animation: pulse-red 2.5s cubic-bezier(0.23, 1, 0.32, 1) infinite; border-radius: 6px; padding: 2px 6px; }
+    .alert-quantum  { animation: pulse-blue 2.5s cubic-bezier(0.23, 1, 0.32, 1) infinite; border-radius: 6px; padding: 2px 6px; }
     .alert-high     { background-color: rgba(255,179,0,0.12); border-radius: 6px; padding: 2px 6px; }
     </style>
     """, unsafe_allow_html=True)
