@@ -15,6 +15,7 @@ from typing import Optional
 import redis.asyncio as aioredis
 
 from src.core.quantum_monitor import explain_tls
+from src.ml import inference as infer
 
 logger = logging.getLogger("correlator")
 
@@ -73,7 +74,7 @@ class CorrelationEngine:
 
             # score first so we know if this is worth writing
             try:
-                alert_score = self.infer.score(vector)
+                alert_score = infer.score(vector)
             except RuntimeError:
                 return
 
