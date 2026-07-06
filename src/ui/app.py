@@ -22,7 +22,7 @@ def _load_graph_model():
         pass  # run generate_baseline.py first
     return gm
 
-API_BASE = os.getenv("API_BASE_URL", "http://localhost:8000")
+API_BASE = os.getenv("API_BASE_URL", "http://127.0.0.1:8000")
 API_KEY = os.getenv("API_KEY", "changeme")
 HEADERS = {"X-API-Key": API_KEY}
 
