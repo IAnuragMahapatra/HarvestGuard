@@ -20,7 +20,6 @@ def _get_state(request: Request):
 @router.post("/ingest/cyber", status_code=202)
 async def ingest_cyber(
     event: CyberEvent,
-    background: BackgroundTasks,
     request: Request,
 ):
     state = _get_state(request)
@@ -42,7 +41,6 @@ async def ingest_cyber(
 @router.post("/ingest/transaction", status_code=202)
 async def ingest_transaction(
     event: TransactionEvent,
-    background: BackgroundTasks,
     request: Request,
 ):
     state = _get_state(request)
