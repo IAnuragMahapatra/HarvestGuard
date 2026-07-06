@@ -39,13 +39,26 @@ st.set_page_config(
     initial_sidebar_state="collapsed",
 )
 
-# Global CSS
+# Global CSS - Premium Typography & Spacing
 st.markdown("""
 <style>
-  .block-container { padding-top: 1rem; padding-bottom: 0.5rem; }
-  .stMetric label { font-size: 0.75rem !important; color: #8892A4 !important; }
-  .stMetric .css-1wivap2 { font-size: 1.6rem !important; }
-  div[data-testid="stHorizontalBlock"] { gap: 0.5rem; }
+  @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Display:ital@0;1&family=JetBrains+Mono:wght@400;700&display=swap');
+  
+  html, body, [class*="css"] {
+    font-family: 'DM Sans', sans-serif !important;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'DM Serif Display', serif !important;
+    letter-spacing: -0.02em;
+  }
+  code, pre {
+    font-family: 'JetBrains Mono', monospace !important;
+  }
+  
+  .block-container { padding-top: 2rem; padding-bottom: 2rem; max-width: 1400px; }
+  .stMetric label { font-size: 0.75rem !important; color: #8892A4 !important; text-transform: uppercase; letter-spacing: 0.05em; }
+  .stMetric .css-1wivap2 { font-size: 1.8rem !important; font-weight: 500; font-family: 'DM Serif Display', serif !important; }
+  div[data-testid="stHorizontalBlock"] { gap: 1.25rem; }
 </style>
 """, unsafe_allow_html=True)
 
@@ -60,12 +73,13 @@ def _get(path: str) -> dict | list | None:
 
 def _metric_tile(label: str, value: int, prev: int, colour: str):
     delta = value - prev if prev is not None else None
+    # Industrial panel style: full subtle border + tint, no side-stripes
     st.markdown(
-        f'<div style="background:#1E2430;border-left:3px solid {colour};'
-        f'padding:12px 16px;border-radius:6px">'
-        f'<div style="font-size:0.72rem;color:#8892A4">{label}</div>'
-        f'<div style="font-size:2rem;font-weight:700;color:{colour}">{value:,}</div>'
-        + (f'<div style="font-size:0.72rem;color:#8892A4">+{delta} this refresh</div>' if delta else "")
+        f'<div style="background:{colour}0A; border:1px solid {colour}40; '
+        f'padding:16px 20px; border-radius:8px; display:flex; flex-direction:column; gap:8px;">'
+        f'<div style="font-size:0.75rem; color:#8892A4; text-transform:uppercase; letter-spacing:0.05em;">{label}</div>'
+        f'<div style="font-family:\'DM Serif Display\', serif; font-size:2.5rem; font-weight:400; color:{colour}; line-height:1;">{value:,}</div>'
+        + (f'<div style="font-size:0.75rem; color:#8892A4;">+{delta} this refresh</div>' if delta else '<div style="font-size:0.75rem; color:#8892A4;">--</div>')
         + "</div>",
         unsafe_allow_html=True,
     )
