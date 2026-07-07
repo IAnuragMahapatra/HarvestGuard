@@ -1,15 +1,48 @@
+import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { Bot, BarChart2 } from 'lucide-react';
+import { Bot, BarChart2, Loader2 } from 'lucide-react';
 
 export default function ShapView({ alert }) {
-  // Mock LLM report and SHAP features
-  const llmReport = "CRITICAL: IP 10.0.0.99 executed MITRE T1110 (Brute Force) 61 seconds before successful authentication. Three structuring transfers totalling ₹1,48,500 followed immediately. This sequence is highly consistent with FATF Typology 3 (Smurfing). Recommend immediate account freeze and SOC escalation.";
+  const [fullAlert, setFullAlert] = useState(null);
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    if (!alert?.alert_id) return;
+    
+    const fetchFullAlert = async () => {
+      setLoading(true);
+      try {
+        const res = await fetch(`/api/alerts/${alert.alert_id}`);
+        if (res.ok) {
+          const data = await res.json();
+          setFullAlert(data);
+        }
+      } catch (err) {
+        console.error("Failed to fetch full alert details:", err);
+      } finally {
+        setLoading(false);
+      }
+    };
+    
+    fetchFullAlert();
+  }, [alert?.alert_id]);
+
+  const llmReport = alert.llm_report || "No autonomous report generated for this alert.";
   
-  const shapFeatures = [
-    { name: 'prior_cyber_alert_count', value: '+0.41' },
-    { name: 'transfer_velocity_3min', value: '+0.31' },
-    { name: 'ip_reputation_score', value: '+0.19' }
-  ];
+  // Format SHAP dictionary if present
+  let shapFeatures = [];
+  try {
+    const shapDict = alert.shap_values || {};
+    shapFeatures = Object.entries(shapDict)
+      .map(([name, value]) => ({ 
+        name, 
+        value: Number(value) > 0 ? `+${Number(value).toFixed(2)}` : Number(value).toFixed(2) 
+      }))
+      .sort((a, b) => Math.abs(parseFloat(b.value)) - Math.abs(parseFloat(a.value)))
+      .slice(0, 5); // top 5
+  } catch (e) {
+    // skip
+  }
 
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -44,13 +77,23 @@ export default function ShapView({ alert }) {
           </h3>
         </div>
         <div className="p-5">
-          {/* Mock Waterfall Plot visual representation */}
-          <div className="h-32 bg-slate-bg rounded-lg border border-ghost/5 mb-4 flex items-center justify-center text-ghost text-sm relative overflow-hidden">
-            <div className="absolute top-4 left-8 h-4 bg-crimson w-32 rounded-r opacity-80" />
-            <div className="absolute top-12 left-8 h-4 bg-crimson w-24 rounded-r opacity-80" />
-            <div className="absolute top-20 left-8 h-4 bg-crimson w-16 rounded-r opacity-80" />
-            <span className="z-10 bg-slate-bg/80 px-2 rounded backdrop-blur-sm">[SHAP Waterfall Plot renders here]</span>
-          </div>
+          {loading ? (
+            <div className="h-32 bg-slate-bg rounded-lg border border-ghost/5 mb-4 flex items-center justify-center text-ghost text-sm">
+              <Loader2 className="w-6 h-6 animate-spin text-electric" />
+            </div>
+          ) : fullAlert?.shap_waterfall_png ? (
+            <div className="bg-white/90 rounded-lg p-2 mb-4">
+              <img 
+                src={`data:image/png;base64,${fullAlert.shap_waterfall_png}`} 
+                alt="SHAP Waterfall"
+                className="w-full h-auto object-contain"
+              />
+            </div>
+          ) : (
+            <div className="h-32 bg-slate-bg rounded-lg border border-ghost/5 mb-4 flex items-center justify-center text-ghost text-sm">
+              <span>No explainability data available</span>
+            </div>
+          )}
 
           <div className="space-y-2">
             {shapFeatures.map((feat, idx) => (

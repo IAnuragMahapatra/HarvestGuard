@@ -1,15 +1,27 @@
+import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight, Zap, ShieldAlert, GitBranch } from 'lucide-react';
 
-// Mock data to simulate alerts from the backend
-const mockAlerts = [
-  { id: 'ALT-1049', time: '10:06:21', score: 0.94, type: 'Correlated Threat', precursor: 'T1110 Brute Force', financial: 'FATF-3 Smurfing', account: 'ACC-0042', tls_risk_score: 0.1 },
-  { id: 'ALT-1048', time: '10:01:14', score: 0.82, type: 'Velocity Anomaly', precursor: 'None', financial: 'High Velocity', account: 'ACC-0891', tls_risk_score: 0.0 },
-  { id: 'ALT-1047', time: '09:55:03', score: 0.65, type: 'Quantum Risk', precursor: 'HNDL Pattern', financial: 'None', account: 'SYS-NET', tls_risk_score: 0.85 },
-  { id: 'ALT-1046', time: '09:42:11', score: 0.91, type: 'Correlated Threat', precursor: 'T1078 Valid Accounts', financial: 'Mule Transfer', account: 'ACC-0071', tls_risk_score: 0.0 }
-];
-
 export default function AlertFeed({ onSelectAlert }) {
+  const [alerts, setAlerts] = useState([]);
+
+  useEffect(() => {
+    const fetchAlerts = async () => {
+      try {
+        const res = await fetch('/api/alerts?limit=50');
+        if (res.ok) {
+          const data = await res.json();
+          setAlerts(data);
+        }
+      } catch (err) {
+        console.error("Failed to fetch alerts:", err);
+      }
+    };
+    
+    fetchAlerts();
+    const interval = setInterval(fetchAlerts, 2000);
+    return () => clearInterval(interval);
+  }, []);
   return (
     <div className="bg-slate-surface rounded-2xl border border-ghost/10 overflow-hidden shadow-2xl flex flex-col h-[500px]">
       <div className="p-5 border-b border-ghost/10 flex justify-between items-center bg-slate-bg/30">
@@ -33,9 +45,10 @@ export default function AlertFeed({ onSelectAlert }) {
             </tr>
           </thead>
           <tbody className="divide-y divide-ghost/5">
-            {mockAlerts.map((alert, idx) => {
-              const isCritical = alert.score >= 0.90;
-              const isWarning = alert.score >= 0.75 && alert.score < 0.90;
+            {alerts.map((alert, idx) => {
+              const score = alert.anomaly_score || 0;
+              const isCritical = score >= 0.90;
+              const isWarning = score >= 0.75 && score < 0.90;
               const isQuantum = alert.tls_risk_score >= 0.5;
 
               let rowClasses = "hover:bg-slate-bg/50 transition-colors cursor-pointer group";
@@ -51,25 +64,30 @@ export default function AlertFeed({ onSelectAlert }) {
                 badgeColor = "bg-electric/20 text-electric";
               }
 
+              // format time HH:MM:SS
+              const timeStr = alert.created_at ? new Date(alert.created_at).toLocaleTimeString() : '--:--:--';
+              const precursor = alert.mitre_tags ? alert.mitre_tags.join(', ') : 'None';
+              const financial = alert.fatf_tags ? alert.fatf_tags.join(', ') : 'None';
+
               return (
                 <motion.tr 
-                  key={alert.id}
+                  key={alert.alert_id}
                   initial={{ opacity: 0, x: -10 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ delay: idx * 0.05 }}
                   onClick={() => onSelectAlert(alert)}
                   className={rowClasses}
                 >
-                  <td className="py-4 px-4 text-ghost font-mono">{alert.time}</td>
+                  <td className="py-4 px-4 text-ghost font-mono">{timeStr}</td>
                   <td className="py-4 px-4">
                     <span className={`px-2 py-1 rounded-md font-mono text-xs font-semibold ${badgeColor}`}>
-                      {alert.score.toFixed(2)}
+                      {score.toFixed(2)}
                     </span>
                   </td>
-                  <td className="py-4 px-4 font-medium text-on-surface">{alert.type}</td>
-                  <td className="py-4 px-4 text-ghost">{alert.precursor}</td>
-                  <td className="py-4 px-4 text-ghost">{alert.financial}</td>
-                  <td className="py-4 px-4 font-mono text-xs">{alert.account}</td>
+                  <td className="py-4 px-4 font-medium text-on-surface">{isQuantum ? 'Quantum Risk' : 'Correlated Threat'}</td>
+                  <td className="py-4 px-4 text-ghost">{precursor || 'None'}</td>
+                  <td className="py-4 px-4 text-ghost">{financial || 'None'}</td>
+                  <td className="py-4 px-4 font-mono text-xs">{alert.account_id || 'N/A'}</td>
                   <td className="py-4 px-4 text-right">
                     <button className="text-electric group-hover:translate-x-1 transition-transform" aria-label="View Details">
                       <ArrowRight className="w-4 h-4 inline-block" />

@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import MetricTile from './components/MetricTile';
 import AlertFeed from './components/AlertFeed';
 import ThreatChain from './components/ThreatChain';
@@ -10,14 +10,30 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 export default function App() {
   const [selectedAlert, setSelectedAlert] = useState(null);
+  const [metrics, setMetrics] = useState({
+    transactions_analysed: 0,
+    cyber_events_ingested: 0,
+    correlated_threats: 0,
+    quantum_risk_flags: 0
+  });
 
-  // Mock metrics for layout purposes
-  const metrics = {
-    transactionsAnalysed: 1423,
-    cyberEventsIngested: 852,
-    correlatedThreats: 14,
-    quantumRiskFlags: 2
-  };
+  useEffect(() => {
+    const fetchCounts = async () => {
+      try {
+        const res = await fetch('/api/counts');
+        if (res.ok) {
+          const data = await res.json();
+          setMetrics(data);
+        }
+      } catch (err) {
+        console.error("Failed to fetch counts:", err);
+      }
+    };
+    
+    fetchCounts();
+    const interval = setInterval(fetchCounts, 2000);
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <div className="min-h-screen bg-slate-bg text-on-surface selection:bg-electric selection:text-slate-bg font-body overflow-x-hidden p-6 lg:p-10">
@@ -45,10 +61,10 @@ export default function App() {
           >
             {/* Command Center */}
             <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
-              <MetricTile title="Transactions Analysed" value={metrics.transactionsAnalysed} icon={Activity} color="emerald" delay={0.1} />
-              <MetricTile title="Cyber Events Ingested" value={metrics.cyberEventsIngested} icon={GitCommit} color="electric" delay={0.2} />
-              <MetricTile title="Correlated Threats" value={metrics.correlatedThreats} icon={ShieldAlert} color="crimson" delay={0.3} />
-              <MetricTile title="Quantum Risk Flags" value={metrics.quantumRiskFlags} icon={Lock} color="electric" delay={0.4} />
+              <MetricTile title="Transactions Analysed" value={metrics.transactions_analysed} icon={Activity} color="emerald" delay={0.1} />
+              <MetricTile title="Cyber Events Ingested" value={metrics.cyber_events_ingested} icon={GitCommit} color="electric" delay={0.2} />
+              <MetricTile title="Correlated Threats" value={metrics.correlated_threats} icon={ShieldAlert} color="crimson" delay={0.3} />
+              <MetricTile title="Quantum Risk Flags" value={metrics.quantum_risk_flags} icon={Lock} color="electric" delay={0.4} />
             </section>
 
             <section className="grid grid-cols-1 lg:grid-cols-12 gap-8">
