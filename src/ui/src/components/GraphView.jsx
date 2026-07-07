@@ -45,9 +45,9 @@ export default function GraphView({ focusAccount, alertId }) {
   }, [alertId]);
 
   const CATEGORIES = [
-    { name: "IP Address", itemStyle: { color: "#33B5E5", shadowBlur: 10, shadowColor: 'rgba(51, 181, 229, 0.5)' } },
+    { name: "IP Address", itemStyle: { color: "#33B5E5" } },
     { name: "Normal Account", itemStyle: { color: "#00C853" } },
-    { name: "Flagged Account", itemStyle: { color: "#E53935", shadowBlur: 15, shadowColor: 'rgba(229, 57, 53, 0.5)' } },
+    { name: "Flagged Account", itemStyle: { color: "#E53935" } },
     { name: "Fraud Ring Member", itemStyle: { color: "#F57F17" } },
   ];
 
