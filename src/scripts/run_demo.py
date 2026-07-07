@@ -19,22 +19,44 @@ ROOT = Path(__file__).resolve().parents[2]
 SAMPLE_DIR = ROOT / "sample_data"
 
 DEMO_EVENTS = [
-    # T+0s: port scan
+    # ---------------------------------------------------------
+    # OPERATION 1: SMURFING PHANTOM & OPERATION 3: INSIDER 
+    # (Interleaved early stages)
+    # ---------------------------------------------------------
+    
+    # T+0s: port scan (Op 1)
     {
         "offset_seconds": 0,
         "endpoint": "/ingest/cyber",
         "payload": {
             "event_id": "demo-cyber-001",
-            "timestamp": None,  # filled at runtime
+            "timestamp": None,
             "src_ip": "10.0.0.99",
             "dest_ip": "10.0.0.1",
             "mitre_tag": "T1046",
             "severity": 3.0,
             "tls_metadata": None,
         },
-        "label": "T+0s  | Port scan from 10.0.0.99 [T1046 Network Service Discovery]",
+        "label": "T+0s   | [Op 1] Port scan from 10.0.0.99 [T1046]",
     },
-    # T+12s: brute force
+    
+    # T+5s: Insider login outside hours (Op 3)
+    {
+        "offset_seconds": 5,
+        "endpoint": "/ingest/cyber",
+        "payload": {
+            "event_id": "demo-cyber-005",
+            "timestamp": None,
+            "src_ip": "10.0.0.12",
+            "dest_ip": "10.0.0.1",
+            "mitre_tag": "T1078",
+            "severity": 6.5,
+            "tls_metadata": None,
+        },
+        "label": "T+5s   | [Op 3] Off-hours internal login, ACC-8888 [T1078]",
+    },
+
+    # T+12s: brute force (Op 1)
     {
         "offset_seconds": 12,
         "endpoint": "/ingest/cyber",
@@ -47,9 +69,26 @@ DEMO_EVENTS = [
             "severity": 7.5,
             "tls_metadata": None,
         },
-        "label": "T+12s | 47 failed logins from 10.0.0.99 [T1110 Brute Force]",
+        "label": "T+12s  | [Op 1] 47 failed logins from 10.0.0.99 [T1110]",
     },
-    # T+61s: successful login
+    
+    # T+18s: Insider malicious command execution (Op 3)
+    {
+        "offset_seconds": 18,
+        "endpoint": "/ingest/cyber",
+        "payload": {
+            "event_id": "demo-cyber-006",
+            "timestamp": None,
+            "src_ip": "10.0.0.12",
+            "dest_ip": "10.0.0.12",
+            "mitre_tag": "T1059",
+            "severity": 8.0,
+            "tls_metadata": None,
+        },
+        "label": "T+18s  | [Op 3] PowerShell obfuscated execution on endpoint [T1059]",
+    },
+
+    # T+61s: successful login (Op 1)
     {
         "offset_seconds": 61,
         "endpoint": "/ingest/cyber",
@@ -62,8 +101,13 @@ DEMO_EVENTS = [
             "severity": 8.5,
             "tls_metadata": None,
         },
-        "label": "T+61s | Successful login, ACC-0042 [T1078 Valid Accounts]",
+        "label": "T+61s  | [Op 1] Successful remote login, ACC-0042 [T1078]",
     },
+
+    # ---------------------------------------------------------
+    # OPERATION 1: SMURFING EXECUTION
+    # ---------------------------------------------------------
+
     # T+74s: first smurfing transfer
     {
         "offset_seconds": 74,
@@ -78,8 +122,9 @@ DEMO_EVENTS = [
             "fatf_tag": "FATF-3",
             "branch_id": "BR-001",
         },
-        "label": "T+74s | ₹49,500 transfer ACC-0042 → ACC-0071 [FATF Typology 3 Smurfing]",
+        "label": "T+74s  | [Op 1] ₹49,500 transfer ACC-0042 → ACC-0071 [FATF-3]",
     },
+    
     # T+81s: second smurfing transfer
     {
         "offset_seconds": 81,
@@ -94,9 +139,10 @@ DEMO_EVENTS = [
             "fatf_tag": "FATF-3",
             "branch_id": "BR-001",
         },
-        "label": "T+81s | ₹49,500 transfer ACC-0042 → ACC-0088 [FATF Typology 3 Smurfing]",
+        "label": "T+81s  | [Op 1] ₹49,500 transfer ACC-0042 → ACC-0088 [FATF-3]",
     },
-    # T+89s: third smurfing transfer
+    
+    # T+89s: third smurfing transfer (receiver is ACC-0103)
     {
         "offset_seconds": 89,
         "endpoint": "/ingest/transaction",
@@ -110,9 +156,10 @@ DEMO_EVENTS = [
             "fatf_tag": "FATF-3",
             "branch_id": "BR-001",
         },
-        "label": "T+89s | ₹49,500 transfer ACC-0042 → ACC-0103 [FATF Typology 3 Smurfing]",
+        "label": "T+89s  | [Op 1] ₹49,500 transfer ACC-0042 → ACC-0103 [FATF-3]",
     },
-    # T+95s: HNDL quantum risk
+
+    # T+95s: HNDL quantum risk (Op 1)
     {
         "offset_seconds": 95,
         "endpoint": "/ingest/cyber",
@@ -133,7 +180,106 @@ DEMO_EVENTS = [
                 "dest_asn": 64512,
             },
         },
-        "label": "T+95s | TLS RSA-2048, 380MB to ASN 64512 [HNDL Quantum Risk]",
+        "label": "T+95s  | [Op 1] TLS RSA-2048, 380MB to ASN 64512 [HNDL Quantum Risk]",
+    },
+
+    # ---------------------------------------------------------
+    # OPERATION 2: MULE LAYERING (Connects to Op 1 via ACC-0103)
+    # ---------------------------------------------------------
+
+    # T+110s: Suspicious login to the smurf receiver
+    {
+        "offset_seconds": 110,
+        "endpoint": "/ingest/cyber",
+        "payload": {
+            "event_id": "demo-cyber-007",
+            "timestamp": None,
+            "src_ip": "192.168.4.15",
+            "dest_ip": "10.0.0.1",
+            "mitre_tag": "T1078",
+            "severity": 8.5,
+            "tls_metadata": None,
+        },
+        "label": "T+110s | [Op 2] Suspicious login to receiver ACC-0103 from 192.168.4.15 [T1078]",
+    },
+    
+    # T+115s: Layering transfer from ACC-0103 to central mule ACC-0999
+    {
+        "offset_seconds": 115,
+        "endpoint": "/ingest/transaction",
+        "payload": {
+            "event_id": "demo-tx-004",
+            "timestamp": None,
+            "src_ip": "192.168.4.15",
+            "account_id": "ACC-0103",
+            "dest_account_id": "ACC-0999",
+            "amount_inr": 48000.0,
+            "fatf_tag": "FATF-1",
+            "branch_id": "BR-001",
+        },
+        "label": "T+115s | [Op 2] ₹48,000 transfer ACC-0103 → ACC-0999 [FATF-1 Mule Layering]",
+    },
+    
+    # T+120s: Another layering transfer from ACC-0071 to central mule ACC-0999
+    {
+        "offset_seconds": 120,
+        "endpoint": "/ingest/transaction",
+        "payload": {
+            "event_id": "demo-tx-005",
+            "timestamp": None,
+            "src_ip": "192.168.4.15",
+            "account_id": "ACC-0071",
+            "dest_account_id": "ACC-0999",
+            "amount_inr": 48500.0,
+            "fatf_tag": "FATF-1",
+            "branch_id": "BR-001",
+        },
+        "label": "T+120s | [Op 2] ₹48,500 transfer ACC-0071 → ACC-0999 [FATF-1 Mule Layering]",
+    },
+
+    # ---------------------------------------------------------
+    # OPERATION 3: INSIDER EXECUTION (PQC Downgrade)
+    # ---------------------------------------------------------
+
+    # T+135s: Massive offshore wire transfer
+    {
+        "offset_seconds": 135,
+        "endpoint": "/ingest/transaction",
+        "payload": {
+            "event_id": "demo-tx-006",
+            "timestamp": None,
+            "src_ip": "10.0.0.12",
+            "account_id": "ACC-8888",
+            "dest_account_id": "ACC-9999-OFFSHORE",
+            "amount_inr": 8500000.0,
+            "fatf_tag": "FATF-2",
+            "branch_id": "BR-001",
+        },
+        "label": "T+135s | [Op 3] ₹8,500,000 offshore wire from treasury ACC-8888 [FATF-2]",
+    },
+    
+    # T+140s: PQC Downgrade Attack detected
+    {
+        "offset_seconds": 140,
+        "endpoint": "/ingest/cyber",
+        "payload": {
+            "event_id": "demo-cyber-008",
+            "timestamp": None,
+            "src_ip": "10.0.0.12",
+            "dest_ip": "10.0.0.1",
+            "mitre_tag": "T1573",
+            "severity": 10.0,
+            "tls_metadata": {
+                "tls_version": "1.3",
+                "cipher_suite": "TLS_AES_128_GCM_SHA256",
+                "ja3_hash": "a011a011a011a011a011a011a011a011",
+                "ja4_hash": "t13d1516_downgraded_hash",
+                "pqc_downgrade_detected": True,
+                "session_bytes": 10240,
+                "dest_asn": 0,
+            },
+        },
+        "label": "T+140s | [Op 3] PQC Downgrade Attack detected during internal session [T1573]",
     },
 ]
 

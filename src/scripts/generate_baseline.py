@@ -151,8 +151,8 @@ def generate_graph_embeddings() -> dict:
             "ring_members": ring_members_map.get(acc, []),
         }
 
-    # Ensure demo accounts are in a ring
-    demo_accounts = ["ACC-0042", "ACC-0071", "ACC-0088", "ACC-0103"]
+    # Ensure demo accounts are in a ring (Op 1 & Op 2)
+    demo_accounts = ["ACC-0042", "ACC-0071", "ACC-0088", "ACC-0103", "ACC-0999"]
     demo_ring_members = demo_accounts + rng.sample(all_accounts, 16)
     for acc in demo_accounts:
         embeddings[acc] = {
@@ -160,6 +160,17 @@ def generate_graph_embeddings() -> dict:
             "is_fraud_ring": True,
             "cluster_id": 99,
             "ring_members": demo_ring_members,
+        }
+
+    # Op 3 Insider accounts
+    insider_accounts = ["ACC-8888", "ACC-9999-OFFSHORE"]
+    insider_ring_members = insider_accounts + rng.sample(all_accounts, 5)
+    for acc in insider_accounts:
+        embeddings[acc] = {
+            "embedding": (np_rng.standard_normal(64) * 0.3 + 100).tolist(),
+            "is_fraud_ring": True,
+            "cluster_id": 100,
+            "ring_members": insider_ring_members,
         }
 
     return embeddings
