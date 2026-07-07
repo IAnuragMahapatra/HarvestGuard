@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+@theme {
+  --color-crimson: #E53935;
+  --color-amber: #FFB300;
+  --color-electric: #29B6F6;
+  --color-emerald: #00E676;
+  --color-slate-bg: #1E2430;
+  --color-slate-surface: #2A313E;
+  --color-ghost: #8892A4;
+
+  --font-display: "DM Serif Display", serif;
+  --font-body: "DM Sans", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+}
+
+/* Base custom styles based on ui-design-constraints */
+@layer base {
+  :root {
+    --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
+    --ease-in-out: cubic-bezier(0.77, 0, 0.175, 1);
+    --ease-drawer: cubic-bezier(0.32, 0.72, 0, 1);
+    
+    /* Semantic references derived from theme colors */
+    --color-surface: var(--color-slate-bg);
+    --color-on-surface: #F8FAFC;
+    --color-accent: var(--color-electric);
+  }
+  
+  body {
+    background-color: var(--color-surface);
+    color: var(--color-on-surface);
+    font-family: var(--font-body);
+    /* Improve font rendering */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  /* Type scale settings for readability */
+  p, span, div {
+    max-width: 70ch;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+    line-height: 1.1;
+  }
+}
+
+/* Reduced motion handler */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
