@@ -32,7 +32,9 @@ export default function QuantumRiskPanel({ alert }) {
         </div>
 
         <div className="text-sm text-on-surface/90 mt-2 p-3 bg-electric/5 rounded border border-electric/10">
-          This session used RSA-2048 (vulnerable to quantum attack) and transferred 380MB to an unverified ASN. This matches a Harvest Now Decrypt Later exfiltration pattern.
+          {alert.mitre_tags?.includes("T1573") 
+            ? "PQC Downgrade Attack detected. Adversary forced connection downgrade to vulnerable cipher suite during internal session."
+            : "This session used RSA-2048 (vulnerable to quantum attack) and transferred massive data to an unverified ASN. This matches a Harvest Now Decrypt Later exfiltration pattern."}
         </div>
       </div>
     </motion.div>
