@@ -44,10 +44,20 @@ export default function GraphView({ focusAccount, alertId }) {
     return () => clearInterval(interval);
   }, [alertId]);
 
+  const CATEGORIES = [
+    { name: "IP Address", itemStyle: { color: "#33B5E5", shadowBlur: 10, shadowColor: 'rgba(51, 181, 229, 0.5)' } },
+    { name: "Normal Account", itemStyle: { color: "#00C853" } },
+    { name: "Flagged Account", itemStyle: { color: "#E53935", shadowBlur: 15, shadowColor: 'rgba(229, 57, 53, 0.5)' } },
+    { name: "Fraud Ring Member", itemStyle: { color: "#F57F17" } },
+  ];
+
   const option = {
     backgroundColor: 'transparent',
     tooltip: {
       trigger: 'item',
+      backgroundColor: '#202530',
+      textStyle: { color: '#F8FAFC', fontFamily: '"DM Sans", sans-serif' },
+      borderColor: 'rgba(255,255,255,0.05)',
       formatter: '{b}'
     },
     series: [
@@ -56,36 +66,45 @@ export default function GraphView({ focusAccount, alertId }) {
         layout: 'force',
         data: graphData.nodes,
         links: graphData.edges,
+        categories: CATEGORIES,
         roam: true,
         label: {
           show: true,
           position: 'right',
-          color: '#8892A4',
+          color: '#8A95A5',
+          fontFamily: '"JetBrains Mono", monospace',
           fontSize: 10
         },
+        lineStyle: {
+          color: '#8A95A5',
+          opacity: 0.3,
+          curveness: 0.1
+        },
         force: {
-          repulsion: 300,
-          edgeLength: 80
+          repulsion: 350,
+          edgeLength: 90,
+          gravity: 0.1
         }
       }
     ]
   };
 
   return (
-    <div className="h-full min-h-[400px] flex flex-col">
-      <div className="p-5 border-b border-ghost/10 flex justify-between items-center bg-slate-bg/30">
-        <h2 className="text-lg font-display tracking-wide font-medium flex items-center gap-2">
+    <div className="h-full min-h-[400px] flex flex-col bg-slate-surface rounded-xl border border-white/5 shadow-[0_8px_32px_rgba(0,0,0,0.4)] relative overflow-hidden">
+      <div className="absolute inset-0 pointer-events-none shadow-[inset_0_1px_1px_rgba(255,255,255,0.05)] rounded-xl z-20" />
+      <div className="p-5 border-b border-white/5 flex justify-between items-center bg-black/20 backdrop-blur-sm relative z-10">
+        <h2 className="text-lg font-display tracking-wide font-medium flex items-center gap-2 text-on-surface">
           <Network className="w-5 h-5 text-ghost" /> Fraud Ring Topology
         </h2>
       </div>
-      <div className="flex-1 p-4 relative">
+      <div className="flex-1 p-4 relative bg-slate-bg/30">
         <ReactECharts 
           option={option} 
           style={{ height: '100%', width: '100%' }}
           opts={{ renderer: 'canvas' }}
         />
         {/* Subtle overlay vignette */}
-        <div className="absolute inset-0 pointer-events-none shadow-[inset_0_0_50px_rgba(30,36,48,0.8)] rounded-b-2xl" />
+        <div className="absolute inset-0 pointer-events-none shadow-[inset_0_0_100px_rgba(20,25,35,1)] z-10" />
       </div>
     </div>
   );

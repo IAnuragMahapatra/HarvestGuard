@@ -51,9 +51,9 @@ export default function ShapView({ alert }) {
         initial={{ opacity: 0, x: -10 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ delay: 0.2, duration: 0.4 }}
-        className="bg-slate-surface rounded-2xl border border-ghost/10 overflow-hidden shadow-xl"
+        className="bg-slate-surface rounded-xl border border-white/5 overflow-hidden shadow-xl"
       >
-        <div className="p-4 border-b border-ghost/10 bg-slate-bg/30 flex justify-between items-center">
+        <div className="p-4 border-b border-white/5 bg-slate-bg/30 flex justify-between items-center">
           <h3 className="font-display flex items-center gap-2">
             <Bot className="w-5 h-5 text-electric" /> Autonomous SOC Report
           </h3>
@@ -69,9 +69,9 @@ export default function ShapView({ alert }) {
         initial={{ opacity: 0, x: 10 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ delay: 0.3, duration: 0.4 }}
-        className="bg-slate-surface rounded-2xl border border-ghost/10 overflow-hidden shadow-xl"
+        className="bg-slate-surface rounded-xl border border-white/5 overflow-hidden shadow-xl"
       >
-        <div className="p-4 border-b border-ghost/10 bg-slate-bg/30">
+        <div className="p-4 border-b border-white/5 bg-slate-bg/30">
           <h3 className="font-display flex items-center gap-2">
             <BarChart2 className="w-5 h-5 text-amber" /> Why did this alert fire?
           </h3>

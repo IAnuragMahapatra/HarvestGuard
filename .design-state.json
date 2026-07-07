@@ -56,6 +56,16 @@
       "oldValue": "python-streamlit-html",
       "newValue": "react-tailwind-framer-motion",
       "reason": "Complete React rewrite requested by user for premium UI polish."
+    },
+    {
+      "oldValue": "hex-colors",
+      "newValue": "oklch-palette",
+      "reason": "User complained the UI lacked soul and looked like default AI slop. Upgraded to premium industrial OKLCH palette per UI polish guidelines."
+    },
+    {
+      "oldValue": "max-width: 70ch on div",
+      "newValue": "max-width: 75ch on p, span",
+      "reason": "Global div restriction collapsed the entire CSS grid."
     }
   ]
 }

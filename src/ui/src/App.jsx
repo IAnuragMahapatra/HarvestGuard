@@ -71,7 +71,7 @@ export default function App() {
               <div className="lg:col-span-7">
                 <AlertFeed onSelectAlert={setSelectedAlert} />
               </div>
-              <div className="lg:col-span-5 bg-slate-surface rounded-2xl border border-ghost/10 overflow-hidden shadow-2xl">
+              <div className="lg:col-span-5 bg-slate-surface rounded-xl border border-white/5 overflow-hidden shadow-[0_8px_32px_rgba(0,0,0,0.4)]">
                 <GraphView />
               </div>
             </section>
@@ -89,12 +89,12 @@ export default function App() {
             <div className="flex items-center gap-4">
               <button 
                 onClick={() => setSelectedAlert(null)}
-                className="p-2 bg-slate-surface hover:bg-slate-bg border border-ghost/20 hover:border-ghost/50 rounded-full transition-colors group cursor-pointer"
+                className="p-2 bg-slate-surface hover:bg-slate-bg border border-white/5 hover:border-white/20 rounded-full transition-colors group cursor-pointer"
                 aria-label="Back to Command Center"
               >
                 <ArrowLeft className="w-5 h-5 text-ghost group-hover:text-on-surface transition-colors" />
               </button>
-              <h2 className="text-xl font-display">Alert Analysis: {selectedAlert.id}</h2>
+              <h2 className="text-2xl font-display tracking-tight text-on-surface">Alert Analysis: <span className="font-mono text-ghost">{selectedAlert.alert_id}</span></h2>
             </div>
 
             <section className="grid grid-cols-1 lg:grid-cols-12 gap-8">
@@ -106,9 +106,9 @@ export default function App() {
                 {selectedAlert.tls_risk_score >= 0.5 && (
                   <QuantumRiskPanel alert={selectedAlert} />
                 )}
-                <div className="bg-slate-surface rounded-2xl p-6 border border-ghost/10 shadow-2xl">
+                <div className="bg-slate-surface rounded-xl border border-white/5 shadow-[0_8px_32px_rgba(0,0,0,0.4)] overflow-hidden h-[400px]">
                   {/* Additional context or graph could go here */}
-                  <GraphView focusAccount={selectedAlert.account_id} />
+                  <GraphView focusAccount={selectedAlert.account_id} alertId={selectedAlert.alert_id} />
                 </div>
               </div>
             </section>

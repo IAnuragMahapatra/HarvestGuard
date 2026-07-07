@@ -23,8 +23,11 @@ export default function AlertFeed({ onSelectAlert }) {
     return () => clearInterval(interval);
   }, []);
   return (
-    <div className="bg-slate-surface rounded-2xl border border-ghost/10 overflow-hidden shadow-2xl flex flex-col h-[500px]">
-      <div className="p-5 border-b border-ghost/10 flex justify-between items-center bg-slate-bg/30">
+    <div className="bg-slate-surface rounded-xl border border-white/5 overflow-hidden shadow-[0_8px_32px_rgba(0,0,0,0.4)] flex flex-col h-[500px] relative">
+      {/* Subtle inset highlight for premium feel */}
+      <div className="absolute inset-0 pointer-events-none shadow-[inset_0_1px_1px_rgba(255,255,255,0.05)] rounded-xl z-20" />
+      
+      <div className="p-5 border-b border-white/5 flex justify-between items-center bg-black/20 backdrop-blur-sm relative z-10">
         <h2 className="text-lg font-display tracking-wide font-medium flex items-center gap-2">
           <Zap className="w-5 h-5 text-amber" /> Live Threat Feed
         </h2>
@@ -51,17 +54,18 @@ export default function AlertFeed({ onSelectAlert }) {
               const isWarning = score >= 0.75 && score < 0.90;
               const isQuantum = alert.tls_risk_score >= 0.5;
 
-              let rowClasses = "hover:bg-slate-bg/50 transition-colors cursor-pointer group";
-              let badgeColor = "bg-ghost/10 text-ghost";
+              let rowClasses = "hover:bg-white/5 transition-colors cursor-pointer group relative";
+              let badgeColor = "bg-white/5 text-ghost border border-white/10";
               
               if (isCritical) {
                 rowClasses += " bg-crimson/5 hover:bg-crimson/10";
-                badgeColor = "bg-crimson/20 text-crimson animate-pulse";
+                badgeColor = "bg-crimson/20 text-crimson border border-crimson/30 shadow-[0_0_10px_rgba(229,57,53,0.3)] animate-pulse";
               } else if (isWarning) {
-                badgeColor = "bg-amber/20 text-amber";
+                rowClasses += " bg-amber/5 hover:bg-amber/10";
+                badgeColor = "bg-amber/20 text-amber border border-amber/30";
               } else if (isQuantum) {
                 rowClasses += " bg-electric/5 hover:bg-electric/10";
-                badgeColor = "bg-electric/20 text-electric";
+                badgeColor = "bg-electric/20 text-electric border border-electric/30";
               }
 
               // format time HH:MM:SS

@@ -27,10 +27,10 @@ export default function ThreatChain({ alert }) {
   const fatfTags = alert.fatf_tags ? alert.fatf_tags.join(', ') : 'None';
 
   return (
-    <div className="bg-slate-surface rounded-2xl border border-ghost/10 overflow-hidden shadow-2xl p-6">
+    <div className="bg-slate-surface rounded-xl border border-white/5 overflow-hidden shadow-[0_8px_32px_rgba(0,0,0,0.4)] relative overflow-hidden p-6">
       <div className="mb-8">
         <h3 className="text-xl font-display font-medium mb-2">Correlation Timeline</h3>
-        <p className="text-sm text-ghost font-mono bg-slate-bg inline-block px-3 py-1 rounded border border-ghost/10">
+        <p className="text-sm text-ghost font-mono bg-slate-bg inline-block px-3 py-1 rounded border border-white/5">
           Attack Chain: {mitreTags} <ChevronRight className="inline w-3 h-3 mx-1" /> {fatfTags}
         </p>
       </div>

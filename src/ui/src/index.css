@@ -1,13 +1,14 @@
 @import "tailwindcss";
 
 @theme {
-  --color-crimson: #E53935;
-  --color-amber: #FFB300;
-  --color-electric: #29B6F6;
-  --color-emerald: #00E676;
-  --color-slate-bg: #1E2430;
-  --color-slate-surface: #2A313E;
-  --color-ghost: #8892A4;
+  /* Premium Industrial OKLCH Palette */
+  --color-crimson: oklch(55% 0.2 25);
+  --color-amber: oklch(75% 0.18 70);
+  --color-electric: oklch(65% 0.15 250);
+  --color-emerald: oklch(65% 0.15 150);
+  --color-slate-bg: oklch(15% 0.01 250);
+  --color-slate-surface: oklch(22% 0.015 250);
+  --color-ghost: oklch(60% 0.02 250);
 
   --font-display: "DM Serif Display", serif;
   --font-body: "DM Sans", sans-serif;
@@ -23,7 +24,7 @@
     
     /* Semantic references derived from theme colors */
     --color-surface: var(--color-slate-bg);
-    --color-on-surface: #F8FAFC;
+    --color-on-surface: oklch(95% 0.01 250);
     --color-accent: var(--color-electric);
   }
   
@@ -36,9 +37,9 @@
     -moz-osx-font-smoothing: grayscale;
   }
   
-  /* Type scale settings for readability */
-  p, span, div {
-    max-width: 70ch;
+  /* Type scale settings for readability (Removed 'div' to fix grid collapse bug) */
+  p, span {
+    max-width: 75ch;
   }
 
   h1, h2, h3, h4, h5, h6 {

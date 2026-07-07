@@ -9,29 +9,40 @@ export default function MetricTile({ title, value, icon: Icon, color, delay }) {
   };
 
   const iconColor = colorMap[color] || 'text-ghost';
+  const bgColor = {
+    emerald: 'bg-emerald/10 text-emerald',
+    electric: 'bg-electric/10 text-electric',
+    crimson: 'bg-crimson/10 text-crimson'
+  }[color] || 'bg-ghost/10 text-ghost';
 
   return (
     <motion.div 
       initial={{ opacity: 0, y: 15 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.4, ease: [0.23, 1, 0.32, 1], delay }}
-      className="bg-slate-surface rounded-2xl p-6 border border-ghost/10 shadow-lg relative overflow-hidden group"
+      className="bg-slate-surface rounded-xl p-6 border border-white/5 shadow-2xl relative overflow-hidden group"
     >
-      <div className="flex justify-between items-start mb-4 relative z-10">
-        <h3 className="text-ghost text-sm font-medium tracking-wide">{title}</h3>
-        <div className={`p-2 bg-slate-bg/50 rounded-lg border border-ghost/5 ${iconColor}`}>
+      {/* Premium hardware inset shadow */}
+      <div className="absolute inset-0 pointer-events-none shadow-[inset_0_1px_1px_rgba(255,255,255,0.05)] rounded-xl" />
+      
+      <div className="flex justify-between items-start mb-6 relative z-10">
+        <h3 className="text-ghost text-xs font-mono tracking-widest uppercase">{title}</h3>
+        <div className={`p-2.5 rounded-lg border border-white/5 shadow-inner backdrop-blur-md ${bgColor}`}>
           <Icon className="w-5 h-5" />
         </div>
       </div>
       
       <div className="relative z-10">
-        <span className="text-3xl font-mono font-semibold tracking-tight text-on-surface">
+        <span className="text-4xl font-display tracking-tight text-on-surface">
           {value.toLocaleString()}
         </span>
       </div>
 
-      {/* Decorative gradient orb on hover */}
-      <div className="absolute -bottom-8 -right-8 w-32 h-32 bg-current opacity-0 group-hover:opacity-5 blur-2xl transition-opacity duration-500 pointer-events-none" style={{ color: `var(--color-${color})` }} />
+      {/* Hardware LED glow effect */}
+      <div className={`absolute -top-12 -right-12 w-32 h-32 opacity-20 blur-[40px] pointer-events-none ${bgColor.split(' ')[0].replace('/10', '')}`} />
+      
+      {/* Decorative scanline on hover */}
+      <div className="absolute inset-0 translate-y-[100%] group-hover:translate-y-[-100%] bg-gradient-to-b from-transparent via-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-1000 ease-in-out pointer-events-none" />
     </motion.div>
   );
 }
