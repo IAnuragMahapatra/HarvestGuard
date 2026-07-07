@@ -71,7 +71,7 @@ export default function App() {
               <div className="lg:col-span-7">
                 <AlertFeed onSelectAlert={setSelectedAlert} />
               </div>
-              <div className="lg:col-span-5 bg-slate-surface rounded-xl border border-white/5 overflow-hidden shadow-[0_8px_32px_rgba(0,0,0,0.4)]">
+              <div className="lg:col-span-5 flex flex-col">
                 <GraphView />
               </div>
             </section>
@@ -106,10 +106,7 @@ export default function App() {
                 {selectedAlert.tls_risk_score >= 0.5 && (
                   <QuantumRiskPanel alert={selectedAlert} />
                 )}
-                <div className="bg-slate-surface rounded-xl border border-white/5 shadow-[0_8px_32px_rgba(0,0,0,0.4)] overflow-hidden h-[400px]">
-                  {/* Additional context or graph could go here */}
-                  <GraphView focusAccount={selectedAlert.account_id} alertId={selectedAlert.alert_id} />
-                </div>
+                <GraphView focusAccount={selectedAlert.account_id} alertId={selectedAlert.alert_id} />
               </div>
             </section>
           </motion.div>
