@@ -103,8 +103,6 @@ export default function GraphView({ focusAccount, alertId }) {
           style={{ height: '100%', width: '100%' }}
           opts={{ renderer: 'canvas' }}
         />
-        {/* Subtle overlay vignette */}
-        <div className="absolute inset-0 pointer-events-none shadow-[inset_0_0_100px_rgba(20,25,35,1)] z-10" />
       </div>
     </div>
   );

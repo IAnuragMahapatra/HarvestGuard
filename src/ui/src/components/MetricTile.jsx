@@ -38,9 +38,6 @@ export default function MetricTile({ title, value, icon: Icon, color, delay }) {
         </span>
       </div>
 
-      {/* Hardware LED glow effect */}
-      <div className={`absolute -top-12 -right-12 w-32 h-32 opacity-20 blur-[40px] pointer-events-none ${bgColor.split(' ')[0].replace('/10', '')}`} />
-      
       {/* Decorative scanline on hover */}
       <div className="absolute inset-0 translate-y-[100%] group-hover:translate-y-[-100%] bg-gradient-to-b from-transparent via-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-1000 ease-in-out pointer-events-none" />
     </motion.div>
