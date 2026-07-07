@@ -1,9 +1,49 @@
+import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { Network } from 'lucide-react';
+import { Network, Loader2 } from 'lucide-react';
 import ReactECharts from 'echarts-for-react';
 
-export default function GraphView({ focusAccount }) {
-  // Mock data for the network graph representing a fraud ring
+export default function GraphView({ focusAccount, alertId }) {
+  const [graphData, setGraphData] = useState({ nodes: [], edges: [] });
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    const fetchGraph = async () => {
+      setLoading(true);
+      try {
+        let targetAlertId = alertId;
+        
+        // If no alertId is provided (e.g. on the Command Center dashboard),
+        // fetch the most recent alert to display its graph.
+        if (!targetAlertId) {
+          const alertsRes = await fetch('/api/alerts?limit=1');
+          if (alertsRes.ok) {
+            const alerts = await alertsRes.json();
+            if (alerts.length > 0) {
+              targetAlertId = alerts[0].alert_id;
+            }
+          }
+        }
+        
+        if (targetAlertId) {
+          const res = await fetch(`/api/alerts/${targetAlertId}/graph`);
+          if (res.ok) {
+            const data = await res.json();
+            setGraphData(data);
+          }
+        }
+      } catch (err) {
+        console.error("Failed to fetch graph data:", err);
+      } finally {
+        setLoading(false);
+      }
+    };
+    
+    fetchGraph();
+    const interval = setInterval(fetchGraph, 2000);
+    return () => clearInterval(interval);
+  }, [alertId]);
+
   const option = {
     backgroundColor: 'transparent',
     tooltip: {
@@ -14,22 +54,8 @@ export default function GraphView({ focusAccount }) {
       {
         type: 'graph',
         layout: 'force',
-        data: [
-          { id: '0', name: '10.0.0.99 (Attacker IP)', symbolSize: 30, itemStyle: { color: '#29B6F6' } },
-          { id: '1', name: 'ACC-0042 (Compromised)', symbolSize: 45, itemStyle: { color: '#E53935' } },
-          { id: '2', name: 'ACC-0071 (Mule)', symbolSize: 25, itemStyle: { color: '#FFB300' } },
-          { id: '3', name: 'ACC-0088 (Mule)', symbolSize: 25, itemStyle: { color: '#FFB300' } },
-          { id: '4', name: 'ACC-0103 (Mule)', symbolSize: 25, itemStyle: { color: '#FFB300' } },
-          { id: '5', name: '192.168.1.15', symbolSize: 20, itemStyle: { color: '#00E676' } },
-          { id: '6', name: 'ACC-0891', symbolSize: 20, itemStyle: { color: '#00E676' } }
-        ],
-        links: [
-          { source: '0', target: '1', lineStyle: { color: '#8892A4', width: 2, type: 'dashed' } },
-          { source: '1', target: '2', lineStyle: { color: '#FFB300', width: 3 } },
-          { source: '1', target: '3', lineStyle: { color: '#FFB300', width: 3 } },
-          { source: '1', target: '4', lineStyle: { color: '#FFB300', width: 3 } },
-          { source: '5', target: '6', lineStyle: { color: '#8892A4', width: 1 } }
-        ],
+        data: graphData.nodes,
+        links: graphData.edges,
         roam: true,
         label: {
           show: true,
