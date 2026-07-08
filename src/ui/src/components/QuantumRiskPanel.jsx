@@ -31,10 +31,10 @@ export default function QuantumRiskPanel({ alert }) {
           <span className="text-electric">Threshold: 0.50</span>
         </div>
 
-        <div className="text-sm text-on-surface/90 mt-2 p-3 bg-electric/5 rounded border border-electric/10">
+        <div className="text-sm text-on-surface/90 mt-2 p-3 bg-electric/5 rounded border border-electric/10 leading-relaxed">
           {alert.mitre_tags?.includes("T1573") 
-            ? "PQC Downgrade Attack detected. Adversary forced connection downgrade to vulnerable cipher suite during internal session."
-            : "This session used RSA-2048 (vulnerable to quantum attack) and transferred massive data to an unverified ASN. This matches a Harvest Now Decrypt Later exfiltration pattern."}
+            ? "Downgrade attack detected. The attacker forced an internal connection to use weak encryption."
+            : "This session used RSA-2048 encryption (vulnerable to quantum attacks) to transfer data to an unverified location. This fits a 'Harvest Now, Decrypt Later' pattern."}
         </div>
       </div>
     </motion.div>
