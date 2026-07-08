@@ -18,16 +18,16 @@ uv run python src/scripts/generate_baseline.py
 Write-Host "[3/4] Starting FastAPI backend in a new window..." -ForegroundColor Yellow
 Start-Process powershell -ArgumentList "-NoExit", "-Command", "uv run uvicorn src.api.main:app --host 0.0.0.0 --port 8000"
 
-# Wait a couple seconds to ensure API is up before Streamlit tries to connect
+# Wait a couple seconds to ensure API is up before the React app tries to connect
 Start-Sleep -Seconds 3
 
 # 4. Start the Dashboard
-Write-Host "[4/4] Starting Streamlit dashboard in a new window..." -ForegroundColor Yellow
-Start-Process powershell -ArgumentList "-NoExit", "-Command", "uv run streamlit run src/ui/app.py"
+Write-Host "[4/4] Starting React dashboard in a new window..." -ForegroundColor Yellow
+Start-Process powershell -ArgumentList "-NoExit", "-Command", "cd src/ui; npm run dev"
 
 Write-Host ""
 Write-Host "Done. The environment is running." -ForegroundColor Green
-Write-Host "The dashboard will open in your browser at http://localhost:8501" -ForegroundColor Green
+Write-Host "The dashboard will open in your browser at http://localhost:5173" -ForegroundColor Green
 Write-Host ""
 Write-Host "To run the demo scenario, run:" -ForegroundColor Cyan
 Write-Host "  uv run python src/scripts/run_demo.py" -ForegroundColor White
