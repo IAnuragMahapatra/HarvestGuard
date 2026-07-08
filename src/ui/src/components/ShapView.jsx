@@ -27,7 +27,7 @@ export default function ShapView({ alert }) {
     fetchFullAlert();
   }, [alert?.alert_id]);
 
-  const llmReport = alert.llm_report || "No autonomous report generated for this alert.";
+  const llmReport = alert.llm_report || "No AI report available for this alert.";
   
   // Format SHAP dictionary if present
   let shapFeatures = [];
@@ -45,21 +45,21 @@ export default function ShapView({ alert }) {
   }
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 flex-1 min-h-0">
       {/* Autonomous SOC Report */}
       <motion.div 
         initial={{ opacity: 0, x: -10 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ delay: 0.2, duration: 0.4 }}
-        className="bg-slate-surface rounded-xl border border-white/5 overflow-hidden shadow-xl"
+        className="bg-slate-surface rounded-xl border border-white/5 overflow-hidden shadow-xl flex flex-col"
       >
-        <div className="p-4 border-b border-white/5 bg-slate-bg/30 flex justify-between items-center">
-          <h3 className="font-display flex items-center gap-2">
-            <Bot className="w-5 h-5 text-electric" /> Autonomous SOC Report
+        <div className="p-3 border-b border-white/5 bg-slate-bg/30 flex justify-between items-center shrink-0">
+          <h3 className="text-xl font-display flex items-center gap-2">
+            <Bot className="w-5 h-5 text-electric" /> AI Analysis
           </h3>
-          <span className="text-[10px] uppercase tracking-wider text-electric border border-electric/30 px-2 py-1 rounded bg-electric/10">Local AI Data</span>
+          <span className="text-[10px] uppercase tracking-wider text-electric border border-electric/30 px-2 py-1 rounded bg-electric/10">Local Data</span>
         </div>
-        <div className="p-5 text-sm leading-relaxed text-on-surface/90 font-body">
+        <div className="p-4 text-base leading-relaxed text-on-surface/90 font-body flex-1 overflow-y-auto custom-scrollbar">
           {llmReport}
         </div>
       </motion.div>
@@ -69,20 +69,20 @@ export default function ShapView({ alert }) {
         initial={{ opacity: 0, x: 10 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ delay: 0.3, duration: 0.4 }}
-        className="bg-slate-surface rounded-xl border border-white/5 overflow-hidden shadow-xl"
+        className="bg-slate-surface rounded-xl border border-white/5 overflow-hidden shadow-xl flex flex-col"
       >
-        <div className="p-4 border-b border-white/5 bg-slate-bg/30">
-          <h3 className="font-display flex items-center gap-2">
-            <BarChart2 className="w-5 h-5 text-amber" /> Why did this alert fire?
+        <div className="p-3 border-b border-white/5 bg-slate-bg/30 shrink-0">
+          <h3 className="text-xl font-display flex items-center gap-2">
+            <BarChart2 className="w-5 h-5 text-amber" /> Why this alert fired
           </h3>
         </div>
-        <div className="p-5">
+        <div className="p-4 flex-1 overflow-y-auto custom-scrollbar">
           {loading ? (
-            <div className="h-32 bg-slate-bg rounded-lg border border-ghost/5 mb-4 flex items-center justify-center text-ghost text-sm">
+            <div className="h-28 bg-slate-bg rounded-lg border border-ghost/5 mb-3 flex items-center justify-center text-ghost text-sm">
               <Loader2 className="w-6 h-6 animate-spin text-electric" />
             </div>
           ) : fullAlert?.shap_waterfall_png ? (
-            <div className="bg-white/90 rounded-lg p-2 mb-4">
+            <div className="bg-white/90 rounded-lg p-2 mb-3">
               <img 
                 src={`data:image/png;base64,${fullAlert.shap_waterfall_png}`} 
                 alt="SHAP Waterfall"
