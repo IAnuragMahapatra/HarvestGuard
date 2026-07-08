@@ -90,19 +90,21 @@ export default function GraphView({ focusAccount, alertId }) {
   };
 
   return (
-    <div className="flex-1 min-h-[400px] flex flex-col bg-slate-surface rounded-xl border border-white/5 shadow-[0_8px_32px_rgba(0,0,0,0.4)] relative overflow-hidden">
+    <div className="flex-1 min-h-0 flex flex-col bg-slate-surface rounded-xl border border-white/5 shadow-[0_8px_32px_rgba(0,0,0,0.4)] relative overflow-hidden">
       <div className="absolute inset-0 pointer-events-none shadow-[inset_0_1px_1px_rgba(255,255,255,0.05)] rounded-xl z-20" />
       <div className="p-5 border-b border-white/5 flex justify-between items-center bg-black/20 backdrop-blur-sm relative z-10">
         <h2 className="text-lg font-display tracking-wide font-medium flex items-center gap-2 text-on-surface">
           <Network className="w-5 h-5 text-ghost" /> Fraud Ring Topology
         </h2>
       </div>
-      <div className="flex-1 p-4 relative bg-slate-bg/30">
-        <ReactECharts 
-          option={option} 
-          style={{ height: '100%', width: '100%' }}
-          opts={{ renderer: 'canvas' }}
-        />
+      <div className="flex-1 p-4 relative bg-slate-bg/30 min-h-0">
+        <div className="absolute inset-0 p-4">
+          <ReactECharts 
+            option={option} 
+            style={{ height: '100%', width: '100%' }}
+            opts={{ renderer: 'canvas' }}
+          />
+        </div>
       </div>
     </div>
   );
