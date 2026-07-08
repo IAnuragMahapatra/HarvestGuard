@@ -23,13 +23,13 @@ export default function AlertFeed({ onSelectAlert }) {
     return () => clearInterval(interval);
   }, []);
   return (
-    <div className="bg-slate-surface rounded-xl border border-white/5 overflow-hidden shadow-[0_8px_32px_rgba(0,0,0,0.4)] flex flex-col h-[500px] relative">
+    <div className="bg-slate-surface rounded-xl border border-white/5 overflow-hidden shadow-[0_8px_32px_rgba(0,0,0,0.4)] flex flex-col flex-1 min-h-0 relative">
       {/* Subtle inset highlight for premium feel */}
       <div className="absolute inset-0 pointer-events-none shadow-[inset_0_1px_1px_rgba(255,255,255,0.05)] rounded-xl z-20" />
       
-      <div className="p-5 border-b border-white/5 flex justify-between items-center bg-black/20 backdrop-blur-sm relative z-10">
-        <h2 className="text-lg font-display tracking-wide font-medium flex items-center gap-2">
-          <Zap className="w-5 h-5 text-amber" /> Live Threat Feed
+      <div className="p-4 border-b border-white/5 flex justify-between items-center bg-black/20 backdrop-blur-sm relative z-10 shrink-0">
+        <h2 className="text-xl font-display tracking-wide font-medium flex items-center gap-2">
+          <Zap className="w-5 h-5 text-amber" /> Live Alerts
         </h2>
         <span className="text-xs text-ghost font-mono bg-slate-bg px-2 py-1 rounded">Polling 2s</span>
       </div>
