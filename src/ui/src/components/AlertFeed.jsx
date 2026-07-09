@@ -34,17 +34,17 @@ export default function AlertFeed({ onSelectAlert }) {
         <span className="text-xs text-ghost font-mono bg-slate-bg px-2 py-1 rounded">Polling 2s</span>
       </div>
 
-      <div className="flex-1 overflow-y-auto overflow-x-auto p-4 custom-scrollbar">
+      <div className="flex-1 overflow-y-auto overflow-x-auto px-4 pb-4 custom-scrollbar">
         <table className="w-full text-left text-sm whitespace-nowrap">
-          <thead className="text-ghost font-medium sticky top-0 bg-slate-surface/90 backdrop-blur pb-2 z-10">
+          <thead className="text-ghost font-medium">
             <tr>
-              <th className="pb-3 px-4">Time</th>
-              <th className="pb-3 px-4">Score</th>
-              <th className="pb-3 px-4">Type</th>
-              <th className="pb-3 px-4">Cyber Precursor</th>
-              <th className="pb-3 px-4">Financial Pattern</th>
-              <th className="pb-3 px-4">Account</th>
-              <th className="pb-3 px-4 text-right">Action</th>
+              <th className="sticky top-0 bg-slate-surface z-20 pt-4 pb-3 px-4 border-b border-white/5 shadow-sm">Time</th>
+              <th className="sticky top-0 bg-slate-surface z-20 pt-4 pb-3 px-4 border-b border-white/5 shadow-sm">Score</th>
+              <th className="sticky top-0 bg-slate-surface z-20 pt-4 pb-3 px-4 border-b border-white/5 shadow-sm">Type</th>
+              <th className="sticky top-0 bg-slate-surface z-20 pt-4 pb-3 px-4 border-b border-white/5 shadow-sm">Cyber Precursor</th>
+              <th className="sticky top-0 bg-slate-surface z-20 pt-4 pb-3 px-4 border-b border-white/5 shadow-sm">Financial Pattern</th>
+              <th className="sticky top-0 bg-slate-surface z-20 pt-4 pb-3 px-4 border-b border-white/5 shadow-sm">Account</th>
+              <th className="sticky top-0 bg-slate-surface z-20 pt-4 pb-3 px-4 text-right border-b border-white/5 shadow-sm">Action</th>
             </tr>
           </thead>
           <tbody className="divide-y divide-ghost/5">
