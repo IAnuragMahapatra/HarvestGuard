@@ -81,7 +81,7 @@ export default function AlertFeed({ onSelectAlert }) {
                   onClick={() => onSelectAlert(alert)}
                   className={rowClasses}
                 >
-                  <td className="py-4 px-4 text-ghost font-mono">{timeStr}</td>
+                  <td className="py-4 px-4 text-ghost font-mono whitespace-nowrap">{timeStr}</td>
                   <td className="py-4 px-4">
                     <span className={`px-2 py-1 rounded-md font-mono text-xs font-semibold ${badgeColor}`}>
                       {score.toFixed(2)}
@@ -90,7 +90,7 @@ export default function AlertFeed({ onSelectAlert }) {
                   <td className="py-4 px-4 font-medium text-on-surface">{isQuantum ? 'Quantum Risk' : 'Correlated Threat'}</td>
                   <td className="py-4 px-4 text-ghost">{precursor || 'None'}</td>
                   <td className="py-4 px-4 text-ghost">{financial || 'None'}</td>
-                  <td className="py-4 px-4 font-mono text-xs">{alert.account_id || 'N/A'}</td>
+                  <td className="py-4 px-4 font-mono text-xs whitespace-nowrap">{alert.account_id || 'N/A'}</td>
                 </motion.tr>
               );
             })}
