@@ -43,8 +43,7 @@ export default function AlertFeed({ onSelectAlert }) {
               <th className="sticky top-0 bg-slate-surface z-20 pt-4 pb-3 px-4 border-b border-white/5 shadow-sm">Type</th>
               <th className="sticky top-0 bg-slate-surface z-20 pt-4 pb-3 px-4 border-b border-white/5 shadow-sm">Cyber Precursor</th>
               <th className="sticky top-0 bg-slate-surface z-20 pt-4 pb-3 px-4 border-b border-white/5 shadow-sm">Financial Pattern</th>
-              <th className="sticky top-0 bg-slate-surface z-20 pt-4 pb-3 px-4 border-b border-white/5 shadow-sm">Account</th>
-              <th className="sticky top-0 bg-slate-surface z-20 pt-4 pb-3 px-4 text-right border-b border-white/5 shadow-sm">Action</th>
+              <th className="sticky top-0 bg-slate-surface z-20 pt-4 pb-3 px-4 text-right border-b border-white/5 shadow-sm">Account</th>
             </tr>
           </thead>
           <tbody className="divide-y divide-ghost/5">
@@ -92,11 +91,6 @@ export default function AlertFeed({ onSelectAlert }) {
                   <td className="py-4 px-4 text-ghost">{precursor || 'None'}</td>
                   <td className="py-4 px-4 text-ghost">{financial || 'None'}</td>
                   <td className="py-4 px-4 font-mono text-xs">{alert.account_id || 'N/A'}</td>
-                  <td className="py-4 px-4 text-right">
-                    <button className="text-electric group-hover:translate-x-1 transition-transform" aria-label="View Details">
-                      <ArrowRight className="w-4 h-4 inline-block" />
-                    </button>
-                  </td>
                 </motion.tr>
               );
             })}
