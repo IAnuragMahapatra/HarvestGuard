@@ -97,9 +97,9 @@ export default function ShapView({ alert }) {
 
           <div className="space-y-2">
             {shapFeatures.map((feat, idx) => (
-              <div key={idx} className="flex justify-between items-center text-xs font-mono border-b border-ghost/5 pb-2">
-                <span className="text-ghost">{feat.name}</span>
-                <span className="text-crimson font-medium">{feat.value}</span>
+              <div key={idx} className="flex justify-between items-center text-sm font-mono border-b border-ghost/5 pb-2 gap-4 whitespace-nowrap">
+                <span className="text-ghost truncate">{feat.name}</span>
+                <span className="text-crimson font-medium shrink-0">{feat.value}</span>
               </div>
             ))}
           </div>
