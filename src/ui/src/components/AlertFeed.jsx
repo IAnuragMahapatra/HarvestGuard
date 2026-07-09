@@ -8,7 +8,7 @@ export default function AlertFeed({ onSelectAlert }) {
   useEffect(() => {
     const fetchAlerts = async () => {
       try {
-        const res = await fetch('/api/alerts?limit=50');
+        const res = await fetch('/api/alerts?limit=50', { cache: 'no-store' });
         if (res.ok) {
           const data = await res.json();
           setAlerts(data);
