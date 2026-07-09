@@ -34,8 +34,8 @@ export default function AlertFeed({ onSelectAlert }) {
         <span className="text-xs text-ghost font-mono bg-slate-bg px-2 py-1 rounded">Polling 2s</span>
       </div>
 
-      <div className="flex-1 overflow-y-auto overflow-x-auto px-4 pb-4 custom-scrollbar">
-        <table className="w-full text-left text-sm whitespace-nowrap">
+      <div className="flex-1 overflow-y-auto px-4 pb-4 custom-scrollbar">
+        <table className="w-full text-left text-sm">
           <thead className="text-ghost font-medium">
             <tr>
               <th className="sticky top-0 bg-slate-surface z-20 pt-4 pb-3 px-4 border-b border-white/5 shadow-sm">Time</th>
