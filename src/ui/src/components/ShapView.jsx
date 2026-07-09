@@ -59,7 +59,7 @@ export default function ShapView({ alert }) {
           </h3>
           <span className="text-[10px] uppercase tracking-wider text-electric border border-electric/30 px-2 py-1 rounded bg-electric/10">Local Data</span>
         </div>
-        <div className="p-4 text-base leading-relaxed text-on-surface/90 font-body flex-1 overflow-y-auto custom-scrollbar">
+        <div className="p-4 text-base leading-relaxed text-justify text-on-surface/90 font-body flex-1 overflow-y-auto custom-scrollbar">
           {llmReport}
         </div>
       </motion.div>
